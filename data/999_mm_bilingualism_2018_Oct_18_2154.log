@@ -1,0 +1,67 @@
+6.9720 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1680, 1050]. Using actual size
+7.8763 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x12d3e8908>, multiSample=False, name='window1', numSamples=2, pos=[-840.0, -525.0], screen=0, size=array([3360, 2100]), stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.8764 	EXP 	window1: recordFrameIntervals = False
+8.0727 	EXP 	window1: recordFrameIntervals = True
+8.2558 	EXP 	window1: recordFrameIntervals = False
+8.2584 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([1., 1.]), size=array([1., 1.]), texRes=128, units='pix', win=Window(...))
+8.3456 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([0.5, 0.5]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+8.3534 	EXP 	Imported images.xlsx as conditions, 13 conditions, 3 params
+8.3537 	EXP 	Created sequence: random, trialTypes=13, nReps=5, seed=None
+8.3541 	EXP 	New trial (rep=0, index=0): OrderedDict([('images', 'images/barn.jpg'), ('name', 'shoe'), ('corrAns', 'x')])
+8.7002 	EXP 	image: size = array([300., 300.])
+8.7002 	EXP 	image: image = 'images/barn.jpg'
+8.7002 	EXP 	text: text = 'shoe'
+8.7002 	EXP 	image: autoDraw = True
+8.7002 	EXP 	text: autoDraw = True
+10.3567 	EXP 	New trial (rep=0, index=1): OrderedDict([('images', 'images/antelope.jpg'), ('name', 'antelope'), ('corrAns', 'z')])
+10.5223 	EXP 	image: autoDraw = False
+10.5223 	EXP 	text: autoDraw = False
+10.5223 	EXP 	image: size = array([300., 300.])
+10.5223 	EXP 	image: image = 'images/antelope.jpg'
+10.5223 	EXP 	text: text = 'antelope'
+10.5223 	EXP 	image: autoDraw = True
+10.5223 	EXP 	text: autoDraw = True
+11.8085 	DATA 	Keypress: escape
+12.0816 	EXP 	window1: mouseVisible = True
+6.6050 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1680, 1050]. Using actual size
+7.4343 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x128ae4978>, multiSample=False, name='window1', numSamples=2, pos=[-840.0, -525.0], screen=0, size=array([3360, 2100]), stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.4343 	EXP 	window1: recordFrameIntervals = False
+7.6343 	EXP 	window1: recordFrameIntervals = True
+7.8190 	EXP 	window1: recordFrameIntervals = False
+7.8210 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([1., 1.]), size=array([1., 1.]), texRes=128, units='pix', win=Window(...))
+7.8961 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([0.5, 0.5]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+7.9046 	EXP 	Imported images.xlsx as conditions, 13 conditions, 3 params
+7.9050 	EXP 	Created sequence: random, trialTypes=13, nReps=5, seed=None
+7.9053 	EXP 	New trial (rep=0, index=0): OrderedDict([('images', 'images/acorn.jpg'), ('name', 'tree'), ('corrAns', 'x')])
+8.1821 	EXP 	image: size = array([300., 300.])
+8.1821 	EXP 	image: image = 'images/acorn.jpg'
+8.1821 	EXP 	text: text = 'tree'
+8.1821 	EXP 	image: autoDraw = True
+8.1821 	EXP 	text: autoDraw = True
+9.8997 	EXP 	New trial (rep=0, index=1): OrderedDict([('images', 'images/banjo.jpg'), ('name', 'banjo'), ('corrAns', 'z')])
+10.0660 	EXP 	image: autoDraw = False
+10.0660 	EXP 	text: autoDraw = False
+10.0660 	EXP 	image: size = array([300., 300.])
+10.0660 	EXP 	image: image = 'images/banjo.jpg'
+10.0660 	EXP 	text: text = 'banjo'
+10.0660 	EXP 	image: autoDraw = True
+10.0660 	EXP 	text: autoDraw = True
+10.6507 	DATA 	Keypress: escape
+10.9239 	EXP 	window1: mouseVisible = True
+5.7203 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1680, 1050]. Using actual size
+6.7759 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x12d4da908>, multiSample=False, name='window1', numSamples=2, pos=[-840.0, -525.0], screen=0, size=array([3360, 2100]), stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.7760 	EXP 	window1: recordFrameIntervals = False
+6.9410 	EXP 	window1: recordFrameIntervals = True
+7.1253 	EXP 	window1: recordFrameIntervals = False
+7.1273 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0.1, 1. ]), size=array([1., 1.]), texRes=128, units='pix', win=Window(...))
+7.1981 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([0.5, 0.5]), rgb=array([255., 255., 255.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+7.2054 	EXP 	Imported images.xlsx as conditions, 13 conditions, 3 params
+7.2057 	EXP 	Created sequence: random, trialTypes=13, nReps=5, seed=None
+7.2060 	EXP 	New trial (rep=0, index=0): OrderedDict([('images', 'images/acorn.jpg'), ('name', 'tree'), ('corrAns', 'x')])
+7.4728 	EXP 	image: size = array([300., 300.])
+7.4728 	EXP 	image: image = 'images/acorn.jpg'
+7.4728 	EXP 	text: text = 'tree'
+7.4728 	EXP 	image: autoDraw = True
+7.4728 	EXP 	text: autoDraw = True
+9.1082 	DATA 	Keypress: escape
+9.3813 	EXP 	window1: mouseVisible = True

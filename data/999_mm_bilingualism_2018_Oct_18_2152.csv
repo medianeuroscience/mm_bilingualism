@@ -1,0 +1,5 @@
+images,name,corrAns,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,participant,session,date,expName,frameRate,
+images/almond.jpg,apple,x,0,0,0,11,999,001,2018_Oct_18_2152,mm_bilingualism,59.851337409264254,
+images/banjo.jpg,banjo,z,0,1,1,8,999,001,2018_Oct_18_2152,mm_bilingualism,59.851337409264254,
+images/acorn.jpg,tree,x,0,2,2,10,999,001,2018_Oct_18_2152,mm_bilingualism,59.851337409264254,
+images/armadillo.jpg,armadillo,z,0,3,3,4,999,001,2018_Oct_18_2152,mm_bilingualism,59.851337409264254,

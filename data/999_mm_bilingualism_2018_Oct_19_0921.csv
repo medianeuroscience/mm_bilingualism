@@ -1,0 +1,4 @@
+images,name,corrAns,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,begin_global,begin_routine,end_global,end_routine,resp,rt,correct,key_resp_1.keys,key_resp_1.corr,key_resp_1.rt,date,frameRate,expName,session,participant,
+images/bagel01.jpg,bagel,z,0,0,0,1,0.292664051056,6.91413879395e-06,0.700492143631,0.407833814621,z,0.376232147217,1,z,1,0.376232147217,2018_Oct_19_0921,59.66759846076151,mm_bilingualism,001,999,
+images/apple01.jpg,apple,z,0,1,1,2,1.87552809715,7.15255737305e-06,2.30949807167,0.433976173401,z,0.401770830154,1,z,1,0.401770830154,2018_Oct_19_0921,59.66759846076151,mm_bilingualism,001,999,
+images/antelope.jpg,antelope,z,0,2,2,0,3.4449031353,7.15255737305e-06,3.79422211647,0.349326133728,x,0.319961071014,0,x,0,0.319961071014,2018_Oct_19_0921,59.66759846076151,mm_bilingualism,001,999,

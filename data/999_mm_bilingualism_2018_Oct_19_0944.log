@@ -1,0 +1,292 @@
+10.3190 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([1., 1., 1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x113031c90>, multiSample=False, name='window1', numSamples=2, pos=[-840, -525], screen=0, size=array([3360, 2100]), stereo=False, units=u'norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+10.3190 	EXP 	window1: recordFrameIntervals = False
+10.5175 	EXP 	window1: recordFrameIntervals = True
+10.8018 	EXP 	window1: recordFrameIntervals = False
+10.8040 	EXP 	Created image = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([-100.,    0.]), size=array([1., 1.]), texRes=128, units='pix', win=Window(...))
+10.9036 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([0.2, 0. ]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+10.9107 	EXP 	Created text_2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+10.9219 	EXP 	Imported images.xlsx as conditions, 13 conditions, 3 params
+10.9224 	EXP 	Created sequence: random, trialTypes=13, nReps=5, seed=None
+10.9227 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'images', u'images/antlers.jpg'), (u'name', u'antlers'), (u'corrAns', u'z')])
+11.2267 	EXP 	image: image = u'images/antlers.jpg'
+11.2267 	EXP 	image: size = array([300., 300.])
+11.2267 	EXP 	text: text = u'antlers'
+11.2267 	EXP 	image: autoDraw = True
+11.2267 	EXP 	text: autoDraw = True
+12.9517 	EXP 	image: autoDraw = False
+12.9517 	EXP 	text: autoDraw = False
+12.9517 	EXP 	text_2: text = 'Failed to respond'
+12.9517 	EXP 	text_2: autoDraw = True
+13.9173 	EXP 	New trial (rep=0, index=1): OrderedDict([(u'images', u'images/antelope.jpg'), (u'name', u'antelope'), (u'corrAns', u'z')])
+14.0827 	EXP 	text_2: autoDraw = False
+14.0827 	EXP 	image: image = u'images/antelope.jpg'
+14.0827 	EXP 	image: size = array([300., 300.])
+14.0827 	EXP 	text: text = u'antelope'
+14.0827 	EXP 	image: autoDraw = True
+14.0827 	EXP 	text: autoDraw = True
+15.2903 	DATA 	Keypress: x
+15.3180 	EXP 	image: autoDraw = False
+15.3180 	EXP 	text: autoDraw = False
+15.3180 	EXP 	text_2: text = 'Wrong.'
+15.3180 	EXP 	text_2: autoDraw = True
+16.2851 	EXP 	New trial (rep=0, index=2): OrderedDict([(u'images', u'images/banjo.jpg'), (u'name', u'banjo'), (u'corrAns', u'z')])
+16.4342 	EXP 	text_2: autoDraw = False
+16.4342 	EXP 	text_2: autoDraw = False
+16.4342 	EXP 	image: image = u'images/banjo.jpg'
+16.4342 	EXP 	image: size = array([300., 300.])
+16.4342 	EXP 	text: text = u'banjo'
+16.4342 	EXP 	image: autoDraw = True
+16.4342 	EXP 	text: autoDraw = True
+17.8691 	DATA 	Keypress: x
+17.8850 	EXP 	image: autoDraw = False
+17.8850 	EXP 	text: autoDraw = False
+17.8850 	EXP 	text_2: text = 'Wrong.'
+17.8850 	EXP 	text_2: autoDraw = True
+18.8695 	EXP 	New trial (rep=0, index=3): OrderedDict([(u'images', u'images/barn.jpg'), (u'name', u'shoe'), (u'corrAns', u'x')])
+19.0984 	EXP 	text_2: autoDraw = False
+19.0984 	EXP 	text_2: autoDraw = False
+19.0984 	EXP 	image: image = u'images/barn.jpg'
+19.0984 	EXP 	image: size = array([300., 300.])
+19.0984 	EXP 	text: text = u'shoe'
+19.0984 	EXP 	image: autoDraw = True
+19.0984 	EXP 	text: autoDraw = True
+20.9012 	EXP 	image: autoDraw = False
+20.9012 	EXP 	text: autoDraw = False
+20.9012 	EXP 	image: autoDraw = False
+20.9012 	EXP 	text: autoDraw = False
+20.9012 	EXP 	text_2: text = 'Failed to respond'
+20.9012 	EXP 	text_2: autoDraw = True
+21.8686 	EXP 	New trial (rep=0, index=4): OrderedDict([(u'images', u'images/apple01.jpg'), (u'name', u'apple'), (u'corrAns', u'z')])
+22.0830 	EXP 	text_2: autoDraw = False
+22.0830 	EXP 	text_2: autoDraw = False
+22.0830 	EXP 	image: image = u'images/apple01.jpg'
+22.0830 	EXP 	image: size = array([300., 300.])
+22.0830 	EXP 	text: text = u'apple'
+22.0830 	EXP 	image: autoDraw = True
+22.0830 	EXP 	text: autoDraw = True
+23.8827 	EXP 	image: autoDraw = False
+23.8827 	EXP 	text: autoDraw = False
+23.8827 	EXP 	image: autoDraw = False
+23.8827 	EXP 	text: autoDraw = False
+23.8827 	EXP 	text_2: text = 'Failed to respond'
+23.8827 	EXP 	text_2: autoDraw = True
+24.8697 	EXP 	New trial (rep=0, index=5): OrderedDict([(u'images', u'images/acorn.jpg'), (u'name', u'tree'), (u'corrAns', u'x')])
+25.0660 	EXP 	text_2: autoDraw = False
+25.0660 	EXP 	text_2: autoDraw = False
+25.0660 	EXP 	image: image = u'images/acorn.jpg'
+25.0660 	EXP 	image: size = array([300., 300.])
+25.0660 	EXP 	text: text = u'tree'
+25.0660 	EXP 	image: autoDraw = True
+25.0660 	EXP 	text: autoDraw = True
+26.0183 	DATA 	Keypress: x
+26.0526 	EXP 	image: autoDraw = False
+26.0526 	EXP 	text: autoDraw = False
+26.0526 	EXP 	text_2: text = 'Correct!'
+26.0526 	EXP 	text_2: autoDraw = True
+27.0186 	EXP 	New trial (rep=0, index=6): OrderedDict([(u'images', u'images/almond.jpg'), (u'name', u'apple'), (u'corrAns', u'x')])
+27.2158 	EXP 	text_2: autoDraw = False
+27.2158 	EXP 	text_2: autoDraw = False
+27.2158 	EXP 	image: image = u'images/almond.jpg'
+27.2158 	EXP 	image: size = array([300., 300.])
+27.2158 	EXP 	text: text = u'apple'
+27.2158 	EXP 	image: autoDraw = True
+27.2158 	EXP 	text: autoDraw = True
+28.5011 	DATA 	Keypress: x
+28.5152 	EXP 	image: autoDraw = False
+28.5152 	EXP 	text: autoDraw = False
+28.5152 	EXP 	text_2: text = 'Correct!'
+28.5152 	EXP 	text_2: autoDraw = True
+29.5030 	EXP 	New trial (rep=0, index=7): OrderedDict([(u'images', u'images/avocado02.jpg'), (u'name', u'avocado'), (u'corrAns', u'z')])
+29.6993 	EXP 	text_2: autoDraw = False
+29.6993 	EXP 	text_2: autoDraw = False
+29.6993 	EXP 	image: image = u'images/avocado02.jpg'
+29.6993 	EXP 	image: size = array([300., 300.])
+29.6993 	EXP 	text: text = u'avocado'
+29.6993 	EXP 	image: autoDraw = True
+29.6993 	EXP 	text: autoDraw = True
+30.7343 	DATA 	Keypress: z
+30.7491 	EXP 	image: autoDraw = False
+30.7491 	EXP 	text: autoDraw = False
+30.7491 	EXP 	text_2: text = 'Correct!'
+30.7491 	EXP 	text_2: autoDraw = True
+31.7359 	EXP 	New trial (rep=0, index=8): OrderedDict([(u'images', u'images/alligator.jpg'), (u'name', u'deer'), (u'corrAns', u'x')])
+31.9009 	EXP 	text_2: autoDraw = False
+31.9009 	EXP 	text_2: autoDraw = False
+31.9009 	EXP 	image: image = u'images/alligator.jpg'
+31.9009 	EXP 	image: size = array([300., 300.])
+31.9009 	EXP 	text: text = u'deer'
+31.9009 	EXP 	image: autoDraw = True
+31.9009 	EXP 	text: autoDraw = True
+32.8680 	DATA 	Keypress: x
+32.8819 	EXP 	image: autoDraw = False
+32.8819 	EXP 	text: autoDraw = False
+32.8819 	EXP 	text_2: text = 'Correct!'
+32.8819 	EXP 	text_2: autoDraw = True
+33.8695 	EXP 	New trial (rep=0, index=9): OrderedDict([(u'images', u'images/armadillo.jpg'), (u'name', u'armadillo'), (u'corrAns', u'z')])
+34.0594 	EXP 	text_2: autoDraw = False
+34.0594 	EXP 	text_2: autoDraw = False
+34.0594 	EXP 	image: image = u'images/armadillo.jpg'
+34.0594 	EXP 	image: size = array([300., 300.])
+34.0594 	EXP 	text: text = u'armadillo'
+34.0594 	EXP 	image: autoDraw = True
+34.0594 	EXP 	text: autoDraw = True
+34.9023 	DATA 	Keypress: z
+34.9162 	EXP 	image: autoDraw = False
+34.9162 	EXP 	text: autoDraw = False
+34.9162 	EXP 	text_2: text = 'Correct!'
+34.9162 	EXP 	text_2: autoDraw = True
+35.9028 	EXP 	New trial (rep=0, index=10): OrderedDict([(u'images', u'images/banana04a.jpg'), (u'name', u'banana'), (u'corrAns', u'z')])
+36.0665 	EXP 	text_2: autoDraw = False
+36.0665 	EXP 	text_2: autoDraw = False
+36.0665 	EXP 	image: image = u'images/banana04a.jpg'
+36.0665 	EXP 	image: size = array([300., 300.])
+36.0665 	EXP 	text: text = u'banana'
+36.0665 	EXP 	image: autoDraw = True
+36.0665 	EXP 	text: autoDraw = True
+37.2031 	DATA 	Keypress: z
+37.2329 	EXP 	image: autoDraw = False
+37.2329 	EXP 	text: autoDraw = False
+37.2329 	EXP 	text_2: text = 'Correct!'
+37.2329 	EXP 	text_2: autoDraw = True
+38.2196 	EXP 	New trial (rep=0, index=11): OrderedDict([(u'images', u'images/bagel01.jpg'), (u'name', u'bagel'), (u'corrAns', u'z')])
+38.4340 	EXP 	text_2: autoDraw = False
+38.4340 	EXP 	text_2: autoDraw = False
+38.4340 	EXP 	image: image = u'images/bagel01.jpg'
+38.4340 	EXP 	image: size = array([300., 300.])
+38.4340 	EXP 	text: text = u'bagel'
+38.4340 	EXP 	image: autoDraw = True
+38.4340 	EXP 	text: autoDraw = True
+39.2025 	DATA 	Keypress: z
+39.2158 	EXP 	image: autoDraw = False
+39.2158 	EXP 	text: autoDraw = False
+39.2158 	EXP 	text_2: text = 'Correct!'
+39.2158 	EXP 	text_2: autoDraw = True
+40.2018 	EXP 	New trial (rep=0, index=12): OrderedDict([(u'images', u'images/bacon.jpg'), (u'name', u'bacon'), (u'corrAns', u'z')])
+40.3661 	EXP 	text_2: autoDraw = False
+40.3661 	EXP 	text_2: autoDraw = False
+40.3661 	EXP 	image: image = u'images/bacon.jpg'
+40.3661 	EXP 	image: size = array([300., 300.])
+40.3661 	EXP 	text: text = u'bacon'
+40.3661 	EXP 	image: autoDraw = True
+40.3661 	EXP 	text: autoDraw = True
+42.2352 	EXP 	image: autoDraw = False
+42.2352 	EXP 	text: autoDraw = False
+42.2352 	EXP 	image: autoDraw = False
+42.2352 	EXP 	text: autoDraw = False
+42.2352 	EXP 	text_2: text = 'Failed to respond'
+42.2352 	EXP 	text_2: autoDraw = True
+43.2020 	EXP 	New trial (rep=1, index=0): OrderedDict([(u'images', u'images/barn.jpg'), (u'name', u'shoe'), (u'corrAns', u'x')])
+43.4325 	EXP 	text_2: autoDraw = False
+43.4325 	EXP 	text_2: autoDraw = False
+43.4325 	EXP 	image: image = u'images/barn.jpg'
+43.4325 	EXP 	image: size = array([300., 300.])
+43.4325 	EXP 	text: text = u'shoe'
+43.4325 	EXP 	image: autoDraw = True
+43.4325 	EXP 	text: autoDraw = True
+45.2160 	EXP 	image: autoDraw = False
+45.2160 	EXP 	text: autoDraw = False
+45.2160 	EXP 	image: autoDraw = False
+45.2160 	EXP 	text: autoDraw = False
+45.2160 	EXP 	text_2: text = 'Failed to respond'
+45.2160 	EXP 	text_2: autoDraw = True
+46.2023 	EXP 	New trial (rep=1, index=1): OrderedDict([(u'images', u'images/bagel01.jpg'), (u'name', u'bagel'), (u'corrAns', u'z')])
+46.4162 	EXP 	text_2: autoDraw = False
+46.4162 	EXP 	text_2: autoDraw = False
+46.4162 	EXP 	image: image = u'images/bagel01.jpg'
+46.4162 	EXP 	image: size = array([300., 300.])
+46.4162 	EXP 	text: text = u'bagel'
+46.4162 	EXP 	image: autoDraw = True
+46.4162 	EXP 	text: autoDraw = True
+47.5345 	DATA 	Keypress: z
+47.5677 	EXP 	image: autoDraw = False
+47.5677 	EXP 	text: autoDraw = False
+47.5677 	EXP 	text_2: text = 'Correct!'
+47.5677 	EXP 	text_2: autoDraw = True
+48.5363 	EXP 	New trial (rep=1, index=2): OrderedDict([(u'images', u'images/almond.jpg'), (u'name', u'apple'), (u'corrAns', u'x')])
+48.7324 	EXP 	text_2: autoDraw = False
+48.7324 	EXP 	text_2: autoDraw = False
+48.7324 	EXP 	image: image = u'images/almond.jpg'
+48.7324 	EXP 	image: size = array([300., 300.])
+48.7324 	EXP 	text: text = u'apple'
+48.7324 	EXP 	image: autoDraw = True
+48.7324 	EXP 	text: autoDraw = True
+49.7345 	DATA 	Keypress: x
+49.7486 	EXP 	image: autoDraw = False
+49.7486 	EXP 	text: autoDraw = False
+49.7486 	EXP 	text_2: text = 'Correct!'
+49.7486 	EXP 	text_2: autoDraw = True
+50.7362 	EXP 	New trial (rep=1, index=3): OrderedDict([(u'images', u'images/banjo.jpg'), (u'name', u'banjo'), (u'corrAns', u'z')])
+50.8995 	EXP 	text_2: autoDraw = False
+50.8995 	EXP 	text_2: autoDraw = False
+50.8995 	EXP 	image: image = u'images/banjo.jpg'
+50.8995 	EXP 	image: size = array([300., 300.])
+50.8995 	EXP 	text: text = u'banjo'
+50.8995 	EXP 	image: autoDraw = True
+50.8995 	EXP 	text: autoDraw = True
+51.6685 	DATA 	Keypress: z
+51.6814 	EXP 	image: autoDraw = False
+51.6814 	EXP 	text: autoDraw = False
+51.6814 	EXP 	text_2: text = 'Correct!'
+51.6814 	EXP 	text_2: autoDraw = True
+52.6665 	EXP 	New trial (rep=1, index=4): OrderedDict([(u'images', u'images/avocado02.jpg'), (u'name', u'avocado'), (u'corrAns', u'z')])
+52.8652 	EXP 	text_2: autoDraw = False
+52.8652 	EXP 	text_2: autoDraw = False
+52.8652 	EXP 	image: image = u'images/avocado02.jpg'
+52.8652 	EXP 	image: size = array([300., 300.])
+52.8652 	EXP 	text: text = u'avocado'
+52.8652 	EXP 	image: autoDraw = True
+52.8652 	EXP 	text: autoDraw = True
+53.6181 	DATA 	Keypress: z
+53.6322 	EXP 	image: autoDraw = False
+53.6322 	EXP 	text: autoDraw = False
+53.6322 	EXP 	text_2: text = 'Correct!'
+53.6322 	EXP 	text_2: autoDraw = True
+54.6190 	EXP 	New trial (rep=1, index=5): OrderedDict([(u'images', u'images/armadillo.jpg'), (u'name', u'armadillo'), (u'corrAns', u'z')])
+54.7985 	EXP 	text_2: autoDraw = False
+54.7985 	EXP 	text_2: autoDraw = False
+54.7985 	EXP 	image: image = u'images/armadillo.jpg'
+54.7985 	EXP 	image: size = array([300., 300.])
+54.7985 	EXP 	text: text = u'armadillo'
+54.7985 	EXP 	image: autoDraw = True
+54.7985 	EXP 	text: autoDraw = True
+55.4846 	DATA 	Keypress: z
+55.4991 	EXP 	image: autoDraw = False
+55.4991 	EXP 	text: autoDraw = False
+55.4991 	EXP 	text_2: text = 'Correct!'
+55.4991 	EXP 	text_2: autoDraw = True
+56.4855 	EXP 	New trial (rep=1, index=6): OrderedDict([(u'images', u'images/bacon.jpg'), (u'name', u'bacon'), (u'corrAns', u'z')])
+56.6483 	EXP 	text_2: autoDraw = False
+56.6483 	EXP 	text_2: autoDraw = False
+56.6483 	EXP 	image: image = u'images/bacon.jpg'
+56.6483 	EXP 	image: size = array([300., 300.])
+56.6483 	EXP 	text: text = u'bacon'
+56.6483 	EXP 	image: autoDraw = True
+56.6483 	EXP 	text: autoDraw = True
+57.3186 	DATA 	Keypress: x
+57.3519 	EXP 	image: autoDraw = False
+57.3519 	EXP 	text: autoDraw = False
+57.3519 	EXP 	text_2: text = 'Wrong.'
+57.3519 	EXP 	text_2: autoDraw = True
+58.3195 	EXP 	New trial (rep=1, index=7): OrderedDict([(u'images', u'images/banana04a.jpg'), (u'name', u'banana'), (u'corrAns', u'z')])
+58.4839 	EXP 	text_2: autoDraw = False
+58.4839 	EXP 	text_2: autoDraw = False
+58.4839 	EXP 	image: image = u'images/banana04a.jpg'
+58.4839 	EXP 	image: size = array([300., 300.])
+58.4839 	EXP 	text: text = u'banana'
+58.4839 	EXP 	image: autoDraw = True
+58.4839 	EXP 	text: autoDraw = True
+58.9838 	DATA 	Keypress: x
+59.0001 	EXP 	image: autoDraw = False
+59.0001 	EXP 	text: autoDraw = False
+59.0001 	EXP 	text_2: text = 'Wrong.'
+59.0001 	EXP 	text_2: autoDraw = True
+59.9858 	EXP 	New trial (rep=1, index=8): OrderedDict([(u'images', u'images/acorn.jpg'), (u'name', u'tree'), (u'corrAns', u'x')])
+60.1671 	EXP 	text_2: autoDraw = False
+60.1671 	EXP 	text_2: autoDraw = False
+60.1671 	EXP 	image: image = u'images/acorn.jpg'
+60.1671 	EXP 	image: size = array([300., 300.])
+60.1671 	EXP 	text: text = u'tree'
+60.1671 	EXP 	image: autoDraw = True
+60.1671 	EXP 	text: autoDraw = True
+60.5182 	DATA 	Keypress: escape
+60.7963 	EXP 	window1: mouseVisible = True

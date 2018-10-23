@@ -1,0 +1,88 @@
+7.3880 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([1., 1., 1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x128b2e9b0>, multiSample=False, name='window1', numSamples=2, pos=[-840.0, -525.0], screen=0, size=array([3360, 2100]), stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.3880 	EXP 	window1: recordFrameIntervals = False
+7.5537 	EXP 	window1: recordFrameIntervals = True
+7.7371 	EXP 	window1: recordFrameIntervals = False
+7.7391 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([-200.,    0.]), size=array([1., 1.]), texRes=128, units='pix', win=Window(...))
+7.8098 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([0.2, 0. ]), rgb=array([0., 0., 0.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+7.8177 	EXP 	Imported images.xlsx as conditions, 13 conditions, 3 params
+7.8181 	EXP 	Created sequence: random, trialTypes=13, nReps=5, seed=None
+7.8183 	EXP 	New trial (rep=0, index=0): OrderedDict([('images', 'images/antelope.jpg'), ('name', 'antelope'), ('corrAns', 'z')])
+8.0682 	EXP 	image: size = array([300., 300.])
+8.0682 	EXP 	image: image = 'images/antelope.jpg'
+8.0682 	EXP 	text: text = 'antelope'
+8.0682 	EXP 	image: autoDraw = True
+8.0682 	EXP 	text: autoDraw = True
+9.8180 	EXP 	New trial (rep=0, index=1): OrderedDict([('images', 'images/avocado02.jpg'), ('name', 'avocado'), ('corrAns', 'z')])
+10.0139 	EXP 	image: autoDraw = False
+10.0139 	EXP 	text: autoDraw = False
+10.0139 	EXP 	image: size = array([300., 300.])
+10.0139 	EXP 	image: image = 'images/avocado02.jpg'
+10.0139 	EXP 	text: text = 'avocado'
+10.0139 	EXP 	image: autoDraw = True
+10.0139 	EXP 	text: autoDraw = True
+11.8183 	EXP 	New trial (rep=0, index=2): OrderedDict([('images', 'images/barn.jpg'), ('name', 'shoe'), ('corrAns', 'x')])
+12.0515 	EXP 	image: autoDraw = False
+12.0515 	EXP 	text: autoDraw = False
+12.0515 	EXP 	image: size = array([300., 300.])
+12.0515 	EXP 	image: image = 'images/barn.jpg'
+12.0515 	EXP 	text: text = 'shoe'
+12.0515 	EXP 	image: autoDraw = True
+12.0515 	EXP 	text: autoDraw = True
+12.9386 	DATA 	Keypress: escape
+13.2240 	EXP 	window1: mouseVisible = True
+7.4529 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([1., 1., 1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x12d337978>, multiSample=False, name='window1', numSamples=2, pos=[-840.0, -525.0], screen=0, size=array([3360, 2100]), stereo=False, units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.4529 	EXP 	window1: recordFrameIntervals = False
+7.6210 	EXP 	window1: recordFrameIntervals = True
+7.8037 	EXP 	window1: recordFrameIntervals = False
+7.8058 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([-100.,    0.]), size=array([1., 1.]), texRes=128, units='pix', win=Window(...))
+7.8741 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([0.2, 0. ]), rgb=array([0., 0., 0.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+7.8823 	EXP 	Imported images.xlsx as conditions, 13 conditions, 3 params
+7.8826 	EXP 	Created sequence: random, trialTypes=13, nReps=5, seed=None
+7.8829 	EXP 	New trial (rep=0, index=0): OrderedDict([('images', 'images/almond.jpg'), ('name', 'apple'), ('corrAns', 'x')])
+8.1527 	EXP 	image: size = array([300., 300.])
+8.1527 	EXP 	image: image = 'images/almond.jpg'
+8.1527 	EXP 	text: text = 'apple'
+8.1527 	EXP 	image: autoDraw = True
+8.1527 	EXP 	text: autoDraw = True
+9.8868 	EXP 	New trial (rep=0, index=1): OrderedDict([('images', 'images/antlers.jpg'), ('name', 'antlers'), ('corrAns', 'z')])
+10.0537 	EXP 	image: autoDraw = False
+10.0537 	EXP 	text: autoDraw = False
+10.0537 	EXP 	image: size = array([300., 300.])
+10.0537 	EXP 	image: image = 'images/antlers.jpg'
+10.0537 	EXP 	text: text = 'antlers'
+10.0537 	EXP 	image: autoDraw = True
+10.0537 	EXP 	text: autoDraw = True
+11.8870 	EXP 	New trial (rep=0, index=2): OrderedDict([('images', 'images/avocado02.jpg'), ('name', 'avocado'), ('corrAns', 'z')])
+12.0864 	EXP 	image: autoDraw = False
+12.0864 	EXP 	text: autoDraw = False
+12.0864 	EXP 	image: size = array([300., 300.])
+12.0864 	EXP 	image: image = 'images/avocado02.jpg'
+12.0864 	EXP 	text: text = 'avocado'
+12.0864 	EXP 	image: autoDraw = True
+12.0864 	EXP 	text: autoDraw = True
+13.8891 	EXP 	New trial (rep=0, index=3): OrderedDict([('images', 'images/antelope.jpg'), ('name', 'antelope'), ('corrAns', 'z')])
+14.0478 	EXP 	image: autoDraw = False
+14.0478 	EXP 	text: autoDraw = False
+14.0478 	EXP 	image: size = array([300., 300.])
+14.0478 	EXP 	image: image = 'images/antelope.jpg'
+14.0478 	EXP 	text: text = 'antelope'
+14.0478 	EXP 	image: autoDraw = True
+14.0478 	EXP 	text: autoDraw = True
+15.8859 	EXP 	New trial (rep=0, index=4): OrderedDict([('images', 'images/acorn.jpg'), ('name', 'tree'), ('corrAns', 'x')])
+16.0697 	EXP 	image: autoDraw = False
+16.0697 	EXP 	text: autoDraw = False
+16.0697 	EXP 	image: size = array([300., 300.])
+16.0697 	EXP 	image: image = 'images/acorn.jpg'
+16.0697 	EXP 	text: text = 'tree'
+16.0697 	EXP 	image: autoDraw = True
+16.0697 	EXP 	text: autoDraw = True
+17.8862 	EXP 	New trial (rep=0, index=5): OrderedDict([('images', 'images/alligator.jpg'), ('name', 'deer'), ('corrAns', 'x')])
+18.0485 	EXP 	image: autoDraw = False
+18.0485 	EXP 	text: autoDraw = False
+18.0485 	EXP 	image: size = array([300., 300.])
+18.0485 	EXP 	image: image = 'images/alligator.jpg'
+18.0485 	EXP 	text: text = 'deer'
+18.0485 	EXP 	image: autoDraw = True
+18.0485 	EXP 	text: autoDraw = True
+19.3057 	DATA 	Keypress: escape
+19.5786 	EXP 	window1: mouseVisible = True
