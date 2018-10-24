@@ -66,7 +66,7 @@
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="name" updates="None" val="image" valType="code"/>
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
-        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
         <Param name="pos" updates="constant" val="[-100, 0]" valType="code"/>
@@ -88,7 +88,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="text" updates="set every repeat" val="$name" valType="str"/>
-        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="pos" updates="constant" val="(.2, 0)" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
@@ -113,7 +113,7 @@
         <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
         <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_1" valType="code"/>
-        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
