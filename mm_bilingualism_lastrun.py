@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy2 Experiment Builder (v1.90.1),
-    on Wed Oct 24 14:49:05 2018
+    on Wed Oct 24 16:17:35 2018
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -40,7 +40,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath=u'/Users/jacobfisher/projects/inprogress/mm_bilingualism/mm_bilingualism.psyexp',
+    originPath=u'/Users/Leah/Desktop/multitasking_bilingualism/github/mm_bilingualism/mm_bilingualism.psyexp',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -123,7 +123,7 @@ for thisTrial in trials:
     matchClock.reset()  # clock
     frameN = -1
     continueRoutine = True
-    routineTimer.add(2.000000)
+    routineTimer.add(3.000000)
     # update component parameters for each repeat
     image.setImage(images)
     image.setSize([300,300])
@@ -151,7 +151,7 @@ for thisTrial in trials:
             image.tStart = t
             image.frameNStart = frameN  # exact frame index
             image.setAutoDraw(True)
-        frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = 0.0 + 3.0- win.monitorFramePeriod * 0.75  # most of one frame period left
         if image.status == STARTED and t >= frameRemains:
             image.setAutoDraw(False)
         
@@ -161,7 +161,7 @@ for thisTrial in trials:
             text.tStart = t
             text.frameNStart = frameN  # exact frame index
             text.setAutoDraw(True)
-        frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = 0.0 + 3.0- win.monitorFramePeriod * 0.75  # most of one frame period left
         if text.status == STARTED and t >= frameRemains:
             text.setAutoDraw(False)
         
@@ -175,7 +175,7 @@ for thisTrial in trials:
             # keyboard checking is just starting
             win.callOnFlip(key_resp_1.clock.reset)  # t=0 on next screen flip
             event.clearEvents(eventType='keyboard')
-        frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = 0.0 + 3.0- win.monitorFramePeriod * 0.75  # most of one frame period left
         if key_resp_1.status == STARTED and t >= frameRemains:
             key_resp_1.status = STOPPED
         if key_resp_1.status == STARTED:
