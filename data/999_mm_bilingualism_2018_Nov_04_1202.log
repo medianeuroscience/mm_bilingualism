@@ -1,0 +1,187 @@
+11.6274 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([1., 1., 1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x113641dd0>, multiSample=False, name='window1', numSamples=2, pos=[-840, -525], screen=0, size=array([3360, 2100]), stereo=False, units=u'norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+11.6274 	EXP 	window1: recordFrameIntervals = False
+11.7933 	EXP 	window1: recordFrameIntervals = True
+12.0603 	EXP 	window1: recordFrameIntervals = False
+12.1689 	EXP 	Created text_3 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='The matching task will begin soon', units=u'norm', win=Window(...), wrapWidth=1)
+12.1705 	EXP 	Created image = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([-200.,    0.]), size=array([1., 1.]), texRes=128, units='pix', win=Window(...))
+12.1807 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([0.2, 0. ]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+12.1882 	EXP 	Created text_2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+12.2032 	EXP 	Created text_4 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_4', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='This round is now complete', units=u'norm', win=Window(...), wrapWidth=1)
+12.2185 	EXP 	Created text_5 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_5', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Thank you for participating!', units=u'norm', win=Window(...), wrapWidth=1)
+12.2519 	EXP 	Created text_6 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_6', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+12.2707 	EXP 	Created text_7 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_7', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='An experimenter will come by to assist you', units=u'norm', win=Window(...), wrapWidth=1)
+12.2773 	EXP 	Imported sounds.xlsx as conditions, 2 conditions, 1 params
+12.2776 	EXP 	Created sequence: random, trialTypes=2, nReps=1, seed=None
+12.2778 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'sounds', u'sounds/animalfarm_chinese.wav')])
+12.4581 	EXP 	Set  sound=sounds/animalfarm_chinese.wav
+12.4582 	EXP 	Sound  started
+12.4863 	EXP 	text_3: autoDraw = True
+22.2970 	EXP 	Imported images.xlsx as conditions, 240 conditions, 3 params
+22.2982 	EXP 	Created sequence: random, trialTypes=240, nReps=5, seed=None
+22.2985 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'images', u'images/dragonfly02.jpg'), (u'name', u'dragon fly'), (u'corrAns', u'z')])
+22.5690 	EXP 	text_3: autoDraw = False
+22.5690 	EXP 	image: image = u'images/dragonfly02.jpg'
+22.5690 	EXP 	image: size = array([300., 300.])
+22.5690 	EXP 	text: text = u'dragon fly'
+22.5690 	EXP 	image: autoDraw = True
+22.5690 	EXP 	text: autoDraw = True
+23.6339 	DATA 	Keypress: x
+23.6426 	EXP 	Sound  stopped
+23.6611 	EXP 	image: autoDraw = False
+23.6611 	EXP 	text: autoDraw = False
+23.6611 	EXP 	text_2: text = 'Wrong.'
+23.6611 	EXP 	text_2: autoDraw = True
+23.6612 	EXP 	Sound  stopped
+23.6776 	EXP 	Sound  stopped
+23.6936 	EXP 	Sound  stopped
+23.7102 	EXP 	Sound  stopped
+23.7274 	EXP 	Sound  stopped
+23.7445 	EXP 	Sound  stopped
+23.7609 	EXP 	Sound  stopped
+23.7775 	EXP 	Sound  stopped
+23.7939 	EXP 	Sound  stopped
+23.8111 	EXP 	Sound  stopped
+23.8276 	EXP 	Sound  stopped
+23.8442 	EXP 	Sound  stopped
+23.8608 	EXP 	Sound  stopped
+23.8774 	EXP 	Sound  stopped
+23.8942 	EXP 	Sound  stopped
+23.9106 	EXP 	Sound  stopped
+23.9326 	EXP 	Sound  stopped
+23.9484 	EXP 	Sound  stopped
+23.9611 	EXP 	Sound  stopped
+23.9757 	EXP 	Sound  stopped
+23.9917 	EXP 	Sound  stopped
+24.0077 	EXP 	Sound  stopped
+24.0245 	EXP 	Sound  stopped
+24.0416 	EXP 	Sound  stopped
+24.0576 	EXP 	Sound  stopped
+24.0762 	EXP 	Sound  stopped
+24.0913 	EXP 	Sound  stopped
+24.1089 	EXP 	Sound  stopped
+24.1251 	EXP 	Sound  stopped
+24.1420 	EXP 	Sound  stopped
+24.1582 	EXP 	Sound  stopped
+24.1753 	EXP 	Sound  stopped
+24.1918 	EXP 	Sound  stopped
+24.2089 	EXP 	Sound  stopped
+24.2251 	EXP 	Sound  stopped
+24.2423 	EXP 	Sound  stopped
+24.2587 	EXP 	Sound  stopped
+24.2744 	EXP 	Sound  stopped
+24.2919 	EXP 	Sound  stopped
+24.3087 	EXP 	Sound  stopped
+24.3245 	EXP 	Sound  stopped
+24.3410 	EXP 	Sound  stopped
+24.3586 	EXP 	Sound  stopped
+24.3745 	EXP 	Sound  stopped
+24.3921 	EXP 	Sound  stopped
+24.4081 	EXP 	Sound  stopped
+24.4250 	EXP 	Sound  stopped
+24.4410 	EXP 	Sound  stopped
+24.4579 	EXP 	Sound  stopped
+24.4753 	EXP 	Sound  stopped
+24.4918 	EXP 	Sound  stopped
+24.5078 	EXP 	Sound  stopped
+24.5243 	EXP 	Sound  stopped
+24.5432 	EXP 	Sound  stopped
+24.5605 	EXP 	Sound  stopped
+24.5778 	EXP 	Sound  stopped
+24.5942 	EXP 	Sound  stopped
+24.6106 	EXP 	Sound  stopped
+24.6275 	EXP 	Sound  stopped
+24.6450 	EXP 	text_2: autoDraw = False
+24.6450 	EXP 	text_2: autoDraw = False
+24.6450 	EXP 	text_4: autoDraw = True
+34.6260 	EXP 	New trial (rep=0, index=1): OrderedDict([(u'sounds', u'sounds/greatgatsby_english.wav')])
+34.7673 	EXP 	Set  sound=sounds/greatgatsby_english.wav
+34.7673 	EXP 	Sound  started
+34.7890 	EXP 	text_4: autoDraw = False
+34.7890 	EXP 	text_4: autoDraw = False
+34.7890 	EXP 	text_3: autoDraw = True
+44.6615 	EXP 	Imported images.xlsx as conditions, 240 conditions, 3 params
+44.6626 	EXP 	Created sequence: random, trialTypes=240, nReps=5, seed=None
+44.6629 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'images', u'images/scooter.jpg'), (u'name', u'pen'), (u'corrAns', u'x')])
+44.8235 	EXP 	text_3: autoDraw = False
+44.8235 	EXP 	text_3: autoDraw = False
+44.8235 	EXP 	image: image = u'images/scooter.jpg'
+44.8235 	EXP 	image: size = array([300., 300.])
+44.8235 	EXP 	text: text = u'pen'
+44.8235 	EXP 	image: autoDraw = True
+44.8235 	EXP 	text: autoDraw = True
+45.6117 	DATA 	Keypress: x
+45.6239 	EXP 	Sound  stopped
+45.6439 	EXP 	image: autoDraw = False
+45.6439 	EXP 	text: autoDraw = False
+45.6439 	EXP 	text_2: text = 'Correct!'
+45.6439 	EXP 	text_2: autoDraw = True
+45.6441 	EXP 	Sound  stopped
+45.6607 	EXP 	Sound  stopped
+45.6769 	EXP 	Sound  stopped
+45.6943 	EXP 	Sound  stopped
+45.7098 	EXP 	Sound  stopped
+45.7275 	EXP 	Sound  stopped
+45.7435 	EXP 	Sound  stopped
+45.7601 	EXP 	Sound  stopped
+45.7769 	EXP 	Sound  stopped
+45.7942 	EXP 	Sound  stopped
+45.8102 	EXP 	Sound  stopped
+45.8277 	EXP 	Sound  stopped
+45.8431 	EXP 	Sound  stopped
+45.8599 	EXP 	Sound  stopped
+45.8777 	EXP 	Sound  stopped
+45.8944 	EXP 	Sound  stopped
+45.9095 	EXP 	Sound  stopped
+45.9273 	EXP 	Sound  stopped
+45.9433 	EXP 	Sound  stopped
+45.9601 	EXP 	Sound  stopped
+45.9767 	EXP 	Sound  stopped
+45.9947 	EXP 	Sound  stopped
+46.0104 	EXP 	Sound  stopped
+46.0270 	EXP 	Sound  stopped
+46.0428 	EXP 	Sound  stopped
+46.0608 	EXP 	Sound  stopped
+46.0774 	EXP 	Sound  stopped
+46.0931 	EXP 	Sound  stopped
+46.1096 	EXP 	Sound  stopped
+46.1274 	EXP 	Sound  stopped
+46.1438 	EXP 	Sound  stopped
+46.1608 	EXP 	Sound  stopped
+46.1766 	EXP 	Sound  stopped
+46.1931 	EXP 	Sound  stopped
+46.2107 	EXP 	Sound  stopped
+46.2266 	EXP 	Sound  stopped
+46.2441 	EXP 	Sound  stopped
+46.2607 	EXP 	Sound  stopped
+46.2772 	EXP 	Sound  stopped
+46.2935 	EXP 	Sound  stopped
+46.3096 	EXP 	Sound  stopped
+46.3274 	EXP 	Sound  stopped
+46.3431 	EXP 	Sound  stopped
+46.3603 	EXP 	Sound  stopped
+46.3771 	EXP 	Sound  stopped
+46.3944 	EXP 	Sound  stopped
+46.4107 	EXP 	Sound  stopped
+46.4276 	EXP 	Sound  stopped
+46.4432 	EXP 	Sound  stopped
+46.4609 	EXP 	Sound  stopped
+46.4762 	EXP 	Sound  stopped
+46.4940 	EXP 	Sound  stopped
+46.5105 	EXP 	Sound  stopped
+46.5277 	EXP 	Sound  stopped
+46.5429 	EXP 	Sound  stopped
+46.5608 	EXP 	Sound  stopped
+46.5764 	EXP 	Sound  stopped
+46.5940 	EXP 	Sound  stopped
+46.6104 	EXP 	Sound  stopped
+46.6276 	EXP 	text_2: autoDraw = False
+46.6276 	EXP 	text_2: autoDraw = False
+46.6276 	EXP 	text_4: autoDraw = True
+56.6286 	EXP 	text_4: autoDraw = False
+56.6286 	EXP 	text_4: autoDraw = False
+56.6286 	EXP 	text_5: autoDraw = True
+62.6248 	EXP 	text_5: autoDraw = False
+62.6416 	EXP 	text_6: autoDraw = True
+68.6233 	EXP 	text_6: autoDraw = False
+68.6412 	EXP 	text_7: autoDraw = True
+75.0192 	EXP 	window1: mouseVisible = True

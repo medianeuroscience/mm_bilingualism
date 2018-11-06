@@ -1,6 +1,0 @@
-images,name,corrAns,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,participant,session,date,expName,frameRate,
-images/almond.jpg,apple,x,0,0,0,11,999,001,2018_Oct_18_2201,mm_bilingualism,60.68444467486969,
-images/antlers.jpg,antlers,z,0,1,1,7,999,001,2018_Oct_18_2201,mm_bilingualism,60.68444467486969,
-images/avocado02.jpg,avocado,z,0,2,2,5,999,001,2018_Oct_18_2201,mm_bilingualism,60.68444467486969,
-images/antelope.jpg,antelope,z,0,3,3,0,999,001,2018_Oct_18_2201,mm_bilingualism,60.68444467486969,
-images/acorn.jpg,tree,x,0,4,4,10,999,001,2018_Oct_18_2201,mm_bilingualism,60.68444467486969,

@@ -1,0 +1,5 @@
+sounds,images,name,corrAns,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,begin_book,begin_global,begin_routine,end_global,end_routine,key_resp_1.keys,key_resp_1.corr,key_resp_1.rt,date,frameRate,expName,session,participant,
+sounds/animalfarm_chinese.wav,images/dragonfly02.jpg,dragon fly,z,0,0,0,1,0,0,0,29,0.00708913803101,10.2532169819,6.91413879395e-06,11.3639199734,1.1107108593,x,0,1.06556415558,2018_Nov_04_1202,59.7418779582122,mm_bilingualism,001,999,
+sounds/animalfarm_chinese.wav,,,,0,0,0,1,,,,,,,,,,,,,2018_Nov_04_1202,59.7418779582122,mm_bilingualism,001,999,
+sounds/greatgatsby_english.wav,images/scooter.jpg,pen,x,0,1,1,0,0,0,0,212,22.3553490639,32.5176041126,7.15255737305e-06,33.3417870998,0.824192047119,x,1,0.788975954056,2018_Nov_04_1202,59.7418779582122,mm_bilingualism,001,999,
+sounds/greatgatsby_english.wav,,,,0,1,1,0,,,,,,,,,,,,,2018_Nov_04_1202,59.7418779582122,mm_bilingualism,001,999,

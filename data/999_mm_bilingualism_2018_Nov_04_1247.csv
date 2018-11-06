@@ -1,0 +1,8 @@
+images,name,corrAns,sounds,trials_3.thisRepN,trials_3.thisTrialN,trials_3.thisN,trials_3.thisIndex,trials_4.thisRepN,trials_4.thisTrialN,trials_4.thisN,trials_4.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,begin_global,begin_routine,end_global,end_routine,key_resp_2.keys,key_resp_2.corr,key_resp_2.rt,begin_book,key_resp_1.keys,key_resp_1.corr,key_resp_1.rt,date,frameRate,expName,session,participant,
+images/volleyball.jpg,volley ball,z,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,2018_Nov_04_1247,60.11279289247126,mm_bilingualism,001,999,
+images/puma.jpg,puma,z,,,,,,0,0,0,0,,,,,,,,,48.1758098602,6.91413879395e-06,49.1358060837,0.960004091263,z,1,0.925594091415,,,,,2018_Nov_04_1247,60.11279289247126,mm_bilingualism,001,999,
+images/puma.jpg,puma,z,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,2018_Nov_04_1247,60.11279289247126,mm_bilingualism,001,999,
+images/donut.jpg,rhinoceros,x,sounds/animalfarm_chinese.wav,,,,,,,,,0,0,0,1,0,0,0,216,92.3523960114,5.96046447754e-06,93.2124118805,0.860023975372,,,,82.136785984,x,1,0.821456193924,2018_Nov_04_1247,60.11279289247126,mm_bilingualism,001,999,
+,,,sounds/animalfarm_chinese.wav,,,,,,,,,0,0,0,1,,,,,,,,,,,,,,,,2018_Nov_04_1247,60.11279289247126,mm_bilingualism,001,999,
+images/pineapple01a.jpg,pineapple,z,sounds/greatgatsby_english.wav,,,,,,,,,0,1,1,0,0,0,0,51,114.405868053,6.91413879395e-06,115.279111862,0.873251914978,,,,104.215642929,x,0,0.836534976959,2018_Nov_04_1247,60.11279289247126,mm_bilingualism,001,999,
+,,,sounds/greatgatsby_english.wav,,,,,,,,,0,1,1,0,,,,,,,,,,,,,,,,2018_Nov_04_1247,60.11279289247126,mm_bilingualism,001,999,

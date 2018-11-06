@@ -1,0 +1,722 @@
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="1.90.1">
+  <Settings>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="color" updates="None" val="$[1,1,1]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Units" updates="None" val="use prefs" valType="str"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Window size (pixels)" updates="None" val="[1680, 1050]" valType="code"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="OSF Project ID" updates="None" val="" valType="str"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="expName" updates="None" val="spanish_cond2" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+  </Settings>
+  <Routines>
+    <Routine name="Finish">
+      <TextComponent name="text_5">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_5" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Thank you for participating!" valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_6">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_6" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="You will now complete the survey portion of the experiment" valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="6" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_7">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_7" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="An experimenter will come by to assist you" valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="12" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="feedback">
+      <TextComponent name="text_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_2" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$msg" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_2">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="if bookClock.getTime() &gt; 480:&amp;#10;    trials.finished=True&amp;#10;    book.stop()" valType="extendedCode"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="instr">
+      <TextComponent name="text_8">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_8" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Welcome!" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_9">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_9" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="In this experiment you will complete a word matching task." valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="3" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_10">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_10" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="In the task, you will see a series of pictures paired with words." valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="9" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_13">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_13" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Each pair will look like this." valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="15" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="audiobook_1">
+      <CodeComponent name="code_3">
+        <Param name="Begin Experiment" updates="constant" val="globalClock = core.MonotonicClock()&amp;#10;matchClock = core.Clock()&amp;#10;bookClock = core.Clock()&amp;#10;&amp;#10;msg='doh!'#if this comes up we forgot to update the msg!&amp;#10;&amp;#10;myCount = 0" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="bookClock.reset()&amp;#10;thisExp.addData('begin_book', globalClock.getTime())&amp;#10;&amp;#10;book = sound.Sound(sounds)&amp;#10;book.play()&amp;#10;&amp;#10;myCount = myCount + 1" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
+      <TextComponent name="text_3">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="The matching task will begin soon" valType="str"/>
+        <Param name="stopVal" updates="constant" val="10" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="b'feedback_prac_2'">
+      <TextComponent name="text_19">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_19" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$msg" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_6">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_6" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="match_prac2"/>
+    <Routine name="match_prac1">
+      <ImageComponent name="image_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="image_2" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="[-200, 0]" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="image" updates="set every repeat" val="$images" valType="str"/>
+        <Param name="size" updates="constant" val="[300, 300]" valType="code"/>
+      </ImageComponent>
+      <TextComponent name="text_12">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_12" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$name" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(.2, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="trial"/>
+    <Routine name="feedback_prac"/>
+    <Routine name="end_loop">
+      <TextComponent name="text_4">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_4" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="This round is now complete" valType="str"/>
+        <Param name="stopVal" updates="constant" val="10" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_4">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_4" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="match">
+      <ImageComponent name="image">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="image" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="[-200, 0]" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="image" updates="set every repeat" val="$images" valType="str"/>
+        <Param name="size" updates="set every repeat" val="[300,300]" valType="code"/>
+      </ImageComponent>
+      <TextComponent name="text">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$name" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(.2, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="matchClock.reset()&amp;#10;thisExp.addData('begin_global', globalClock.getTime())&amp;#10;thisExp.addData('begin_routine', matchClock.getTime())&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="thisExp.addData('end_global', globalClock.getTime())&amp;#10;thisExp.addData('end_routine', matchClock.getTime())&amp;#10;&amp;#10;if not key_resp_1.keys :&amp;#10;    msg=&quot;Failed to respond&quot;&amp;#10;elif key_resp_1.corr :#stored on last run routine&amp;#10;    msg=&quot;Correct!&quot;&amp;#10;else:&amp;#10;    msg=&quot;Wrong.&quot;" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
+      <KeyboardComponent name="key_resp_1">
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_1" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'z','x'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="first key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="match_2">
+      <ImageComponent name="image_3">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="image_3" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="[-200, 0]" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="image" updates="set every repeat" val="$images" valType="str"/>
+        <Param name="size" updates="constant" val="[300,300]" valType="code"/>
+      </ImageComponent>
+      <TextComponent name="text_18">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_18" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$name" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(.2, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_5">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_5" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="matchClock.reset()&amp;#10;thisExp.addData('begin_global', globalClock.getTime())&amp;#10;thisExp.addData('begin_routine', matchClock.getTime())&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="thisExp.addData('end_global', globalClock.getTime())&amp;#10;thisExp.addData('end_routine', matchClock.getTime())&amp;#10;&amp;#10;if not key_resp_2.keys :&amp;#10;    msg=&quot;Failed to respond&quot;&amp;#10;elif key_resp_2.corr :#stored on last run routine&amp;#10;    msg=&quot;Correct!&quot;&amp;#10;else:&amp;#10;    msg=&quot;Wrong.&quot;" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'z','x'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="first key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instr_2">
+      <TextComponent name="text_14">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_14" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Each pair will be either a correct or incorrect match." valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_15">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_15" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="green" valType="str"/>
+        <Param name="text" updates="constant" val="You should press &quot;z&quot; if the match is correct." valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="6" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_16">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_16" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="red" valType="str"/>
+        <Param name="text" updates="constant" val="You should press &quot;x&quot; if the match is incorrect." valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="12" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_17">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_17" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Let's do a practice round." valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="18" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="instr_3">
+      <TextComponent name="text_20">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_20" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Great job!" valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_22">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_22" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="During the matching task you will also listen to an audiobook." valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="6" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_21">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_21" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="The audiobook will either be in English or in Spanish." valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="12" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_23">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_23" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Pay attention to the audiobook, because you will be asked questions about it later." valType="str"/>
+        <Param name="stopVal" updates="constant" val="8" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="18" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="text_24">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_24" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Okay! Let's get going." valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="26" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instr"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_3">
+      <Param name="conditionsFile" updates="None" val="images.xlsx" valType="str"/>
+      <Param name="name" updates="None" val="trials_3" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([(u'images', u'images/paintbrush03a.jpg'), (u'name', u'paint brush'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/redfox.jpg'), (u'name', u'red fox'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/volleyball.jpg'), (u'name', u'volley ball'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/plate01b.jpg'), (u'name', u'plate'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/puma.jpg'), (u'name', u'puma'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lantern03.jpg'), (u'name', u'lantern'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/daisy.jpg'), (u'name', u'daisy'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/notebook02b.jpg'), (u'name', u'notebook'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/flashlight05.jpg'), (u'name', u'flash light'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/barrel01.jpg'), (u'name', u'barrel'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/pingpongpaddle01c (1).jpg'), (u'name', u'ping pong paddle'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/tent.jpg'), (u'name', u'tent'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/antelope.jpg'), (u'name', u'antelope'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/apple06.jpg'), (u'name', u'apple'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lemon02.jpg'), (u'name', u'lemon'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/hat05.jpg'), (u'name', u'hat'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/desktopcomputer.jpg'), (u'name', u'desktop computer'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/sunglasses03a.jpg'), (u'name', u'sun glasses'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/dryingmachine01.jpg'), (u'name', u'drying machine'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/egg01b (1).jpg'), (u'name', u'egg'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/bowlingball.jpg'), (u'name', u'bowling ball'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/gps.jpg'), (u'name', u'gps'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/corn01.jpg'), (u'name', u'corn'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/cake.jpg'), (u'name', u'cake'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/bowl02b (1).jpg'), (u'name', u'bowl'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/pouch01b.jpg'), (u'name', u'pouch'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/floorlamp.jpg'), (u'name', u'floor lamp'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/flipflop01b.jpg'), (u'name', u'flip flop'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/hairpin.jpg'), (u'name', u'hair pin'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/dragonfly02.jpg'), (u'name', u'dragon fly'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/cocktailshrimp01.jpg'), (u'name', u'cocktail shrimp'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/candy.jpg'), (u'name', u'candy'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/apricot.jpg'), (u'name', u'apricot'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/basketball01.jpg'), (u'name', u'basket ball'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/battery03b.jpg'), (u'name', u'battery'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/graduationcap.jpg'), (u'name', u'graduation cap'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/razor04a.jpg'), (u'name', u'razor'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/radio03a.jpg'), (u'name', u'radio'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/spoon02b.jpg'), (u'name', u'spoon'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/croissant02b.jpg'), (u'name', u'croissant'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/licenseplate.jpg'), (u'name', u'license plate'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/pictureframe04.jpg'), (u'name', u'picture frame'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lollipop03b.jpg'), (u'name', u'lollipop'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/ashtray02b.jpg'), (u'name', u'ashtray'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lion.jpg'), (u'name', u'lion'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/fryingpan01.jpg'), (u'name', u'frying pan'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/blueberry02.jpg'), (u'name', u'blueberry'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/plant01.jpg'), (u'name', u'plant'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/dreamcatcher.jpg'), (u'name', u'dream catcher'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/table02.jpg'), (u'name', u'table'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/seagull.jpg'), (u'name', u'seagull'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/pineapple01a.jpg'), (u'name', u'pineapple'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/flamingo.jpg'), (u'name', u'flamingo'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/umbrella01.jpg'), (u'name', u'umbrella'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/swan.jpg'), (u'name', u'swan'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/birthdaycandle.jpg'), (u'name', u'birthday candle'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lipstick04.jpg'), (u'name', u'lipstick'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/puzzle.jpg'), (u'name', u'puzzle'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/tissuebox03.jpg'), (u'name', u'tissue box'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/honeycomb.jpg'), (u'name', u'honey comb'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/thumbtack02a.jpg'), (u'name', u'thumb tack'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/computerkeyboard01a.jpg'), (u'name', u'computer keyboard'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lychee02a.jpg'), (u'name', u'lychee'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/saltshaker03c.jpg'), (u'name', u'salt shaker'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/magnifyingglass01b.jpg'), (u'name', u'magnifying glass'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lock02a.jpg'), (u'name', u'lock'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/hairband.jpg'), (u'name', u'hairband'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/weight01.jpg'), (u'name', u'weight'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/leaf01a.jpg'), (u'name', u'leaf'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/handfan01b.jpg'), (u'name', u'handfan'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/cactus.jpg'), (u'name', u'cactus'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/parkbench03.jpg'), (u'name', u'park bench'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/printer03a.jpg'), (u'name', u'printer'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/mailbox01.jpg'), (u'name', u'mail box'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/baseball01a.jpg'), (u'name', u'baseball'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/highheelshoe02a.jpg'), (u'name', u'high heel shoe'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/ostrich.jpg'), (u'name', u'ostrich'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/charcoalbarbecue.jpg'), (u'name', u'charcoal barbecue'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/safe.jpg'), (u'name', u'safe'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/clothespin02a.jpg'), (u'name', u'clothes pin'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/gorilla.jpg'), (u'name', u'gorilla'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/toucan.jpg'), (u'name', u'toucan'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/cheetah.jpg'), (u'name', u'cheetah'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/panda.jpg'), (u'name', u'panda'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/screw03c.jpg'), (u'name', u'screw'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/remotecontrol01c.jpg'), (u'name', u'remote control'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/shotglass.jpg'), (u'name', u'shot glass'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/dresser02.jpg'), (u'name', u'dresser'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/hanger02a.jpg'), (u'name', u'hanger'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/bowtie.jpg'), (u'name', u'bowtie'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/sock03.jpg'), (u'name', u'sock'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/butterfly.jpg'), (u'name', u'butterfly'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/beachumbrella01.jpg'), (u'name', u'beach umbrella'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/parkfountain.jpg'), (u'name', u'park fountain'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/nailpolish02b.jpg'), (u'name', u'nail polish'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/marker01a.jpg'), (u'name', u'marker'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/atm.jpg'), (u'name', u'atm'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/acousticguitar02.jpg'), (u'name', u'acoustic guitar'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/ant.jpg'), (u'name', u'ant'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/dolphin01.jpg'), (u'name', u'dolphin'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/electricguitar02.jpg'), (u'name', u'electric guitar'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/headphones02b.jpg'), (u'name', u'headphones'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/mitten01.jpg'), (u'name', u'mitten'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/bed.jpg'), (u'name', u'bed'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/axe01.jpg'), (u'name', u'axe'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/elbow.jpg'), (u'name', u'elbow'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/peach01.jpg'), (u'name', u'peach'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/coffeepot03b.jpg'), (u'name', u'coffee pot'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/nametag01a.jpg'), (u'name', u'name tag'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/straw.jpg'), (u'name', u'straw'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/eraser.jpg'), (u'name', u'eraser'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/beermug01b.jpg'), (u'name', u'beer mug'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/gamecontroller01.jpg'), (u'name', u'game controller'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/ladder.jpg'), (u'name', u'ladder'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/feather03b.jpg'), (u'name', u'feather'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/medal01.jpg'), (u'name', u'medal'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/broom02.jpg'), (u'name', u'broom'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/drink.jpg'), (u'name', u'drink'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/banana04a.jpg'), (u'name', u'banana'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/hairdryer03a.jpg'), (u'name', u'hairdryer'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/chameleon.jpg'), (u'name', u'50 dollar bill'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/mirror02.jpg'), (u'name', u'8 ball'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/icecube02 (2).jpg'), (u'name', u'aloe'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/nailclipper03a.jpg'), (u'name', u'aquarium'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/coin01b.jpg'), (u'name', u'arrow'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/kiwi03.jpg'), (u'name', u'backpack'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/dice05a.jpg'), (u'name', u'band aid'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/electrictoothbrush01a.jpg'), (u'name', u'banjo'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/orange.jpg'), (u'name', u'bat'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cockroach02.jpg'), (u'name', u'belt'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/tie01.jpg'), (u'name', u'bench'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/eyedrops.jpg'), (u'name', u'bicycle'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/squirrel.jpg'), (u'name', u'binder'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cat.jpg'), (u'name', u'black olive'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/triangleruler02.jpg'), (u'name', u'bottle of red wine'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/boxingglove02a.jpg'), (u'name', u'bracelet'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lip.jpg'), (u'name', u'boxing glove'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/aloe02.jpg'), (u'name', u'broad sword'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/camera01a.jpg'), (u'name', u'bull'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/ear.jpg'), (u'name', u'bullet'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/flower01.jpg'), (u'name', u'bus'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bull.jpg'), (u'name', u'button'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/glasses01b.jpg'), (u'name', u'calculator'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/diaper01a.jpg'), (u'name', u'camera'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/handbag02a.jpg'), (u'name', u'candle'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/stapler03a.jpg'), (u'name', u'candy cane'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/doll.jpg'), (u'name', u'carrot'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/mattress.jpg'), (u'name', u'cat'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/grasshopper.jpg'), (u'name', u'cauliflower'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cloud.jpg'), (u'name', u'ceiling fan'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/parrot01.jpg'), (u'name', u'chameleon'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/50dollarbill.jpg'), (u'name', u'cherry'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bracelet02a.jpg'), (u'name', u'chess knight'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/key03b.jpg'), (u'name', u'cigar'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/globe.jpg'), (u'name', u'cloud'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/chessknight02b (1).jpg'), (u'name', u'cockroach'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/highlighter03b.jpg'), (u'name', u'coin'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cola.jpg'), (u'name', u'comb'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/screwdriver02b.jpg'), (u'name', u'cola'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/aquarium.jpg'), (u'name', u'computer mouse'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/fork01.jpg'), (u'name', u'cooking pot'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/carrot02.jpg'), (u'name', u'corkscrew'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cigar.jpg'), (u'name', u'crocodile'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/hand01a.jpg'), (u'name', u'cupcake'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/microphone01.jpg'), (u'name', u'diaper'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/calculator02b.jpg'), (u'name', u'dice'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/comb02a.jpg'), (u'name', u'diploma'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/binder03b.jpg'), (u'name', u'dj mixer'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/doorhandle.jpg'), (u'name', u'doll'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/leek.jpg'), (u'name', u'donut'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bandaid01.jpg'), (u'name', u'door handle'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/parkingmeter.jpg'), (u'name', u'ear'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bench02.jpg'), (u'name', u'electric toothbrush'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/rhinoceros01.jpg'), (u'name', u'envelope'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/paperclip04.jpg'), (u'name', u'eye drops'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/fireextinguisher02.jpg'), (u'name', u'fire extinguisher'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/hammer02a.jpg'), (u'name', u'flower'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lightswitch02a.jpg'), (u'name', u'fork'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/ladybug03.jpg'), (u'name', u'giraffe'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/diploma01.jpg'), (u'name', u'glasses'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/snowman.jpg'), (u'name', u'globe'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cauliflower01.jpg'), (u'name', u'glue stick'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/envelope02a.jpg'), (u'name', u'grand piano'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cookingpot.jpg'), (u'name', u'grasshopper'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/arrow02.jpg'), (u'name', u'hammer'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bat.jpg'), (u'name', u'hand'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bicycle.jpg'), (u'name', u'hand bag'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cherry01.jpg'), (u'name', u'highlighter'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/pipe.jpg'), (u'name', u'icecube'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/skateboard.jpg'), (u'name', u'key'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lily.jpg'), (u'name', u'kiwi'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/banjo.jpg'), (u'name', u'knife'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/rubberglove02a.jpg'), (u'name', u'lady bug'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/wallet01.jpg'), (u'name', u'lamp'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/scissors04a.jpg'), (u'name', u'leek'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/giraffe.jpg'), (u'name', u'lettuce'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/djmixer01.jpg'), (u'name', u'light bulb'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/teapot.jpg'), (u'name', u'light switch'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/pepper05a.jpg'), (u'name', u'lighter'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/treadmill.jpg'), (u'name', u'lily'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/candycane01a.jpg'), (u'name', u'lip'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/corkscrew02a.jpg'), (u'name', u'masquerade mask'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/swallow.jpg'), (u'name', u'mattress'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bus.jpg'), (u'name', u'microphone'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/masquerademask02b.jpg'), (u'name', u'mirror'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lettuce.jpg'), (u'name', u'mushroom'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/8ball.jpg'), (u'name', u'nail clipper'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/watermelon01.jpg'), (u'name', u'orange'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/ceilingfan02.jpg'), (u'name', u'paper clip'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lamp04b.jpg'), (u'name', u'parking meter'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/toothbrush03a.jpg'), (u'name', u'parrot'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/pen03c.jpg'), (u'name', u'pepper'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/scooter.jpg'), (u'name', u'pen'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bottleofredwine02.jpg'), (u'name', u'pipe'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/radish01.jpg'), (u'name', u'raisin'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/button07.jpg'), (u'name', u'radish'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/donut.jpg'), (u'name', u'rhinoceros'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bullet (2).jpg'), (u'name', u'rubber glove'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/raisin.jpg'), (u'name', u'ruler'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cupcake.jpg'), (u'name', u'scissors'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/worldmap.jpg'), (u'name', u'scooter'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/candle08a.jpg'), (u'name', u'screw driver'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/mushroom01.jpg'), (u'name', u'shower head'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/showerhead01.jpg'), (u'name', u'skateboard'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/belt02a.jpg'), (u'name', u'snowman'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/tulip02.jpg'), (u'name', u'sport shorts'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/gluestick.jpg'), (u'name', u'squirrel'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lighter02b.jpg'), (u'name', u'stapler'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/backpack01b.jpg'), (u'name', u'swallow'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/blackolive.jpg'), (u'name', u'tank'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/sportshorts02.jpg'), (u'name', u'tape'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/broadsword.jpg'), (u'name', u'teapot'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/tape01a.jpg'), (u'name', u'tie'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/knife04.jpg'), (u'name', u'tooth brush'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lightbulb03b.jpg'), (u'name', u'treadmill'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/crocodile.jpg'), (u'name', u'triangle ruler'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/grandpiano.jpg'), (u'name', u'tulip'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/tank.jpg'), (u'name', u'wallet'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/ruler02b.jpg'), (u'name', u'watermelon'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/computermouse02a.jpg'), (u'name', u'world map'), (u'corrAns', u'x')])]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="[2]" valType="str"/>
+    </LoopInitiator>
+    <Routine name="match_prac1"/>
+    <LoopTerminator name="trials_3"/>
+    <Routine name="instr_2"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_4">
+      <Param name="conditionsFile" updates="None" val="images.xlsx" valType="str"/>
+      <Param name="name" updates="None" val="trials_4" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([(u'images', u'images/paintbrush03a.jpg'), (u'name', u'paint brush'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/redfox.jpg'), (u'name', u'red fox'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/volleyball.jpg'), (u'name', u'volley ball'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/plate01b.jpg'), (u'name', u'plate'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/puma.jpg'), (u'name', u'puma'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lantern03.jpg'), (u'name', u'lantern'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/daisy.jpg'), (u'name', u'daisy'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/notebook02b.jpg'), (u'name', u'notebook'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/flashlight05.jpg'), (u'name', u'flash light'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/barrel01.jpg'), (u'name', u'barrel'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/pingpongpaddle01c (1).jpg'), (u'name', u'ping pong paddle'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/tent.jpg'), (u'name', u'tent'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/antelope.jpg'), (u'name', u'antelope'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/apple06.jpg'), (u'name', u'apple'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lemon02.jpg'), (u'name', u'lemon'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/hat05.jpg'), (u'name', u'hat'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/desktopcomputer.jpg'), (u'name', u'desktop computer'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/sunglasses03a.jpg'), (u'name', u'sun glasses'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/dryingmachine01.jpg'), (u'name', u'drying machine'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/egg01b (1).jpg'), (u'name', u'egg'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/bowlingball.jpg'), (u'name', u'bowling ball'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/gps.jpg'), (u'name', u'gps'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/corn01.jpg'), (u'name', u'corn'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/cake.jpg'), (u'name', u'cake'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/bowl02b (1).jpg'), (u'name', u'bowl'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/pouch01b.jpg'), (u'name', u'pouch'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/floorlamp.jpg'), (u'name', u'floor lamp'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/flipflop01b.jpg'), (u'name', u'flip flop'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/hairpin.jpg'), (u'name', u'hair pin'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/dragonfly02.jpg'), (u'name', u'dragon fly'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/cocktailshrimp01.jpg'), (u'name', u'cocktail shrimp'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/candy.jpg'), (u'name', u'candy'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/apricot.jpg'), (u'name', u'apricot'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/basketball01.jpg'), (u'name', u'basket ball'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/battery03b.jpg'), (u'name', u'battery'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/graduationcap.jpg'), (u'name', u'graduation cap'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/razor04a.jpg'), (u'name', u'razor'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/radio03a.jpg'), (u'name', u'radio'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/spoon02b.jpg'), (u'name', u'spoon'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/croissant02b.jpg'), (u'name', u'croissant'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/licenseplate.jpg'), (u'name', u'license plate'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/pictureframe04.jpg'), (u'name', u'picture frame'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lollipop03b.jpg'), (u'name', u'lollipop'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/ashtray02b.jpg'), (u'name', u'ashtray'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lion.jpg'), (u'name', u'lion'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/fryingpan01.jpg'), (u'name', u'frying pan'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/blueberry02.jpg'), (u'name', u'blueberry'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/plant01.jpg'), (u'name', u'plant'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/dreamcatcher.jpg'), (u'name', u'dream catcher'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/table02.jpg'), (u'name', u'table'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/seagull.jpg'), (u'name', u'seagull'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/pineapple01a.jpg'), (u'name', u'pineapple'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/flamingo.jpg'), (u'name', u'flamingo'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/umbrella01.jpg'), (u'name', u'umbrella'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/swan.jpg'), (u'name', u'swan'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/birthdaycandle.jpg'), (u'name', u'birthday candle'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lipstick04.jpg'), (u'name', u'lipstick'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/puzzle.jpg'), (u'name', u'puzzle'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/tissuebox03.jpg'), (u'name', u'tissue box'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/honeycomb.jpg'), (u'name', u'honey comb'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/thumbtack02a.jpg'), (u'name', u'thumb tack'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/computerkeyboard01a.jpg'), (u'name', u'computer keyboard'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lychee02a.jpg'), (u'name', u'lychee'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/saltshaker03c.jpg'), (u'name', u'salt shaker'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/magnifyingglass01b.jpg'), (u'name', u'magnifying glass'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/lock02a.jpg'), (u'name', u'lock'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/hairband.jpg'), (u'name', u'hairband'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/weight01.jpg'), (u'name', u'weight'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/leaf01a.jpg'), (u'name', u'leaf'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/handfan01b.jpg'), (u'name', u'handfan'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/cactus.jpg'), (u'name', u'cactus'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/parkbench03.jpg'), (u'name', u'park bench'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/printer03a.jpg'), (u'name', u'printer'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/mailbox01.jpg'), (u'name', u'mail box'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/baseball01a.jpg'), (u'name', u'baseball'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/highheelshoe02a.jpg'), (u'name', u'high heel shoe'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/ostrich.jpg'), (u'name', u'ostrich'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/charcoalbarbecue.jpg'), (u'name', u'charcoal barbecue'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/safe.jpg'), (u'name', u'safe'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/clothespin02a.jpg'), (u'name', u'clothes pin'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/gorilla.jpg'), (u'name', u'gorilla'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/toucan.jpg'), (u'name', u'toucan'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/cheetah.jpg'), (u'name', u'cheetah'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/panda.jpg'), (u'name', u'panda'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/screw03c.jpg'), (u'name', u'screw'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/remotecontrol01c.jpg'), (u'name', u'remote control'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/shotglass.jpg'), (u'name', u'shot glass'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/dresser02.jpg'), (u'name', u'dresser'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/hanger02a.jpg'), (u'name', u'hanger'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/bowtie.jpg'), (u'name', u'bowtie'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/sock03.jpg'), (u'name', u'sock'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/butterfly.jpg'), (u'name', u'butterfly'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/beachumbrella01.jpg'), (u'name', u'beach umbrella'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/parkfountain.jpg'), (u'name', u'park fountain'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/nailpolish02b.jpg'), (u'name', u'nail polish'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/marker01a.jpg'), (u'name', u'marker'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/atm.jpg'), (u'name', u'atm'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/acousticguitar02.jpg'), (u'name', u'acoustic guitar'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/ant.jpg'), (u'name', u'ant'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/dolphin01.jpg'), (u'name', u'dolphin'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/electricguitar02.jpg'), (u'name', u'electric guitar'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/headphones02b.jpg'), (u'name', u'headphones'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/mitten01.jpg'), (u'name', u'mitten'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/bed.jpg'), (u'name', u'bed'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/axe01.jpg'), (u'name', u'axe'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/elbow.jpg'), (u'name', u'elbow'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/peach01.jpg'), (u'name', u'peach'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/coffeepot03b.jpg'), (u'name', u'coffee pot'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/nametag01a.jpg'), (u'name', u'name tag'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/straw.jpg'), (u'name', u'straw'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/eraser.jpg'), (u'name', u'eraser'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/beermug01b.jpg'), (u'name', u'beer mug'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/gamecontroller01.jpg'), (u'name', u'game controller'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/ladder.jpg'), (u'name', u'ladder'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/feather03b.jpg'), (u'name', u'feather'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/medal01.jpg'), (u'name', u'medal'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/broom02.jpg'), (u'name', u'broom'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/drink.jpg'), (u'name', u'drink'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/banana04a.jpg'), (u'name', u'banana'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/hairdryer03a.jpg'), (u'name', u'hairdryer'), (u'corrAns', u'z')]), OrderedDict([(u'images', u'images/chameleon.jpg'), (u'name', u'50 dollar bill'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/mirror02.jpg'), (u'name', u'8 ball'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/icecube02 (2).jpg'), (u'name', u'aloe'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/nailclipper03a.jpg'), (u'name', u'aquarium'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/coin01b.jpg'), (u'name', u'arrow'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/kiwi03.jpg'), (u'name', u'backpack'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/dice05a.jpg'), (u'name', u'band aid'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/electrictoothbrush01a.jpg'), (u'name', u'banjo'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/orange.jpg'), (u'name', u'bat'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cockroach02.jpg'), (u'name', u'belt'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/tie01.jpg'), (u'name', u'bench'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/eyedrops.jpg'), (u'name', u'bicycle'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/squirrel.jpg'), (u'name', u'binder'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cat.jpg'), (u'name', u'black olive'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/triangleruler02.jpg'), (u'name', u'bottle of red wine'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/boxingglove02a.jpg'), (u'name', u'bracelet'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lip.jpg'), (u'name', u'boxing glove'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/aloe02.jpg'), (u'name', u'broad sword'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/camera01a.jpg'), (u'name', u'bull'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/ear.jpg'), (u'name', u'bullet'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/flower01.jpg'), (u'name', u'bus'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bull.jpg'), (u'name', u'button'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/glasses01b.jpg'), (u'name', u'calculator'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/diaper01a.jpg'), (u'name', u'camera'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/handbag02a.jpg'), (u'name', u'candle'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/stapler03a.jpg'), (u'name', u'candy cane'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/doll.jpg'), (u'name', u'carrot'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/mattress.jpg'), (u'name', u'cat'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/grasshopper.jpg'), (u'name', u'cauliflower'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cloud.jpg'), (u'name', u'ceiling fan'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/parrot01.jpg'), (u'name', u'chameleon'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/50dollarbill.jpg'), (u'name', u'cherry'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bracelet02a.jpg'), (u'name', u'chess knight'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/key03b.jpg'), (u'name', u'cigar'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/globe.jpg'), (u'name', u'cloud'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/chessknight02b (1).jpg'), (u'name', u'cockroach'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/highlighter03b.jpg'), (u'name', u'coin'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cola.jpg'), (u'name', u'comb'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/screwdriver02b.jpg'), (u'name', u'cola'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/aquarium.jpg'), (u'name', u'computer mouse'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/fork01.jpg'), (u'name', u'cooking pot'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/carrot02.jpg'), (u'name', u'corkscrew'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cigar.jpg'), (u'name', u'crocodile'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/hand01a.jpg'), (u'name', u'cupcake'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/microphone01.jpg'), (u'name', u'diaper'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/calculator02b.jpg'), (u'name', u'dice'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/comb02a.jpg'), (u'name', u'diploma'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/binder03b.jpg'), (u'name', u'dj mixer'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/doorhandle.jpg'), (u'name', u'doll'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/leek.jpg'), (u'name', u'donut'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bandaid01.jpg'), (u'name', u'door handle'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/parkingmeter.jpg'), (u'name', u'ear'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bench02.jpg'), (u'name', u'electric toothbrush'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/rhinoceros01.jpg'), (u'name', u'envelope'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/paperclip04.jpg'), (u'name', u'eye drops'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/fireextinguisher02.jpg'), (u'name', u'fire extinguisher'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/hammer02a.jpg'), (u'name', u'flower'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lightswitch02a.jpg'), (u'name', u'fork'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/ladybug03.jpg'), (u'name', u'giraffe'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/diploma01.jpg'), (u'name', u'glasses'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/snowman.jpg'), (u'name', u'globe'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cauliflower01.jpg'), (u'name', u'glue stick'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/envelope02a.jpg'), (u'name', u'grand piano'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cookingpot.jpg'), (u'name', u'grasshopper'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/arrow02.jpg'), (u'name', u'hammer'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bat.jpg'), (u'name', u'hand'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bicycle.jpg'), (u'name', u'hand bag'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cherry01.jpg'), (u'name', u'highlighter'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/pipe.jpg'), (u'name', u'icecube'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/skateboard.jpg'), (u'name', u'key'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lily.jpg'), (u'name', u'kiwi'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/banjo.jpg'), (u'name', u'knife'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/rubberglove02a.jpg'), (u'name', u'lady bug'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/wallet01.jpg'), (u'name', u'lamp'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/scissors04a.jpg'), (u'name', u'leek'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/giraffe.jpg'), (u'name', u'lettuce'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/djmixer01.jpg'), (u'name', u'light bulb'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/teapot.jpg'), (u'name', u'light switch'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/pepper05a.jpg'), (u'name', u'lighter'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/treadmill.jpg'), (u'name', u'lily'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/candycane01a.jpg'), (u'name', u'lip'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/corkscrew02a.jpg'), (u'name', u'masquerade mask'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/swallow.jpg'), (u'name', u'mattress'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bus.jpg'), (u'name', u'microphone'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/masquerademask02b.jpg'), (u'name', u'mirror'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lettuce.jpg'), (u'name', u'mushroom'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/8ball.jpg'), (u'name', u'nail clipper'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/watermelon01.jpg'), (u'name', u'orange'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/ceilingfan02.jpg'), (u'name', u'paper clip'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lamp04b.jpg'), (u'name', u'parking meter'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/toothbrush03a.jpg'), (u'name', u'parrot'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/pen03c.jpg'), (u'name', u'pepper'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/scooter.jpg'), (u'name', u'pen'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bottleofredwine02.jpg'), (u'name', u'pipe'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/radish01.jpg'), (u'name', u'raisin'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/button07.jpg'), (u'name', u'radish'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/donut.jpg'), (u'name', u'rhinoceros'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/bullet (2).jpg'), (u'name', u'rubber glove'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/raisin.jpg'), (u'name', u'ruler'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/cupcake.jpg'), (u'name', u'scissors'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/worldmap.jpg'), (u'name', u'scooter'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/candle08a.jpg'), (u'name', u'screw driver'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/mushroom01.jpg'), (u'name', u'shower head'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/showerhead01.jpg'), (u'name', u'skateboard'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/belt02a.jpg'), (u'name', u'snowman'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/tulip02.jpg'), (u'name', u'sport shorts'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/gluestick.jpg'), (u'name', u'squirrel'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lighter02b.jpg'), (u'name', u'stapler'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/backpack01b.jpg'), (u'name', u'swallow'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/blackolive.jpg'), (u'name', u'tank'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/sportshorts02.jpg'), (u'name', u'tape'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/broadsword.jpg'), (u'name', u'teapot'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/tape01a.jpg'), (u'name', u'tie'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/knife04.jpg'), (u'name', u'tooth brush'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/lightbulb03b.jpg'), (u'name', u'treadmill'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/crocodile.jpg'), (u'name', u'triangle ruler'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/grandpiano.jpg'), (u'name', u'tulip'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/tank.jpg'), (u'name', u'wallet'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/ruler02b.jpg'), (u'name', u'watermelon'), (u'corrAns', u'x')]), OrderedDict([(u'images', u'images/computermouse02a.jpg'), (u'name', u'world map'), (u'corrAns', u'x')])]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="[4]" valType="str"/>
+    </LoopInitiator>
+    <Routine name="match_2"/>
+    <LoopTerminator name="trials_4"/>
+    <Routine name="instr_3"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="conditionsFile" updates="None" val="sounds.xlsx" valType="str"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([(u'sounds', u'sounds/greatgatsby_chinese.wav')]), OrderedDict([(u'sounds', u'sounds/greatgatsby_english.wav')]), OrderedDict([(u'sounds', u'sounds/greatgatsby_spanish.wav')]), OrderedDict([(u'sounds', u'sounds/animalfarm_chinese.wav')]), OrderedDict([(u'sounds', u'sounds/animalfarm_english.wav')]), OrderedDict([(u'sounds', u'sounds/animalfarm_spanish.wav')])]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="[2,4]" valType="str"/>
+    </LoopInitiator>
+    <Routine name="audiobook_1"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="conditionsFile" updates="None" val="images.xlsx" valType="str"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="5" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('images', 'images/paintbrush03a.jpg'), ('name', 'paint brush'), ('corrAns', 'z')]), OrderedDict([('images', 'images/redfox.jpg'), ('name', 'red fox'), ('corrAns', 'z')]), OrderedDict([('images', 'images/volleyball.jpg'), ('name', 'volley ball'), ('corrAns', 'z')]), OrderedDict([('images', 'images/plate01b.jpg'), ('name', 'plate'), ('corrAns', 'z')]), OrderedDict([('images', 'images/puma.jpg'), ('name', 'puma'), ('corrAns', 'z')]), OrderedDict([('images', 'images/lantern03.jpg'), ('name', 'lantern'), ('corrAns', 'z')]), OrderedDict([('images', 'images/daisy.jpg'), ('name', 'daisy'), ('corrAns', 'z')]), OrderedDict([('images', 'images/notebook02b.jpg'), ('name', 'notebook'), ('corrAns', 'z')]), OrderedDict([('images', 'images/flashlight05.jpg'), ('name', 'flash light'), ('corrAns', 'z')]), OrderedDict([('images', 'images/barrel01.jpg'), ('name', 'barrel'), ('corrAns', 'z')]), OrderedDict([('images', 'images/pingpongpaddle01c (1).jpg'), ('name', 'ping pong paddle'), ('corrAns', 'z')]), OrderedDict([('images', 'images/tent.jpg'), ('name', 'tent'), ('corrAns', 'z')]), OrderedDict([('images', 'images/antelope.jpg'), ('name', 'antelope'), ('corrAns', 'z')]), OrderedDict([('images', 'images/apple06.jpg'), ('name', 'apple'), ('corrAns', 'z')]), OrderedDict([('images', 'images/lemon02.jpg'), ('name', 'lemon'), ('corrAns', 'z')]), OrderedDict([('images', 'images/hat05.jpg'), ('name', 'hat'), ('corrAns', 'z')]), OrderedDict([('images', 'images/desktopcomputer.jpg'), ('name', 'desktop computer'), ('corrAns', 'z')]), OrderedDict([('images', 'images/sunglasses03a.jpg'), ('name', 'sun glasses'), ('corrAns', 'z')]), OrderedDict([('images', 'images/dryingmachine01.jpg'), ('name', 'drying machine'), ('corrAns', 'z')]), OrderedDict([('images', 'images/egg01b (1).jpg'), ('name', 'egg'), ('corrAns', 'z')]), OrderedDict([('images', 'images/bowlingball.jpg'), ('name', 'bowling ball'), ('corrAns', 'z')]), OrderedDict([('images', 'images/gps.jpg'), ('name', 'gps'), ('corrAns', 'z')]), OrderedDict([('images', 'images/corn01.jpg'), ('name', 'corn'), ('corrAns', 'z')]), OrderedDict([('images', 'images/cake.jpg'), ('name', 'cake'), ('corrAns', 'z')]), OrderedDict([('images', 'images/bowl02b (1).jpg'), ('name', 'bowl'), ('corrAns', 'z')]), OrderedDict([('images', 'images/pouch01b.jpg'), ('name', 'pouch'), ('corrAns', 'z')]), OrderedDict([('images', 'images/floorlamp.jpg'), ('name', 'floor lamp'), ('corrAns', 'z')]), OrderedDict([('images', 'images/flipflop01b.jpg'), ('name', 'flip flop'), ('corrAns', 'z')]), OrderedDict([('images', 'images/hairpin.jpg'), ('name', 'hair pin'), ('corrAns', 'z')]), OrderedDict([('images', 'images/dragonfly02.jpg'), ('name', 'dragon fly'), ('corrAns', 'z')]), OrderedDict([('images', 'images/cocktailshrimp01.jpg'), ('name', 'cocktail shrimp'), ('corrAns', 'z')]), OrderedDict([('images', 'images/candy.jpg'), ('name', 'candy'), ('corrAns', 'z')]), OrderedDict([('images', 'images/apricot.jpg'), ('name', 'apricot'), ('corrAns', 'z')]), OrderedDict([('images', 'images/basketball01.jpg'), ('name', 'basket ball'), ('corrAns', 'z')]), OrderedDict([('images', 'images/battery03b.jpg'), ('name', 'battery'), ('corrAns', 'z')]), OrderedDict([('images', 'images/graduationcap.jpg'), ('name', 'graduation cap'), ('corrAns', 'z')]), OrderedDict([('images', 'images/razor04a.jpg'), ('name', 'razor'), ('corrAns', 'z')]), OrderedDict([('images', 'images/radio03a.jpg'), ('name', 'radio'), ('corrAns', 'z')]), OrderedDict([('images', 'images/spoon02b.jpg'), ('name', 'spoon'), ('corrAns', 'z')]), OrderedDict([('images', 'images/croissant02b.jpg'), ('name', 'croissant'), ('corrAns', 'z')]), OrderedDict([('images', 'images/licenseplate.jpg'), ('name', 'license plate'), ('corrAns', 'z')]), OrderedDict([('images', 'images/pictureframe04.jpg'), ('name', 'picture frame'), ('corrAns', 'z')]), OrderedDict([('images', 'images/lollipop03b.jpg'), ('name', 'lollipop'), ('corrAns', 'z')]), OrderedDict([('images', 'images/ashtray02b.jpg'), ('name', 'ashtray'), ('corrAns', 'z')]), OrderedDict([('images', 'images/lion.jpg'), ('name', 'lion'), ('corrAns', 'z')]), OrderedDict([('images', 'images/fryingpan01.jpg'), ('name', 'frying pan'), ('corrAns', 'z')]), OrderedDict([('images', 'images/blueberry02.jpg'), ('name', 'blueberry'), ('corrAns', 'z')]), OrderedDict([('images', 'images/plant01.jpg'), ('name', 'plant'), ('corrAns', 'z')]), OrderedDict([('images', 'images/dreamcatcher.jpg'), ('name', 'dream catcher'), ('corrAns', 'z')]), OrderedDict([('images', 'images/table02.jpg'), ('name', 'table'), ('corrAns', 'z')]), OrderedDict([('images', 'images/seagull.jpg'), ('name', 'seagull'), ('corrAns', 'z')]), OrderedDict([('images', 'images/pineapple01a.jpg'), ('name', 'pineapple'), ('corrAns', 'z')]), OrderedDict([('images', 'images/flamingo.jpg'), ('name', 'flamingo'), ('corrAns', 'z')]), OrderedDict([('images', 'images/umbrella01.jpg'), ('name', 'umbrella'), ('corrAns', 'z')]), OrderedDict([('images', 'images/swan.jpg'), ('name', 'swan'), ('corrAns', 'z')]), OrderedDict([('images', 'images/birthdaycandle.jpg'), ('name', 'birthday candle'), ('corrAns', 'z')]), OrderedDict([('images', 'images/lipstick04.jpg'), ('name', 'lipstick'), ('corrAns', 'z')]), OrderedDict([('images', 'images/puzzle.jpg'), ('name', 'puzzle'), ('corrAns', 'z')]), OrderedDict([('images', 'images/tissuebox03.jpg'), ('name', 'tissue box'), ('corrAns', 'z')]), OrderedDict([('images', 'images/honeycomb.jpg'), ('name', 'honey comb'), ('corrAns', 'z')]), OrderedDict([('images', 'images/thumbtack02a.jpg'), ('name', 'thumb tack'), ('corrAns', 'z')]), OrderedDict([('images', 'images/computerkeyboard01a.jpg'), ('name', 'computer keyboard'), ('corrAns', 'z')]), OrderedDict([('images', 'images/lychee02a.jpg'), ('name', 'lychee'), ('corrAns', 'z')]), OrderedDict([('images', 'images/saltshaker03c.jpg'), ('name', 'salt shaker'), ('corrAns', 'z')]), OrderedDict([('images', 'images/magnifyingglass01b.jpg'), ('name', 'magnifying glass'), ('corrAns', 'z')]), OrderedDict([('images', 'images/lock02a.jpg'), ('name', 'lock'), ('corrAns', 'z')]), OrderedDict([('images', 'images/hairband.jpg'), ('name', 'hairband'), ('corrAns', 'z')]), OrderedDict([('images', 'images/weight01.jpg'), ('name', 'weight'), ('corrAns', 'z')]), OrderedDict([('images', 'images/leaf01a.jpg'), ('name', 'leaf'), ('corrAns', 'z')]), OrderedDict([('images', 'images/handfan01b.jpg'), ('name', 'handfan'), ('corrAns', 'z')]), OrderedDict([('images', 'images/cactus.jpg'), ('name', 'cactus'), ('corrAns', 'z')]), OrderedDict([('images', 'images/parkbench03.jpg'), ('name', 'park bench'), ('corrAns', 'z')]), OrderedDict([('images', 'images/printer03a.jpg'), ('name', 'printer'), ('corrAns', 'z')]), OrderedDict([('images', 'images/mailbox01.jpg'), ('name', 'mail box'), ('corrAns', 'z')]), OrderedDict([('images', 'images/baseball01a.jpg'), ('name', 'baseball'), ('corrAns', 'z')]), OrderedDict([('images', 'images/highheelshoe02a.jpg'), ('name', 'high heel shoe'), ('corrAns', 'z')]), OrderedDict([('images', 'images/ostrich.jpg'), ('name', 'ostrich'), ('corrAns', 'z')]), OrderedDict([('images', 'images/charcoalbarbecue.jpg'), ('name', 'charcoal barbecue'), ('corrAns', 'z')]), OrderedDict([('images', 'images/safe.jpg'), ('name', 'safe'), ('corrAns', 'z')]), OrderedDict([('images', 'images/clothespin02a.jpg'), ('name', 'clothes pin'), ('corrAns', 'z')]), OrderedDict([('images', 'images/gorilla.jpg'), ('name', 'gorilla'), ('corrAns', 'z')]), OrderedDict([('images', 'images/toucan.jpg'), ('name', 'toucan'), ('corrAns', 'z')]), OrderedDict([('images', 'images/cheetah.jpg'), ('name', 'cheetah'), ('corrAns', 'z')]), OrderedDict([('images', 'images/panda.jpg'), ('name', 'panda'), ('corrAns', 'z')]), OrderedDict([('images', 'images/screw03c.jpg'), ('name', 'screw'), ('corrAns', 'z')]), OrderedDict([('images', 'images/remotecontrol01c.jpg'), ('name', 'remote control'), ('corrAns', 'z')]), OrderedDict([('images', 'images/shotglass.jpg'), ('name', 'shot glass'), ('corrAns', 'z')]), OrderedDict([('images', 'images/dresser02.jpg'), ('name', 'dresser'), ('corrAns', 'z')]), OrderedDict([('images', 'images/hanger02a.jpg'), ('name', 'hanger'), ('corrAns', 'z')]), OrderedDict([('images', 'images/bowtie.jpg'), ('name', 'bowtie'), ('corrAns', 'z')]), OrderedDict([('images', 'images/sock03.jpg'), ('name', 'sock'), ('corrAns', 'z')]), OrderedDict([('images', 'images/butterfly.jpg'), ('name', 'butterfly'), ('corrAns', 'z')]), OrderedDict([('images', 'images/beachumbrella01.jpg'), ('name', 'beach umbrella'), ('corrAns', 'z')]), OrderedDict([('images', 'images/parkfountain.jpg'), ('name', 'park fountain'), ('corrAns', 'z')]), OrderedDict([('images', 'images/nailpolish02b.jpg'), ('name', 'nail polish'), ('corrAns', 'z')]), OrderedDict([('images', 'images/marker01a.jpg'), ('name', 'marker'), ('corrAns', 'z')]), OrderedDict([('images', 'images/atm.jpg'), ('name', 'atm'), ('corrAns', 'z')]), OrderedDict([('images', 'images/acousticguitar02.jpg'), ('name', 'acoustic guitar'), ('corrAns', 'z')]), OrderedDict([('images', 'images/ant.jpg'), ('name', 'ant'), ('corrAns', 'z')]), OrderedDict([('images', 'images/dolphin01.jpg'), ('name', 'dolphin'), ('corrAns', 'z')]), OrderedDict([('images', 'images/electricguitar02.jpg'), ('name', 'electric guitar'), ('corrAns', 'z')]), OrderedDict([('images', 'images/headphones02b.jpg'), ('name', 'headphones'), ('corrAns', 'z')]), OrderedDict([('images', 'images/mitten01.jpg'), ('name', 'mitten'), ('corrAns', 'z')]), OrderedDict([('images', 'images/bed.jpg'), ('name', 'bed'), ('corrAns', 'z')]), OrderedDict([('images', 'images/axe01.jpg'), ('name', 'axe'), ('corrAns', 'z')]), OrderedDict([('images', 'images/elbow.jpg'), ('name', 'elbow'), ('corrAns', 'z')]), OrderedDict([('images', 'images/peach01.jpg'), ('name', 'peach'), ('corrAns', 'z')]), OrderedDict([('images', 'images/coffeepot03b.jpg'), ('name', 'coffee pot'), ('corrAns', 'z')]), OrderedDict([('images', 'images/nametag01a.jpg'), ('name', 'name tag'), ('corrAns', 'z')]), OrderedDict([('images', 'images/straw.jpg'), ('name', 'straw'), ('corrAns', 'z')]), OrderedDict([('images', 'images/eraser.jpg'), ('name', 'eraser'), ('corrAns', 'z')]), OrderedDict([('images', 'images/beermug01b.jpg'), ('name', 'beer mug'), ('corrAns', 'z')]), OrderedDict([('images', 'images/gamecontroller01.jpg'), ('name', 'game controller'), ('corrAns', 'z')]), OrderedDict([('images', 'images/ladder.jpg'), ('name', 'ladder'), ('corrAns', 'z')]), OrderedDict([('images', 'images/feather03b.jpg'), ('name', 'feather'), ('corrAns', 'z')]), OrderedDict([('images', 'images/medal01.jpg'), ('name', 'medal'), ('corrAns', 'z')]), OrderedDict([('images', 'images/broom02.jpg'), ('name', 'broom'), ('corrAns', 'z')]), OrderedDict([('images', 'images/drink.jpg'), ('name', 'drink'), ('corrAns', 'z')]), OrderedDict([('images', 'images/banana04a.jpg'), ('name', 'banana'), ('corrAns', 'z')]), OrderedDict([('images', 'images/hairdryer03a.jpg'), ('name', 'hairdryer'), ('corrAns', 'z')]), OrderedDict([('images', 'images/chameleon.jpg'), ('name', '50 dollar bill'), ('corrAns', 'x')]), OrderedDict([('images', 'images/mirror02.jpg'), ('name', '8 ball'), ('corrAns', 'x')]), OrderedDict([('images', 'images/icecube02 (2).jpg'), ('name', 'aloe'), ('corrAns', 'x')]), OrderedDict([('images', 'images/nailclipper03a.jpg'), ('name', 'aquarium'), ('corrAns', 'x')]), OrderedDict([('images', 'images/coin01b.jpg'), ('name', 'arrow'), ('corrAns', 'x')]), OrderedDict([('images', 'images/kiwi03.jpg'), ('name', 'backpack'), ('corrAns', 'x')]), OrderedDict([('images', 'images/dice05a.jpg'), ('name', 'band aid'), ('corrAns', 'x')]), OrderedDict([('images', 'images/electrictoothbrush01a.jpg'), ('name', 'banjo'), ('corrAns', 'x')]), OrderedDict([('images', 'images/orange.jpg'), ('name', 'bat'), ('corrAns', 'x')]), OrderedDict([('images', 'images/cockroach02.jpg'), ('name', 'belt'), ('corrAns', 'x')]), OrderedDict([('images', 'images/tie01.jpg'), ('name', 'bench'), ('corrAns', 'x')]), OrderedDict([('images', 'images/eyedrops.jpg'), ('name', 'bicycle'), ('corrAns', 'x')]), OrderedDict([('images', 'images/squirrel.jpg'), ('name', 'binder'), ('corrAns', 'x')]), OrderedDict([('images', 'images/cat.jpg'), ('name', 'black olive'), ('corrAns', 'x')]), OrderedDict([('images', 'images/triangleruler02.jpg'), ('name', 'bottle of red wine'), ('corrAns', 'x')]), OrderedDict([('images', 'images/boxingglove02a.jpg'), ('name', 'bracelet'), ('corrAns', 'x')]), OrderedDict([('images', 'images/lip.jpg'), ('name', 'boxing glove'), ('corrAns', 'x')]), OrderedDict([('images', 'images/aloe02.jpg'), ('name', 'broad sword'), ('corrAns', 'x')]), OrderedDict([('images', 'images/camera01a.jpg'), ('name', 'bull'), ('corrAns', 'x')]), OrderedDict([('images', 'images/ear.jpg'), ('name', 'bullet'), ('corrAns', 'x')]), OrderedDict([('images', 'images/flower01.jpg'), ('name', 'bus'), ('corrAns', 'x')]), OrderedDict([('images', 'images/bull.jpg'), ('name', 'button'), ('corrAns', 'x')]), OrderedDict([('images', 'images/glasses01b.jpg'), ('name', 'calculator'), ('corrAns', 'x')]), OrderedDict([('images', 'images/diaper01a.jpg'), ('name', 'camera'), ('corrAns', 'x')]), OrderedDict([('images', 'images/handbag02a.jpg'), ('name', 'candle'), ('corrAns', 'x')]), OrderedDict([('images', 'images/stapler03a.jpg'), ('name', 'candy cane'), ('corrAns', 'x')]), OrderedDict([('images', 'images/doll.jpg'), ('name', 'carrot'), ('corrAns', 'x')]), OrderedDict([('images', 'images/mattress.jpg'), ('name', 'cat'), ('corrAns', 'x')]), OrderedDict([('images', 'images/grasshopper.jpg'), ('name', 'cauliflower'), ('corrAns', 'x')]), OrderedDict([('images', 'images/cloud.jpg'), ('name', 'ceiling fan'), ('corrAns', 'x')]), OrderedDict([('images', 'images/parrot01.jpg'), ('name', 'chameleon'), ('corrAns', 'x')]), OrderedDict([('images', 'images/50dollarbill.jpg'), ('name', 'cherry'), ('corrAns', 'x')]), OrderedDict([('images', 'images/bracelet02a.jpg'), ('name', 'chess knight'), ('corrAns', 'x')]), OrderedDict([('images', 'images/key03b.jpg'), ('name', 'cigar'), ('corrAns', 'x')]), OrderedDict([('images', 'images/globe.jpg'), ('name', 'cloud'), ('corrAns', 'x')]), OrderedDict([('images', 'images/chessknight02b (1).jpg'), ('name', 'cockroach'), ('corrAns', 'x')]), OrderedDict([('images', 'images/highlighter03b.jpg'), ('name', 'coin'), ('corrAns', 'x')]), OrderedDict([('images', 'images/cola.jpg'), ('name', 'comb'), ('corrAns', 'x')]), OrderedDict([('images', 'images/screwdriver02b.jpg'), ('name', 'cola'), ('corrAns', 'x')]), OrderedDict([('images', 'images/aquarium.jpg'), ('name', 'computer mouse'), ('corrAns', 'x')]), OrderedDict([('images', 'images/fork01.jpg'), ('name', 'cooking pot'), ('corrAns', 'x')]), OrderedDict([('images', 'images/carrot02.jpg'), ('name', 'corkscrew'), ('corrAns', 'x')]), OrderedDict([('images', 'images/cigar.jpg'), ('name', 'crocodile'), ('corrAns', 'x')]), OrderedDict([('images', 'images/hand01a.jpg'), ('name', 'cupcake'), ('corrAns', 'x')]), OrderedDict([('images', 'images/microphone01.jpg'), ('name', 'diaper'), ('corrAns', 'x')]), OrderedDict([('images', 'images/calculator02b.jpg'), ('name', 'dice'), ('corrAns', 'x')]), OrderedDict([('images', 'images/comb02a.jpg'), ('name', 'diploma'), ('corrAns', 'x')]), OrderedDict([('images', 'images/binder03b.jpg'), ('name', 'dj mixer'), ('corrAns', 'x')]), OrderedDict([('images', 'images/doorhandle.jpg'), ('name', 'doll'), ('corrAns', 'x')]), OrderedDict([('images', 'images/leek.jpg'), ('name', 'donut'), ('corrAns', 'x')]), OrderedDict([('images', 'images/bandaid01.jpg'), ('name', 'door handle'), ('corrAns', 'x')]), OrderedDict([('images', 'images/parkingmeter.jpg'), ('name', 'ear'), ('corrAns', 'x')]), OrderedDict([('images', 'images/bench02.jpg'), ('name', 'electric toothbrush'), ('corrAns', 'x')]), OrderedDict([('images', 'images/rhinoceros01.jpg'), ('name', 'envelope'), ('corrAns', 'x')]), OrderedDict([('images', 'images/paperclip04.jpg'), ('name', 'eye drops'), ('corrAns', 'x')]), OrderedDict([('images', 'images/fireextinguisher02.jpg'), ('name', 'fire extinguisher'), ('corrAns', 'x')]), OrderedDict([('images', 'images/hammer02a.jpg'), ('name', 'flower'), ('corrAns', 'x')]), OrderedDict([('images', 'images/lightswitch02a.jpg'), ('name', 'fork'), ('corrAns', 'x')]), OrderedDict([('images', 'images/ladybug03.jpg'), ('name', 'giraffe'), ('corrAns', 'x')]), OrderedDict([('images', 'images/diploma01.jpg'), ('name', 'glasses'), ('corrAns', 'x')]), OrderedDict([('images', 'images/snowman.jpg'), ('name', 'globe'), ('corrAns', 'x')]), OrderedDict([('images', 'images/cauliflower01.jpg'), ('name', 'glue stick'), ('corrAns', 'x')]), OrderedDict([('images', 'images/envelope02a.jpg'), ('name', 'grand piano'), ('corrAns', 'x')]), OrderedDict([('images', 'images/cookingpot.jpg'), ('name', 'grasshopper'), ('corrAns', 'x')]), OrderedDict([('images', 'images/arrow02.jpg'), ('name', 'hammer'), ('corrAns', 'x')]), OrderedDict([('images', 'images/bat.jpg'), ('name', 'hand'), ('corrAns', 'x')]), OrderedDict([('images', 'images/bicycle.jpg'), ('name', 'hand bag'), ('corrAns', 'x')]), OrderedDict([('images', 'images/cherry01.jpg'), ('name', 'highlighter'), ('corrAns', 'x')]), OrderedDict([('images', 'images/pipe.jpg'), ('name', 'icecube'), ('corrAns', 'x')]), OrderedDict([('images', 'images/skateboard.jpg'), ('name', 'key'), ('corrAns', 'x')]), OrderedDict([('images', 'images/lily.jpg'), ('name', 'kiwi'), ('corrAns', 'x')]), OrderedDict([('images', 'images/banjo.jpg'), ('name', 'knife'), ('corrAns', 'x')]), OrderedDict([('images', 'images/rubberglove02a.jpg'), ('name', 'lady bug'), ('corrAns', 'x')]), OrderedDict([('images', 'images/wallet01.jpg'), ('name', 'lamp'), ('corrAns', 'x')]), OrderedDict([('images', 'images/scissors04a.jpg'), ('name', 'leek'), ('corrAns', 'x')]), OrderedDict([('images', 'images/giraffe.jpg'), ('name', 'lettuce'), ('corrAns', 'x')]), OrderedDict([('images', 'images/djmixer01.jpg'), ('name', 'light bulb'), ('corrAns', 'x')]), OrderedDict([('images', 'images/teapot.jpg'), ('name', 'light switch'), ('corrAns', 'x')]), OrderedDict([('images', 'images/pepper05a.jpg'), ('name', 'lighter'), ('corrAns', 'x')]), OrderedDict([('images', 'images/treadmill.jpg'), ('name', 'lily'), ('corrAns', 'x')]), OrderedDict([('images', 'images/candycane01a.jpg'), ('name', 'lip'), ('corrAns', 'x')]), OrderedDict([('images', 'images/corkscrew02a.jpg'), ('name', 'masquerade mask'), ('corrAns', 'x')]), OrderedDict([('images', 'images/swallow.jpg'), ('name', 'mattress'), ('corrAns', 'x')]), OrderedDict([('images', 'images/bus.jpg'), ('name', 'microphone'), ('corrAns', 'x')]), OrderedDict([('images', 'images/masquerademask02b.jpg'), ('name', 'mirror'), ('corrAns', 'x')]), OrderedDict([('images', 'images/lettuce.jpg'), ('name', 'mushroom'), ('corrAns', 'x')]), OrderedDict([('images', 'images/8ball.jpg'), ('name', 'nail clipper'), ('corrAns', 'x')]), OrderedDict([('images', 'images/watermelon01.jpg'), ('name', 'orange'), ('corrAns', 'x')]), OrderedDict([('images', 'images/ceilingfan02.jpg'), ('name', 'paper clip'), ('corrAns', 'x')]), OrderedDict([('images', 'images/lamp04b.jpg'), ('name', 'parking meter'), ('corrAns', 'x')]), OrderedDict([('images', 'images/toothbrush03a.jpg'), ('name', 'parrot'), ('corrAns', 'x')]), OrderedDict([('images', 'images/pen03c.jpg'), ('name', 'pepper'), ('corrAns', 'x')]), OrderedDict([('images', 'images/scooter.jpg'), ('name', 'pen'), ('corrAns', 'x')]), OrderedDict([('images', 'images/bottleofredwine02.jpg'), ('name', 'pipe'), ('corrAns', 'x')]), OrderedDict([('images', 'images/radish01.jpg'), ('name', 'raisin'), ('corrAns', 'x')]), OrderedDict([('images', 'images/button07.jpg'), ('name', 'radish'), ('corrAns', 'x')]), OrderedDict([('images', 'images/donut.jpg'), ('name', 'rhinoceros'), ('corrAns', 'x')]), OrderedDict([('images', 'images/bullet (2).jpg'), ('name', 'rubber glove'), ('corrAns', 'x')]), OrderedDict([('images', 'images/raisin.jpg'), ('name', 'ruler'), ('corrAns', 'x')]), OrderedDict([('images', 'images/cupcake.jpg'), ('name', 'scissors'), ('corrAns', 'x')]), OrderedDict([('images', 'images/worldmap.jpg'), ('name', 'scooter'), ('corrAns', 'x')]), OrderedDict([('images', 'images/candle08a.jpg'), ('name', 'screw driver'), ('corrAns', 'x')]), OrderedDict([('images', 'images/mushroom01.jpg'), ('name', 'shower head'), ('corrAns', 'x')]), OrderedDict([('images', 'images/showerhead01.jpg'), ('name', 'skateboard'), ('corrAns', 'x')]), OrderedDict([('images', 'images/belt02a.jpg'), ('name', 'snowman'), ('corrAns', 'x')]), OrderedDict([('images', 'images/tulip02.jpg'), ('name', 'sport shorts'), ('corrAns', 'x')]), OrderedDict([('images', 'images/gluestick.jpg'), ('name', 'squirrel'), ('corrAns', 'x')]), OrderedDict([('images', 'images/lighter02b.jpg'), ('name', 'stapler'), ('corrAns', 'x')]), OrderedDict([('images', 'images/backpack01b.jpg'), ('name', 'swallow'), ('corrAns', 'x')]), OrderedDict([('images', 'images/blackolive.jpg'), ('name', 'tank'), ('corrAns', 'x')]), OrderedDict([('images', 'images/sportshorts02.jpg'), ('name', 'tape'), ('corrAns', 'x')]), OrderedDict([('images', 'images/broadsword.jpg'), ('name', 'teapot'), ('corrAns', 'x')]), OrderedDict([('images', 'images/tape01a.jpg'), ('name', 'tie'), ('corrAns', 'x')]), OrderedDict([('images', 'images/knife04.jpg'), ('name', 'tooth brush'), ('corrAns', 'x')]), OrderedDict([('images', 'images/lightbulb03b.jpg'), ('name', 'treadmill'), ('corrAns', 'x')]), OrderedDict([('images', 'images/crocodile.jpg'), ('name', 'triangle ruler'), ('corrAns', 'x')]), OrderedDict([('images', 'images/grandpiano.jpg'), ('name', 'tulip'), ('corrAns', 'x')]), OrderedDict([('images', 'images/tank.jpg'), ('name', 'wallet'), ('corrAns', 'x')]), OrderedDict([('images', 'images/ruler02b.jpg'), ('name', 'watermelon'), ('corrAns', 'x')]), OrderedDict([('images', 'images/computermouse02a.jpg'), ('name', 'world map'), ('corrAns', 'x')])]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <Routine name="match"/>
+    <Routine name="feedback"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="end_loop"/>
+    <LoopTerminator name="trials_2"/>
+    <Routine name="Finish"/>
+  </Flow>
+</PsychoPy2experiment>

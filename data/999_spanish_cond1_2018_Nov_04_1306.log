@@ -1,0 +1,475 @@
+7.4981 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([1., 1., 1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1140fbfd0>, multiSample=False, name='window1', numSamples=2, pos=[-840, -525], screen=0, size=array([3360, 2100]), stereo=False, units=u'norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+7.4981 	EXP 	window1: recordFrameIntervals = False
+7.6943 	EXP 	window1: recordFrameIntervals = True
+7.8802 	EXP 	window1: recordFrameIntervals = False
+7.9578 	EXP 	Created text_8 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_8', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Welcome!', units=u'norm', win=Window(...), wrapWidth=1)
+7.9913 	EXP 	Created text_9 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_9', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+8.0186 	EXP 	Created text_10 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_10', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+8.0330 	EXP 	Created text_13 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_13', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Each pair will look like this.', units=u'norm', win=Window(...), wrapWidth=1)
+8.0347 	EXP 	Created image_2 = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([-200.,    0.]), size=array([300., 300.]), texRes=128, units='pix', win=Window(...))
+8.0506 	EXP 	Created text_12 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_12', opacity=1.0, ori=0, pos=array([0.2, 0. ]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+8.0745 	EXP 	Created text_14 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_14', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+8.0948 	EXP 	Created text_15 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'green', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_15', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([  0., 128.,   0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+8.1154 	EXP 	Created text_16 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'red', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_16', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255.,   0.,   0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+8.1283 	EXP 	Created text_17 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_17', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text="Let's do a practice round.", units=u'norm', win=Window(...), wrapWidth=1)
+8.1297 	EXP 	Created image_3 = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_3', opacity=1.0, ori=0.0, pos=array([-200.,    0.]), size=array([300., 300.]), texRes=128, units='pix', win=Window(...))
+8.1371 	EXP 	Created text_18 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_18', opacity=1.0, ori=0, pos=array([0.2, 0. ]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+8.1445 	EXP 	Created text_19 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_19', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+8.1536 	EXP 	Created text_20 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_20', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Great job!', units=u'norm', win=Window(...), wrapWidth=1)
+8.1812 	EXP 	Created text_22 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_22', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+8.2062 	EXP 	Created text_21 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_21', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+8.2427 	EXP 	Created text_23 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_23', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+8.2547 	EXP 	Created text_24 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_24', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text="Okay! Let's get going.", units=u'norm', win=Window(...), wrapWidth=1)
+8.2697 	EXP 	Created text_3 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='The matching task will begin soon', units=u'norm', win=Window(...), wrapWidth=1)
+8.2716 	EXP 	Created image = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([-200.,    0.]), size=array([1., 1.]), texRes=128, units='pix', win=Window(...))
+8.2792 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([0.2, 0. ]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+8.2866 	EXP 	Created text_2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+8.2983 	EXP 	Created text_4 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_4', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='This round is now complete', units=u'norm', win=Window(...), wrapWidth=1)
+8.3114 	EXP 	Created text_5 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_5', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Thank you for participating!', units=u'norm', win=Window(...), wrapWidth=1)
+8.3359 	EXP 	Created text_6 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_6', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+8.3546 	EXP 	Created text_7 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_7', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='An experimenter will come by to assist you', units=u'norm', win=Window(...), wrapWidth=1)
+8.3804 	EXP 	text_8: autoDraw = True
+11.3644 	EXP 	text_8: autoDraw = False
+11.3808 	EXP 	text_9: autoDraw = True
+17.3639 	EXP 	text_9: autoDraw = False
+17.3806 	EXP 	text_10: autoDraw = True
+23.3645 	EXP 	text_10: autoDraw = False
+23.3807 	EXP 	text_13: autoDraw = True
+29.3707 	EXP 	Imported images.xlsx as conditions, 1 conditions, 3 params
+29.3711 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+29.3714 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'images', u'images/volleyball.jpg'), (u'name', u'volley ball'), (u'corrAns', u'z')])
+29.6790 	EXP 	text_13: autoDraw = False
+29.6790 	EXP 	text_8: autoDraw = False
+29.6790 	EXP 	text_9: autoDraw = False
+29.6790 	EXP 	text_10: autoDraw = False
+29.6790 	EXP 	text_13: autoDraw = False
+29.6790 	EXP 	image_2: image = u'images/volleyball.jpg'
+29.6790 	EXP 	text_12: text = u'volley ball'
+29.6790 	EXP 	image_2: autoDraw = True
+29.6790 	EXP 	text_12: autoDraw = True
+32.3784 	EXP 	image_2: autoDraw = False
+32.3784 	EXP 	text_12: autoDraw = False
+32.3784 	EXP 	text_14: autoDraw = True
+38.3802 	EXP 	text_14: autoDraw = False
+38.3802 	EXP 	text_15: autoDraw = True
+44.3809 	EXP 	text_15: autoDraw = False
+44.3809 	EXP 	text_16: autoDraw = True
+50.3802 	EXP 	text_16: autoDraw = False
+50.3802 	EXP 	text_17: autoDraw = True
+56.3901 	EXP 	Imported images.xlsx as conditions, 1 conditions, 3 params
+56.3905 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+56.3908 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'images', u'images/puma.jpg'), (u'name', u'puma'), (u'corrAns', u'z')])
+56.5624 	EXP 	text_14: autoDraw = False
+56.5624 	EXP 	text_15: autoDraw = False
+56.5624 	EXP 	text_16: autoDraw = False
+56.5624 	EXP 	text_17: autoDraw = False
+56.5624 	EXP 	image_3: image = u'images/puma.jpg'
+56.5624 	EXP 	text_18: text = u'puma'
+56.5624 	EXP 	image_3: autoDraw = True
+56.5624 	EXP 	text_18: autoDraw = True
+57.3393 	DATA 	Keypress: z
+57.3634 	EXP 	image_3: autoDraw = False
+57.3634 	EXP 	text_18: autoDraw = False
+57.3634 	EXP 	text_19: text = 'Correct!'
+57.3634 	EXP 	text_19: autoDraw = True
+58.3473 	EXP 	text_19: autoDraw = False
+58.3473 	EXP 	text_19: autoDraw = False
+58.3473 	EXP 	text_20: autoDraw = True
+64.3487 	EXP 	text_20: autoDraw = False
+64.3487 	EXP 	text_22: autoDraw = True
+70.3444 	EXP 	text_22: autoDraw = False
+70.3612 	EXP 	text_21: autoDraw = True
+76.3478 	EXP 	text_21: autoDraw = False
+76.3646 	EXP 	text_23: autoDraw = True
+84.3475 	EXP 	text_23: autoDraw = False
+84.3644 	EXP 	text_24: autoDraw = True
+90.3357 	EXP 	Imported sounds.xlsx as conditions, 2 conditions, 1 params
+90.3360 	EXP 	Created sequence: random, trialTypes=2, nReps=1, seed=None
+90.3363 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'sounds', u'sounds/animalfarm_english.wav')])
+90.4272 	EXP 	Set  sound=sounds/animalfarm_english.wav
+90.4272 	EXP 	Sound  started
+90.4473 	EXP 	text_24: autoDraw = False
+90.4473 	EXP 	text_20: autoDraw = False
+90.4473 	EXP 	text_22: autoDraw = False
+90.4473 	EXP 	text_21: autoDraw = False
+90.4473 	EXP 	text_23: autoDraw = False
+90.4473 	EXP 	text_24: autoDraw = False
+90.4473 	EXP 	text_3: autoDraw = True
+100.3559 	EXP 	Imported images.xlsx as conditions, 240 conditions, 3 params
+100.3569 	EXP 	Created sequence: random, trialTypes=240, nReps=5, seed=None
+100.3572 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'images', u'images/broom02.jpg'), (u'name', u'broom'), (u'corrAns', u'z')])
+100.5272 	EXP 	text_3: autoDraw = False
+100.5272 	EXP 	text_3: autoDraw = False
+100.5272 	EXP 	image: image = u'images/broom02.jpg'
+100.5272 	EXP 	image: size = array([300., 300.])
+100.5272 	EXP 	text: text = u'broom'
+100.5272 	EXP 	image: autoDraw = True
+100.5272 	EXP 	text: autoDraw = True
+101.2636 	DATA 	Keypress: z
+101.2969 	EXP 	image: autoDraw = False
+101.2969 	EXP 	text: autoDraw = False
+101.2969 	EXP 	text_2: text = 'Correct!'
+101.2969 	EXP 	text_2: autoDraw = True
+102.2621 	EXP 	New trial (rep=0, index=1): OrderedDict([(u'images', u'images/cherry01.jpg'), (u'name', u'highlighter'), (u'corrAns', u'x')])
+102.4618 	EXP 	text_2: autoDraw = False
+102.4618 	EXP 	text_2: autoDraw = False
+102.4618 	EXP 	image: image = u'images/cherry01.jpg'
+102.4618 	EXP 	image: size = array([300., 300.])
+102.4618 	EXP 	text: text = u'highlighter'
+102.4618 	EXP 	image: autoDraw = True
+102.4618 	EXP 	text: autoDraw = True
+103.2134 	DATA 	Keypress: x
+103.2274 	EXP 	image: autoDraw = False
+103.2274 	EXP 	text: autoDraw = False
+103.2274 	EXP 	text_2: text = 'Correct!'
+103.2274 	EXP 	text_2: autoDraw = True
+104.2139 	EXP 	New trial (rep=0, index=2): OrderedDict([(u'images', u'images/ceilingfan02.jpg'), (u'name', u'paper clip'), (u'corrAns', u'x')])
+104.3968 	EXP 	text_2: autoDraw = False
+104.3968 	EXP 	text_2: autoDraw = False
+104.3968 	EXP 	image: image = u'images/ceilingfan02.jpg'
+104.3968 	EXP 	image: size = array([300., 300.])
+104.3968 	EXP 	text: text = u'paper clip'
+104.3968 	EXP 	image: autoDraw = True
+104.3968 	EXP 	text: autoDraw = True
+105.4502 	DATA 	Keypress: x
+105.4660 	EXP 	image: autoDraw = False
+105.4660 	EXP 	text: autoDraw = False
+105.4660 	EXP 	text_2: text = 'Correct!'
+105.4660 	EXP 	text_2: autoDraw = True
+106.4480 	EXP 	New trial (rep=0, index=3): OrderedDict([(u'images', u'images/apricot.jpg'), (u'name', u'apricot'), (u'corrAns', u'z')])
+106.6617 	EXP 	text_2: autoDraw = False
+106.6617 	EXP 	text_2: autoDraw = False
+106.6617 	EXP 	image: image = u'images/apricot.jpg'
+106.6617 	EXP 	image: size = array([300., 300.])
+106.6617 	EXP 	text: text = u'apricot'
+106.6617 	EXP 	image: autoDraw = True
+106.6617 	EXP 	text: autoDraw = True
+107.6823 	DATA 	Keypress: z
+107.6945 	EXP 	image: autoDraw = False
+107.6945 	EXP 	text: autoDraw = False
+107.6945 	EXP 	text_2: text = 'Correct!'
+107.6945 	EXP 	text_2: autoDraw = True
+108.6818 	EXP 	New trial (rep=0, index=4): OrderedDict([(u'images', u'images/bandaid01.jpg'), (u'name', u'door handle'), (u'corrAns', u'x')])
+108.8617 	EXP 	text_2: autoDraw = False
+108.8617 	EXP 	text_2: autoDraw = False
+108.8617 	EXP 	image: image = u'images/bandaid01.jpg'
+108.8617 	EXP 	image: size = array([300., 300.])
+108.8617 	EXP 	text: text = u'door handle'
+108.8617 	EXP 	image: autoDraw = True
+108.8617 	EXP 	text: autoDraw = True
+109.7802 	DATA 	Keypress: x
+109.7943 	EXP 	image: autoDraw = False
+109.7943 	EXP 	text: autoDraw = False
+109.7943 	EXP 	text_2: text = 'Correct!'
+109.7943 	EXP 	text_2: autoDraw = True
+110.7811 	EXP 	New trial (rep=0, index=5): OrderedDict([(u'images', u'images/djmixer01.jpg'), (u'name', u'light bulb'), (u'corrAns', u'x')])
+110.9961 	EXP 	text_2: autoDraw = False
+110.9961 	EXP 	text_2: autoDraw = False
+110.9961 	EXP 	image: image = u'images/djmixer01.jpg'
+110.9961 	EXP 	image: size = array([300., 300.])
+110.9961 	EXP 	text: text = u'light bulb'
+110.9961 	EXP 	image: autoDraw = True
+110.9961 	EXP 	text: autoDraw = True
+111.8463 	DATA 	Keypress: x
+111.8617 	EXP 	image: autoDraw = False
+111.8617 	EXP 	text: autoDraw = False
+111.8617 	EXP 	text_2: text = 'Correct!'
+111.8617 	EXP 	text_2: autoDraw = True
+112.8480 	EXP 	New trial (rep=0, index=6): OrderedDict([(u'images', u'images/floorlamp.jpg'), (u'name', u'floor lamp'), (u'corrAns', u'z')])
+113.0109 	EXP 	text_2: autoDraw = False
+113.0109 	EXP 	text_2: autoDraw = False
+113.0109 	EXP 	image: image = u'images/floorlamp.jpg'
+113.0109 	EXP 	image: size = array([300., 300.])
+113.0109 	EXP 	text: text = u'floor lamp'
+113.0109 	EXP 	image: autoDraw = True
+113.0109 	EXP 	text: autoDraw = True
+113.9465 	DATA 	Keypress: z
+113.9611 	EXP 	image: autoDraw = False
+113.9611 	EXP 	text: autoDraw = False
+113.9611 	EXP 	text_2: text = 'Correct!'
+113.9611 	EXP 	text_2: autoDraw = True
+114.9476 	EXP 	New trial (rep=0, index=7): OrderedDict([(u'images', u'images/cockroach02.jpg'), (u'name', u'belt'), (u'corrAns', u'x')])
+115.1115 	EXP 	text_2: autoDraw = False
+115.1115 	EXP 	text_2: autoDraw = False
+115.1115 	EXP 	image: image = u'images/cockroach02.jpg'
+115.1115 	EXP 	image: size = array([300., 300.])
+115.1115 	EXP 	text: text = u'belt'
+115.1115 	EXP 	image: autoDraw = True
+115.1115 	EXP 	text: autoDraw = True
+116.4467 	DATA 	Keypress: x
+116.4612 	EXP 	image: autoDraw = False
+116.4612 	EXP 	text: autoDraw = False
+116.4612 	EXP 	text_2: text = 'Correct!'
+116.4612 	EXP 	text_2: autoDraw = True
+117.4471 	EXP 	New trial (rep=0, index=8): OrderedDict([(u'images', u'images/calculator02b.jpg'), (u'name', u'dice'), (u'corrAns', u'x')])
+117.6274 	EXP 	text_2: autoDraw = False
+117.6274 	EXP 	text_2: autoDraw = False
+117.6274 	EXP 	image: image = u'images/calculator02b.jpg'
+117.6274 	EXP 	image: size = array([300., 300.])
+117.6274 	EXP 	text: text = u'dice'
+117.6274 	EXP 	image: autoDraw = True
+117.6274 	EXP 	text: autoDraw = True
+118.5460 	DATA 	Keypress: x
+118.5612 	EXP 	image: autoDraw = False
+118.5612 	EXP 	text: autoDraw = False
+118.5612 	EXP 	text_2: text = 'Correct!'
+118.5612 	EXP 	text_2: autoDraw = True
+119.5453 	EXP 	New trial (rep=0, index=9): OrderedDict([(u'images', u'images/hat05.jpg'), (u'name', u'hat'), (u'corrAns', u'z')])
+119.7279 	EXP 	text_2: autoDraw = False
+119.7279 	EXP 	text_2: autoDraw = False
+119.7279 	EXP 	image: image = u'images/hat05.jpg'
+119.7279 	EXP 	image: size = array([300., 300.])
+119.7279 	EXP 	text: text = u'hat'
+119.7279 	EXP 	image: autoDraw = True
+119.7279 	EXP 	text: autoDraw = True
+120.3665 	DATA 	Keypress: z
+120.3790 	EXP 	Sound  stopped
+120.3942 	EXP 	image: autoDraw = False
+120.3942 	EXP 	text: autoDraw = False
+120.3942 	EXP 	text_2: text = 'Correct!'
+120.3942 	EXP 	text_2: autoDraw = True
+120.3943 	EXP 	Sound  stopped
+120.4109 	EXP 	Sound  stopped
+120.4269 	EXP 	Sound  stopped
+120.4463 	EXP 	Sound  stopped
+120.4633 	EXP 	Sound  stopped
+120.4799 	EXP 	Sound  stopped
+120.4962 	EXP 	Sound  stopped
+120.5134 	EXP 	Sound  stopped
+120.5301 	EXP 	Sound  stopped
+120.5468 	EXP 	Sound  stopped
+120.5634 	EXP 	Sound  stopped
+120.5802 	EXP 	Sound  stopped
+120.5965 	EXP 	Sound  stopped
+120.6136 	EXP 	Sound  stopped
+120.6298 	EXP 	Sound  stopped
+120.6482 	EXP 	Sound  stopped
+120.6651 	EXP 	Sound  stopped
+120.6806 	EXP 	Sound  stopped
+120.6969 	EXP 	Sound  stopped
+120.7136 	EXP 	Sound  stopped
+120.7296 	EXP 	Sound  stopped
+120.7465 	EXP 	Sound  stopped
+120.7634 	EXP 	Sound  stopped
+120.7802 	EXP 	Sound  stopped
+120.7968 	EXP 	Sound  stopped
+120.8135 	EXP 	Sound  stopped
+120.8298 	EXP 	Sound  stopped
+120.8468 	EXP 	Sound  stopped
+120.8635 	EXP 	Sound  stopped
+120.8805 	EXP 	Sound  stopped
+120.8970 	EXP 	Sound  stopped
+120.9137 	EXP 	Sound  stopped
+120.9302 	EXP 	Sound  stopped
+120.9469 	EXP 	Sound  stopped
+120.9638 	EXP 	Sound  stopped
+120.9799 	EXP 	Sound  stopped
+120.9966 	EXP 	Sound  stopped
+121.0128 	EXP 	Sound  stopped
+121.0297 	EXP 	Sound  stopped
+121.0471 	EXP 	Sound  stopped
+121.0632 	EXP 	Sound  stopped
+121.0800 	EXP 	Sound  stopped
+121.0960 	EXP 	Sound  stopped
+121.1136 	EXP 	Sound  stopped
+121.1301 	EXP 	Sound  stopped
+121.1467 	EXP 	Sound  stopped
+121.1627 	EXP 	Sound  stopped
+121.1791 	EXP 	Sound  stopped
+121.1969 	EXP 	Sound  stopped
+121.2134 	EXP 	Sound  stopped
+121.2298 	EXP 	Sound  stopped
+121.2471 	EXP 	Sound  stopped
+121.2629 	EXP 	Sound  stopped
+121.2799 	EXP 	Sound  stopped
+121.2958 	EXP 	Sound  stopped
+121.3128 	EXP 	Sound  stopped
+121.3301 	EXP 	Sound  stopped
+121.3472 	EXP 	Sound  stopped
+121.3636 	EXP 	Sound  stopped
+121.3802 	EXP 	Sound  stopped
+121.3963 	EXP 	text_2: autoDraw = False
+121.3963 	EXP 	text_2: autoDraw = False
+121.3963 	EXP 	text_4: autoDraw = True
+131.3809 	EXP 	New trial (rep=0, index=1): OrderedDict([(u'sounds', u'sounds/greatgatsby_spanish.wav')])
+131.4590 	EXP 	Set  sound=sounds/greatgatsby_spanish.wav
+131.4590 	EXP 	Sound  started
+131.4804 	EXP 	text_4: autoDraw = False
+131.4804 	EXP 	text_4: autoDraw = False
+131.4804 	EXP 	text_3: autoDraw = True
+141.4015 	EXP 	Imported images.xlsx as conditions, 240 conditions, 3 params
+141.4024 	EXP 	Created sequence: random, trialTypes=240, nReps=5, seed=None
+141.4027 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'images', u'images/bicycle.jpg'), (u'name', u'hand bag'), (u'corrAns', u'x')])
+141.5791 	EXP 	text_3: autoDraw = False
+141.5791 	EXP 	text_3: autoDraw = False
+141.5791 	EXP 	image: image = u'images/bicycle.jpg'
+141.5791 	EXP 	image: size = array([300., 300.])
+141.5791 	EXP 	text: text = u'hand bag'
+141.5791 	EXP 	image: autoDraw = True
+141.5791 	EXP 	text: autoDraw = True
+142.2810 	DATA 	Keypress: x
+142.2939 	EXP 	image: autoDraw = False
+142.2939 	EXP 	text: autoDraw = False
+142.2939 	EXP 	text_2: text = 'Correct!'
+142.2939 	EXP 	text_2: autoDraw = True
+143.2817 	EXP 	New trial (rep=0, index=1): OrderedDict([(u'images', u'images/lion.jpg'), (u'name', u'lion'), (u'corrAns', u'z')])
+143.4797 	EXP 	text_2: autoDraw = False
+143.4797 	EXP 	text_2: autoDraw = False
+143.4797 	EXP 	image: image = u'images/lion.jpg'
+143.4797 	EXP 	image: size = array([300., 300.])
+143.4797 	EXP 	text: text = u'lion'
+143.4797 	EXP 	image: autoDraw = True
+143.4797 	EXP 	text: autoDraw = True
+144.1798 	DATA 	Keypress: z
+144.1940 	EXP 	image: autoDraw = False
+144.1940 	EXP 	text: autoDraw = False
+144.1940 	EXP 	text_2: text = 'Correct!'
+144.1940 	EXP 	text_2: autoDraw = True
+145.1809 	EXP 	New trial (rep=0, index=2): OrderedDict([(u'images', u'images/banjo.jpg'), (u'name', u'knife'), (u'corrAns', u'x')])
+145.3553 	EXP 	text_2: autoDraw = False
+145.3553 	EXP 	text_2: autoDraw = False
+145.3553 	EXP 	image: image = u'images/banjo.jpg'
+145.3553 	EXP 	image: size = array([300., 300.])
+145.3553 	EXP 	text: text = u'knife'
+145.3553 	EXP 	image: autoDraw = True
+145.3553 	EXP 	text: autoDraw = True
+146.1493 	DATA 	Keypress: z
+146.1773 	EXP 	image: autoDraw = False
+146.1773 	EXP 	text: autoDraw = False
+146.1773 	EXP 	text_2: text = 'Wrong.'
+146.1773 	EXP 	text_2: autoDraw = True
+147.1647 	EXP 	New trial (rep=0, index=3): OrderedDict([(u'images', u'images/pingpongpaddle01c (1).jpg'), (u'name', u'ping pong paddle'), (u'corrAns', u'z')])
+147.3607 	EXP 	text_2: autoDraw = False
+147.3607 	EXP 	text_2: autoDraw = False
+147.3607 	EXP 	image: image = u'images/pingpongpaddle01c (1).jpg'
+147.3607 	EXP 	image: size = array([300., 300.])
+147.3607 	EXP 	text: text = u'ping pong paddle'
+147.3607 	EXP 	image: autoDraw = True
+147.3607 	EXP 	text: autoDraw = True
+148.5800 	DATA 	Keypress: x
+148.5942 	EXP 	image: autoDraw = False
+148.5942 	EXP 	text: autoDraw = False
+148.5942 	EXP 	text_2: text = 'Wrong.'
+148.5942 	EXP 	text_2: autoDraw = True
+149.5784 	EXP 	New trial (rep=0, index=4): OrderedDict([(u'images', u'images/clothespin02a.jpg'), (u'name', u'clothes pin'), (u'corrAns', u'z')])
+149.7611 	EXP 	text_2: autoDraw = False
+149.7611 	EXP 	text_2: autoDraw = False
+149.7611 	EXP 	image: image = u'images/clothespin02a.jpg'
+149.7611 	EXP 	image: size = array([300., 300.])
+149.7611 	EXP 	text: text = u'clothes pin'
+149.7611 	EXP 	image: autoDraw = True
+149.7611 	EXP 	text: autoDraw = True
+150.4968 	DATA 	Keypress: z
+150.5295 	EXP 	image: autoDraw = False
+150.5295 	EXP 	text: autoDraw = False
+150.5295 	EXP 	text_2: text = 'Correct!'
+150.5295 	EXP 	text_2: autoDraw = True
+151.4974 	EXP 	New trial (rep=0, index=5): OrderedDict([(u'images', u'images/gamecontroller01.jpg'), (u'name', u'game controller'), (u'corrAns', u'z')])
+151.6962 	EXP 	text_2: autoDraw = False
+151.6962 	EXP 	text_2: autoDraw = False
+151.6962 	EXP 	image: image = u'images/gamecontroller01.jpg'
+151.6962 	EXP 	image: size = array([300., 300.])
+151.6962 	EXP 	text: text = u'game controller'
+151.6962 	EXP 	image: autoDraw = True
+151.6962 	EXP 	text: autoDraw = True
+152.3634 	DATA 	Keypress: x
+152.3966 	EXP 	image: autoDraw = False
+152.3966 	EXP 	text: autoDraw = False
+152.3966 	EXP 	text_2: text = 'Wrong.'
+152.3966 	EXP 	text_2: autoDraw = True
+153.3646 	EXP 	New trial (rep=0, index=6): OrderedDict([(u'images', u'images/floorlamp.jpg'), (u'name', u'floor lamp'), (u'corrAns', u'z')])
+153.5113 	EXP 	text_2: autoDraw = False
+153.5113 	EXP 	text_2: autoDraw = False
+153.5113 	EXP 	image: image = u'images/floorlamp.jpg'
+153.5113 	EXP 	image: size = array([300., 300.])
+153.5113 	EXP 	text: text = u'floor lamp'
+153.5113 	EXP 	image: autoDraw = True
+153.5113 	EXP 	text: autoDraw = True
+154.3149 	DATA 	Keypress: z
+154.3459 	EXP 	image: autoDraw = False
+154.3459 	EXP 	text: autoDraw = False
+154.3459 	EXP 	text_2: text = 'Correct!'
+154.3459 	EXP 	text_2: autoDraw = True
+155.3142 	EXP 	New trial (rep=0, index=7): OrderedDict([(u'images', u'images/ear.jpg'), (u'name', u'bullet'), (u'corrAns', u'x')])
+155.4942 	EXP 	text_2: autoDraw = False
+155.4942 	EXP 	text_2: autoDraw = False
+155.4942 	EXP 	image: image = u'images/ear.jpg'
+155.4942 	EXP 	image: size = array([300., 300.])
+155.4942 	EXP 	text: text = u'bullet'
+155.4942 	EXP 	image: autoDraw = True
+155.4942 	EXP 	text: autoDraw = True
+156.8803 	DATA 	Keypress: x
+156.8934 	EXP 	image: autoDraw = False
+156.8934 	EXP 	text: autoDraw = False
+156.8934 	EXP 	text_2: text = 'Correct!'
+156.8934 	EXP 	text_2: autoDraw = True
+157.8802 	EXP 	New trial (rep=0, index=8): OrderedDict([(u'images', u'images/camera01a.jpg'), (u'name', u'bull'), (u'corrAns', u'x')])
+158.0616 	EXP 	text_2: autoDraw = False
+158.0616 	EXP 	text_2: autoDraw = False
+158.0616 	EXP 	image: image = u'images/camera01a.jpg'
+158.0616 	EXP 	image: size = array([300., 300.])
+158.0616 	EXP 	text: text = u'bull'
+158.0616 	EXP 	image: autoDraw = True
+158.0616 	EXP 	text: autoDraw = True
+159.1332 	DATA 	Keypress: z
+159.1650 	EXP 	image: autoDraw = False
+159.1650 	EXP 	text: autoDraw = False
+159.1650 	EXP 	text_2: text = 'Wrong.'
+159.1650 	EXP 	text_2: autoDraw = True
+160.1491 	EXP 	New trial (rep=0, index=9): OrderedDict([(u'images', u'images/hat05.jpg'), (u'name', u'hat'), (u'corrAns', u'z')])
+160.3279 	EXP 	text_2: autoDraw = False
+160.3279 	EXP 	text_2: autoDraw = False
+160.3279 	EXP 	image: image = u'images/hat05.jpg'
+160.3279 	EXP 	image: size = array([300., 300.])
+160.3279 	EXP 	text: text = u'hat'
+160.3279 	EXP 	image: autoDraw = True
+160.3279 	EXP 	text: autoDraw = True
+161.0157 	DATA 	Keypress: x
+161.0438 	EXP 	image: autoDraw = False
+161.0438 	EXP 	text: autoDraw = False
+161.0438 	EXP 	text_2: text = 'Wrong.'
+161.0438 	EXP 	text_2: autoDraw = True
+161.3984 	EXP 	Sound  stopped
+161.4135 	EXP 	Sound  stopped
+161.4303 	EXP 	Sound  stopped
+161.4468 	EXP 	Sound  stopped
+161.4632 	EXP 	Sound  stopped
+161.4800 	EXP 	Sound  stopped
+161.4964 	EXP 	Sound  stopped
+161.5134 	EXP 	Sound  stopped
+161.5296 	EXP 	Sound  stopped
+161.5461 	EXP 	Sound  stopped
+161.5630 	EXP 	Sound  stopped
+161.5798 	EXP 	Sound  stopped
+161.5967 	EXP 	Sound  stopped
+161.6129 	EXP 	Sound  stopped
+161.6297 	EXP 	Sound  stopped
+161.6471 	EXP 	Sound  stopped
+161.6635 	EXP 	Sound  stopped
+161.6797 	EXP 	Sound  stopped
+161.6961 	EXP 	Sound  stopped
+161.7133 	EXP 	Sound  stopped
+161.7299 	EXP 	Sound  stopped
+161.7466 	EXP 	Sound  stopped
+161.7632 	EXP 	Sound  stopped
+161.7799 	EXP 	Sound  stopped
+161.7964 	EXP 	Sound  stopped
+161.8131 	EXP 	Sound  stopped
+161.8291 	EXP 	Sound  stopped
+161.8467 	EXP 	Sound  stopped
+161.8631 	EXP 	Sound  stopped
+161.8793 	EXP 	Sound  stopped
+161.8963 	EXP 	Sound  stopped
+161.9137 	EXP 	Sound  stopped
+161.9302 	EXP 	Sound  stopped
+161.9461 	EXP 	Sound  stopped
+161.9629 	EXP 	Sound  stopped
+161.9798 	EXP 	Sound  stopped
+161.9963 	EXP 	Sound  stopped
+162.0138 	EXP 	Sound  stopped
+162.0303 	EXP 	Sound  stopped
+162.0461 	EXP 	text_2: autoDraw = False
+162.0461 	EXP 	text_2: autoDraw = False
+162.0461 	EXP 	text_4: autoDraw = True
+166.8321 	DATA 	Keypress: escape
+167.1149 	EXP 	window1: mouseVisible = True

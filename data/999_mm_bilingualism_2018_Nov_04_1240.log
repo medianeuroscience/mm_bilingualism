@@ -1,0 +1,68 @@
+7.3017 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([1., 1., 1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1130fbfd0>, multiSample=False, name='window1', numSamples=2, pos=[-840, -525], screen=0, size=array([3360, 2100]), stereo=False, units=u'norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+7.3017 	EXP 	window1: recordFrameIntervals = False
+7.5011 	EXP 	window1: recordFrameIntervals = True
+7.6849 	EXP 	window1: recordFrameIntervals = False
+7.7618 	EXP 	Created text_8 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_8', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Welcome!', units=u'norm', win=Window(...), wrapWidth=1)
+7.7948 	EXP 	Created text_9 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_9', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+7.8211 	EXP 	Created text_10 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_10', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+7.8358 	EXP 	Created text_13 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_13', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Each pair will look like this.', units=u'norm', win=Window(...), wrapWidth=1)
+7.8374 	EXP 	Created image_2 = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([-200.,    0.]), size=array([300., 300.]), texRes=128, units='pix', win=Window(...))
+7.8525 	EXP 	Created text_12 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_12', opacity=1.0, ori=0, pos=array([0.2, 0. ]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.8765 	EXP 	Created text_14 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_14', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+7.8968 	EXP 	Created text_15 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'green', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_15', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([  0., 128.,   0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+7.9155 	EXP 	Created text_16 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'red', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_16', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255.,   0.,   0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+7.9294 	EXP 	Created text_17 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_17', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text="Let's do a practice round.", units=u'norm', win=Window(...), wrapWidth=1)
+7.9308 	EXP 	Created image_3 = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_3', opacity=1.0, ori=0.0, pos=array([-200.,    0.]), size=array([300., 300.]), texRes=128, units='pix', win=Window(...))
+7.9380 	EXP 	Created text_18 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_18', opacity=1.0, ori=0, pos=array([0.2, 0. ]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.9451 	EXP 	Created text_19 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_19', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.9536 	EXP 	Created text_20 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_20', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Great job!', units=u'norm', win=Window(...), wrapWidth=1)
+7.9618 	EXP 	Created text_21 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_21', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text="Let's get going.", units=u'norm', win=Window(...), wrapWidth=1)
+7.9767 	EXP 	Created text_3 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='The matching task will begin soon', units=u'norm', win=Window(...), wrapWidth=1)
+7.9782 	EXP 	Created image = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([-200.,    0.]), size=array([1., 1.]), texRes=128, units='pix', win=Window(...))
+7.9855 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([0.2, 0. ]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.9925 	EXP 	Created text_2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+8.0041 	EXP 	Created text_4 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_4', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='This round is now complete', units=u'norm', win=Window(...), wrapWidth=1)
+8.0168 	EXP 	Created text_5 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_5', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Thank you for participating!', units=u'norm', win=Window(...), wrapWidth=1)
+8.0401 	EXP 	Created text_6 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_6', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+8.0604 	EXP 	Created text_7 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, name='text_7', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='An experimenter will come by to assist you', units=u'norm', win=Window(...), wrapWidth=1)
+8.0859 	EXP 	text_8: autoDraw = True
+11.0683 	EXP 	text_8: autoDraw = False
+11.0846 	EXP 	text_9: autoDraw = True
+17.0677 	EXP 	text_9: autoDraw = False
+17.0849 	EXP 	text_10: autoDraw = True
+23.0659 	EXP 	text_10: autoDraw = False
+23.0838 	EXP 	text_13: autoDraw = True
+29.0794 	EXP 	Imported images.xlsx as conditions, 1 conditions, 3 params
+29.0798 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+29.0801 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'images', u'images/volleyball.jpg'), (u'name', u'volley ball'), (u'corrAns', u'z')])
+29.3828 	EXP 	text_13: autoDraw = False
+29.3828 	EXP 	text_8: autoDraw = False
+29.3828 	EXP 	text_9: autoDraw = False
+29.3828 	EXP 	text_10: autoDraw = False
+29.3828 	EXP 	text_13: autoDraw = False
+29.3828 	EXP 	image_2: image = u'images/volleyball.jpg'
+29.3828 	EXP 	text_12: text = u'volley ball'
+29.3828 	EXP 	image_2: autoDraw = True
+29.3828 	EXP 	text_12: autoDraw = True
+32.0835 	EXP 	image_2: autoDraw = False
+32.0835 	EXP 	text_12: autoDraw = False
+32.0835 	EXP 	text_14: autoDraw = True
+38.0852 	EXP 	text_14: autoDraw = False
+38.0852 	EXP 	text_15: autoDraw = True
+44.0831 	EXP 	text_15: autoDraw = False
+44.0831 	EXP 	text_16: autoDraw = True
+50.0854 	EXP 	text_16: autoDraw = False
+50.0854 	EXP 	text_17: autoDraw = True
+56.0920 	EXP 	Imported images.xlsx as conditions, 1 conditions, 3 params
+56.0925 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+56.0928 	EXP 	New trial (rep=0, index=0): OrderedDict([(u'images', u'images/puma.jpg'), (u'name', u'puma'), (u'corrAns', u'z')])
+56.2770 	EXP 	text_14: autoDraw = False
+56.2770 	EXP 	text_15: autoDraw = False
+56.2770 	EXP 	text_16: autoDraw = False
+56.2770 	EXP 	text_17: autoDraw = False
+56.2770 	EXP 	image_3: image = u'images/puma.jpg'
+56.2770 	EXP 	text_18: text = u'puma'
+56.2770 	EXP 	image_3: autoDraw = True
+56.2770 	EXP 	text_18: autoDraw = True
+57.2245 	DATA 	Keypress: z
+57.4977 	EXP 	window1: mouseVisible = True
