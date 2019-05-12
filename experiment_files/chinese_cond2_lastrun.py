@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy2 Experiment Builder (v1.90.1),
-    on Mon Nov  5 11:25:38 2018
+    on Fri Feb  8 13:55:03 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -22,12 +22,12 @@ import os  # handy system and path functions
 import sys  # to get file system encoding
 
 # Ensure that relative paths start from the same directory as this script
-_thisDir = os.path.dirname(os.path.abspath(__file__)).decode(sys.getfilesystemencoding())
+_thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
 expName = 'chinese_cond2'  # from the Builder filename that created this script
-expInfo = {'session': '001', 'participant': ''}
+expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -40,7 +40,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath=u'/Users/jacobfisher/projects/inprogress/mm_bilingualism/chinese_cond2.psyexp',
+    originPath='/Users/jacobfisher/projects/inprogress/mm_bilingualism/experiment_files/chinese_cond2.psyexp',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -516,7 +516,7 @@ for thisComponent in instr_2Components:
 # set up handler to look after randomisation of conditions etc
 trials_4 = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('images.xlsx', selection=u'[4]'),
+    trialList=data.importConditions('images.xlsx', selection='[4]'),
     seed=None, name='trials_4')
 thisExp.addLoop(trials_4)  # add the loop to the experiment
 thisTrial_4 = trials_4.trialList[0]  # so we can initialise stimuli with some values
@@ -546,9 +546,9 @@ for thisTrial_4 in trials_4:
     thisExp.addData('begin_routine', matchClock.getTime())
     
     
-    b_key_resp_2_ = event.BuilderKeyResponse()
+    key_resp_2 = event.BuilderKeyResponse()
     # keep track of which components have finished
-    match_2Components = [image_3, text_18, b_key_resp_2_]
+    match_2Components = [image_3, text_18, key_resp_2]
     for thisComponent in match_2Components:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -581,33 +581,33 @@ for thisTrial_4 in trials_4:
             text_18.setAutoDraw(False)
         
         
-        # *b_key_resp_2_* updates
-        if t >= 0.0 and b_key_resp_2_.status == NOT_STARTED:
+        # *key_resp_2* updates
+        if t >= 0.0 and key_resp_2.status == NOT_STARTED:
             # keep track of start time/frame for later
-            b_key_resp_2_.tStart = t
-            b_key_resp_2_.frameNStart = frameN  # exact frame index
-            b_key_resp_2_.status = STARTED
+            key_resp_2.tStart = t
+            key_resp_2.frameNStart = frameN  # exact frame index
+            key_resp_2.status = STARTED
             # keyboard checking is just starting
-            win.callOnFlip(b_key_resp_2_.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_2.clock.reset)  # t=0 on next screen flip
             event.clearEvents(eventType='keyboard')
         frameRemains = 0.0 + 3.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if b_key_resp_2_.status == STARTED and t >= frameRemains:
-            b_key_resp_2_.status = STOPPED
-        if b_key_resp_2_.status == STARTED:
+        if key_resp_2.status == STARTED and t >= frameRemains:
+            key_resp_2.status = STOPPED
+        if key_resp_2.status == STARTED:
             theseKeys = event.getKeys(keyList=['z', 'x'])
             
             # check for quit:
             if "escape" in theseKeys:
                 endExpNow = True
             if len(theseKeys) > 0:  # at least one key was pressed
-                if b_key_resp_2_.keys == []:  # then this was the first keypress
-                    b_key_resp_2_.keys = theseKeys[0]  # just the first key pressed
-                    b_key_resp_2_.rt = b_key_resp_2_.clock.getTime()
+                if key_resp_2.keys == []:  # then this was the first keypress
+                    key_resp_2.keys = theseKeys[0]  # just the first key pressed
+                    key_resp_2.rt = key_resp_2.clock.getTime()
                     # was this 'correct'?
-                    if (b_key_resp_2_.keys == str(corrAns)) or (b_key_resp_2_.keys == corrAns):
-                        b_key_resp_2_.corr = 1
+                    if (key_resp_2.keys == str(corrAns)) or (key_resp_2.keys == corrAns):
+                        key_resp_2.corr = 1
                     else:
-                        b_key_resp_2_.corr = 0
+                        key_resp_2.corr = 0
                     # a response ends the routine
                     continueRoutine = False
         
@@ -635,25 +635,25 @@ for thisTrial_4 in trials_4:
     thisExp.addData('end_global', globalClock.getTime())
     thisExp.addData('end_routine', matchClock.getTime())
     
-    if not b_key_resp_2_.keys :
+    if not key_resp_2.keys :
         msg="Failed to respond"
-    elif b_key_resp_2_.corr :#stored on last run routine
+    elif key_resp_2.corr :#stored on last run routine
         msg="Correct!"
     else:
         msg="Wrong."
     # check responses
-    if b_key_resp_2_.keys in ['', [], None]:  # No response was made
-        b_key_resp_2_.keys=None
+    if key_resp_2.keys in ['', [], None]:  # No response was made
+        key_resp_2.keys=None
         # was no response the correct answer?!
         if str(corrAns).lower() == 'none':
-           b_key_resp_2_.corr = 1  # correct non-response
+           key_resp_2.corr = 1  # correct non-response
         else:
-           b_key_resp_2_.corr = 0  # failed to respond (incorrectly)
+           key_resp_2.corr = 0  # failed to respond (incorrectly)
     # store data for trials_4 (TrialHandler)
-    trials_4.addData('b_key_resp_2_.keys',b_key_resp_2_.keys)
-    trials_4.addData('b_key_resp_2_.corr', b_key_resp_2_.corr)
-    if b_key_resp_2_.keys != None:  # we had a response
-        trials_4.addData('b_key_resp_2_.rt', b_key_resp_2_.rt)
+    trials_4.addData('key_resp_2.keys',key_resp_2.keys)
+    trials_4.addData('key_resp_2.corr', key_resp_2.corr)
+    if key_resp_2.keys != None:  # we had a response
+        trials_4.addData('key_resp_2.rt', key_resp_2.rt)
     thisExp.nextEntry()
     
 # completed 1 repeats of 'trials_4'
@@ -857,8 +857,8 @@ for thisTrial_2 in trials_2:
         continueRoutine = True
         routineTimer.add(3.000000)
         # update component parameters for each repeat
-        image.setImage(images)
         image.setSize([300,300])
+        image.setImage(images)
         text.setText(name)
         matchClock.reset()
         thisExp.addData('begin_global', globalClock.getTime())
@@ -1005,7 +1005,7 @@ for thisTrial_2 in trials_2:
             frameRemains = 0.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
             if text_2.status == STARTED and t >= frameRemains:
                 text_2.setAutoDraw(False)
-            if bookClock.getTime() > 30:
+            if bookClock.getTime() > 480:
                 trials.finished=True
                 book.stop()
             
