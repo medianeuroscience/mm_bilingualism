@@ -1,0 +1,60 @@
+---
+title: "Media Multitasking and Bilingualism: Initial Analysis"
+output: html_document
+---
+
+This Rmd file contains code for an initial analysis of the experiment "Media Multitasking and Bilingualism." All data were collected in Fall 2018 at the University of California, Santa Barbara.
+
+Contributors: Xinyang Miao, Jacob T. Fisher, Rene Weber
+
+```{r setup, include=FALSE}
+library(psych)
+library(knitr)
+library(tidyverse)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+First, let's ingest the data. We have a list of csv files that contain the reaction time and accuracy data from the experiment, and we also have a large csv file that contains the survey data and post hoc memory task. We will ingest the files separately and then merge them later.
+
+```{r}
+files = list.files(path ="data/exp_data", pattern="*.csv", full.names = TRUE)
+exp_data = do.call(plyr::rbind.fill, lapply(files, function(x) read.csv(x, as.is=TRUE, stringsAsFactors = FALSE)))
+surveydata = read.csv("data/surveydata.csv")
+```
+
+## TODO
+
+- Create MMI and cross language MMI variables (Jacob will do this)
+- Create bilingualism variable
+- Code questions for each audiobook as a % correct variable
+- Code enjoyment and attention scales for each audiobook
+- Note participants who failed compliance check (create a new variable that is 1 if they answered "yes" to either of the compliance check questions and 0 otherwise)
+- Remove outliers from matching task (RTs that were either way too fast or way too slow)
+- Get % accuracy and RT measures for matching task during each audiobook
+- Merge surveydata and exp_data
+
+
+```{r}
+
+```
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
