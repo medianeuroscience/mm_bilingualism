@@ -1,6 +1,8 @@
 ---
 title: "Media Multitasking and Bilingualism: Initial Analysis"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 This Rmd file contains code for an initial analysis of the experiment "Media Multitasking and Bilingualism." All data were collected in Fall 2018 at the University of California, Santa Barbara.
@@ -11,15 +13,20 @@ Contributors: Xinyang Miao, Jacob T. Fisher, Rene Weber
 library(psych)
 library(knitr)
 library(tidyverse)
+library(stringr)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 First, let's ingest the data. We have a list of csv files that contain the reaction time and accuracy data from the experiment, and we also have a large csv file that contains the survey data and post hoc memory task. We will ingest the files separately and then merge them later.
 
 ```{r}
-files = list.files(path ="data/exp_data", pattern="*.csv", full.names = TRUE)
-exp_data = do.call(plyr::rbind.fill, lapply(files, function(x) read.csv(x, as.is=TRUE, stringsAsFactors = FALSE)))
-surveydata = read.csv("data/surveydata.csv")
+# Commenting the below stuff out since we only need to combine everything together once.
+
+# files = list.files(path ="data/exp_data", pattern="*.csv", full.names = TRUE)
+#exp_data = do.call(plyr::rbind.fill, lapply(files, function(x) read.csv(x, as.is=TRUE, stringsAsFactors = FALSE)))
+
+surveydata = read.csv("data/surveydata.csv", stringsAsFactors = FALSE,  dec = ".")
+exp_data = read.csv("data/expdata.csv")
 ```
 
 ## TODO
@@ -33,28 +40,249 @@ surveydata = read.csv("data/surveydata.csv")
 - Get % accuracy and RT measures for matching task during each audiobook
 - Merge surveydata and exp_data
 
+```{r}
+exp_data <- rename(exp_data, RT = key_resp_1.rt, corr = key_resp_1.corr)
+
+# Creating a variable that captures the book that they were listening to
+
+exp_data <- mutate(exp_data, 
+               cond = ifelse(str_detect(sounds, "animalfarm_chinese") == TRUE, "animalfarm_chinese",
+                             ifelse(str_detect(sounds, "greatgatsby_english") == TRUE, "greatgatsby_english",
+                                    ifelse(str_detect(sounds, "greatgatsby_chinese") == TRUE, "greatgatsby_chinese", 
+                                           ifelse(str_detect(sounds, "animalfarm_english") == TRUE, "animalfarm_english", 
+                                                  ifelse(str_detect(sounds, "animalfarm_spanish") == TRUE, "animalfarm_spanish",
+                                                         ifelse(str_detect(sounds, "greatgatsby_spanish") == TRUE, "greatgatsby_spanish", NA)))))))
+
+#Creating a variable that captures the language condition they were in
+exp_data <- exp_data %>% 
+  group_by(participant) %>% 
+  mutate(lang = ifelse("animalfarm_spanish" %in% cond | "greatgatsby_spanish" %in% cond, "spanish", ifelse("animalfarm_chinese" %in% cond | "greatgatsby_chinese" %in% cond, "chinese", NA))) %>% ungroup()
+
+#Creating a variable that captures the book they were listening to and the language the book was in separately
+exp_data <- exp_data %>% separate(cond, into = c("booktitle", "booklang"), sep = "_", remove=FALSE)
+
+# Creating a variable that captures whether this is the first or second book they've listened to
+
+exp_data <- exp_data %>% mutate(trial = ifelse(trials_2.thisTrialN == 0, 1, 2))
+```
+
+# EDA 
+First we're just going to do some EDA to get a sense of the experiment data. Here are a few things that I'm going to plot:
+
+- Number of trials per condition (to make sure we don't have wildly more trials in one condition than another)
+- Number of trials per participant (to check for outliers)
+- Mean response time and correctness per subject
+- Distribution of response times and correctness
+- Mean response time and correctness per condition
+- Mean response time and correctness per condition and per subject
+- Mean response time and correctness per condition and per language (chinese or spanish)
+
+```{r}
+# Number of trials per condition
+ggplot(exp_data, aes(x = as.factor(cond))) + 
+  geom_bar(stat = "count") + 
+  theme(axis.text.x = element_text(angle = 90))
+
+# Number of trials per participant (filtering NAs)
+ggplot(filter(exp_data, !is.na(RT)), aes(x = as.factor(participant))) + 
+  geom_bar(stat = "count") + 
+  theme(axis.text.x = element_text(angle = 90))
+
+# Number of NA trials per participant
+ggplot(filter(exp_data, is.na(RT)), aes(x = as.factor(participant))) + 
+  geom_bar(stat = "count") + 
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+
+Looks like there are a few that we should probably toss based on the number of NAs that they have. At least 1002 and likely 1007, 1029, 1041, 1063, and 1070  
+
+```{r}
+
+# Mean response time per subject
+ggplot(exp_data, aes(x = as.factor(participant), y=RT)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90))
+
+#Distribution of response times
+ggplot(exp_data, aes(x = RT)) + geom_histogram()
+# Pretty left-skewed but that's to be expected in a task like this.
+
+# Proportion correct per subject
+
+ggplot(exp_data, aes(x = as.factor(participant), y=corr)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+
+Looks like pretty much everyone is correct most of the time which is good. We have a few who are correct much less often and it will be interesting to see how that relates to their language proficiency
+
+```{r}
+
+# correctness per word
+ggplot(filter(exp_data, !is.na(corr)), aes(x = reorder(as.factor(name), corr), fill=(corrAns), y=corr)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90))
+
+# RT per word
+ggplot(filter(exp_data, !is.na(RT)), aes(x = reorder(as.factor(name), RT), fill=(corrAns), y=RT)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+
+```{r}
+# Correctness by trial (to see whether people gave up in the second trial)
+
+ggplot(filter(exp_data, !is.na(corr)), aes(x = as.factor(trial), y=corr)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90)) + facet_wrap(~ lang)
+
+# RT by trial (to see whether people gave up in the second trial)
+
+ggplot(filter(exp_data, !is.na(RT)), aes(x = as.factor(trial), y=RT)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90)) + facet_wrap(~ lang)
+
+# Correctness by book
+
+ggplot(filter(exp_data, !is.na(corr)), aes(x = as.factor(booklang), y=corr)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90)) + facet_wrap(~ booktitle)
+
+# Correctness by book
+
+ggplot(filter(exp_data, !is.na(RT)), aes(x = as.factor(booklang), y=RT)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90)) + facet_wrap(~ booktitle)
+
+```
+
+Looks like people definitely responded faster in the second trial. It's good that we varied the order of presentation. There a re also some between book differences that are interesting, but I'm not sure what to make of them. I'll come back to this if I have time. 
+
+```{r}
+
+# Mean response time per condition
+
+plt_data <- exp_data %>% group_by(participant, lang, cond) %>% summarize(meanRT = mean(RT, na.rm=TRUE), meancorr = mean(corr, na.rm = TRUE)) %>% ungroup() %>% mutate(cut = cut_number(participant, 7))
+
+ggplot(plt_data, aes(x = as.factor(cond), fill = as.factor(cond), y=meanRT)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90)) + facet_wrap(~ lang)
+
+ggplot(plt_data, aes(x = as.factor(cond), fill = as.factor(cond), y=meancorr)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90)) + facet_wrap(~ lang)
+
+ggplot(filter(plt_data, lang=="spanish"), aes(x = as.factor(participant), fill = as.factor(cond), y=meanRT)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90))
+
+ggplot(filter(plt_data, lang=="chinese"), aes(x = as.factor(participant), fill = as.factor(cond), y=meanRT)) + 
+  geom_bar(stat ="summary", fun.y='mean', position='dodge') + 
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+
+Interesting! There are pretty robust differences between conditions for each subject, but themeans are not that different from one another. It seems that there is something that they are interacting with, but I'm not sure what yet. If it's language (as we hypothesized) then it will be pretty cool. There isn't much more I can do without incorporating the survey data so that's what I'm going to do now.
+
+## Survey Data Preprocessing
+
+```{r}
+
+surveydata <- surveydata %>% slice(-c(1,2))
+
+surveydata <- surveydata %>% rename(participant = Q1.1, 
+                                    age = Q2.2,
+                                    sex = Q2.3,
+                                    eth = Q2.4)
+
+surveydata <- surveydata %>% 
+  mutate_at(vars(starts_with("Q")), funs = is.character, as.numeric)
+
+surveydata <- surveydata %>% 
+  mutate(polychron = rowMeans(select(., starts_with("Q3.1")), na.rm=TRUE))
+
+```
+
+Calculating the MMI
+
+The equation is $\sum\limits_{i=1}^{1} \frac{m_i x h_i}{h_{total}}$. Where $m_i$ is the total amount of time that the person spent multitasking using that medium and $h_i$ is the total amount of time the person reported using the medium and $h_total$ is the total amount of time the participant reported using media during a typical week.
+
+As a side note I think that one of the main reasons I want to come up with a new version of the MMI is because the MMI is just such as pain in the behind to do anything with. 
+
+```{r}
+
+media_use <- surveydata %>% select('participant', starts_with('Q4.'))
+media_use <- media_use %>% mutate(total_media_use = rowSums(select(., starts_with("Q4")), na.rm=TRUE))
+#total_use <- media_use %>% select(participant, total_media_use)
+
+MMI <- surveydata %>% select('participant', starts_with('Q5.'))
+MMI <- MMI %>% mutate_at(vars(starts_with("Q")), funs(recode(., "1" = 0, "2" = .33, "3" = .67, "4" = 1)))
+
+MMI <- full_join(MMI,media_use, by="participant")
+
+MMI <- MMI %>% rename(print_u = Q4.1_1,
+                      tv_u = Q4.1_2,
+                      comp_vid_u = Q4.1_3,
+                      music_u = Q4.1_4,
+                      nm_audio_u = Q4.1_5,
+                      vgs_u = Q4.1_6, 
+                      phone_u = Q4.1_7,
+                      im_u = Q4.1_8,
+                      txt_u  = Q4.1_9,
+                      eml_u = Q4.1_10, 
+                      web_u = Q4.1_11,
+                      comp_apps_u = Q4.1_12,
+                      mob_apps_u = Q4.1_13)
+
+MMI <- MMI %>% mutate(
+  MMI_weighted = rowSums(cbind(
+    ((print_u * rowSums(select(MMI, matches("Q5\\.1_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((tv_u * rowSums(select(MMI, matches("Q5\\.2_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((comp_vid_u * rowSums(select(MMI, matches("Q5\\.3_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((music_u * rowSums(select(MMI, matches("Q5\\.4_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((nm_audio_u * rowSums(select(MMI, matches("Q5\\.5_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((vgs_u * rowSums(select(MMI, matches("Q5\\.6_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((phone_u * rowSums(select(MMI, matches("Q5\\.7_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((im_u * rowSums(select(MMI, matches("Q5\\.8_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((txt_u * rowSums(select(MMI, matches("Q5\\.9_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((eml_u * rowSums(select(MMI, matches("Q5\\.10_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((web_u * rowSums(select(MMI, matches("Q5\\.11_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((comp_apps_u * rowSums(select(MMI, matches("Q5\\.12_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use),
+    ((mob_apps_u * rowSums(select(MMI, matches("Q5\\.13_[[:digit:]]{1}")), na.rm=TRUE))/total_media_use)
+    ), na.rm=TRUE))
+
+# This is the extra item that we asked regarding how often the person multitasks with media in a different language while using this primary medium. Since we only have one item, we don't need to take the rowsums within each category, just the sum across all media types.
+
+MMI <- MMI %>% mutate(
+  MMI_lang = rowSums(cbind(
+    ((print_u * Q5.1.1)/total_media_use),
+    ((tv_u * Q5.2.1)/total_media_use),
+    ((comp_vid_u * Q5.3.1)/total_media_use),
+    ((music_u * Q5.4.1)/total_media_use),
+    ((nm_audio_u * Q5.5.1)/total_media_use),
+    ((vgs_u * Q5.6.1)/total_media_use),
+    ((phone_u * Q5.7.1)/total_media_use),
+    ((im_u * Q5.8.1)/total_media_use),
+    ((txt_u * Q5.9.1)/total_media_use),
+    ((eml_u * Q5.10.1)/total_media_use),
+    ((web_u * Q5.11.1)/total_media_use),
+    ((comp_apps_u * Q5.12.1)/total_media_use),
+    ((mob_apps_u * Q5.13.1)/total_media_use)
+    ), na.rm=TRUE))
+
+MMI_s <- MMI %>% select(participant, MMI_weighted, MMI_lang)
+
+surveydata <- full_join(surveydata, MMI_s, by="participant")
+
+```
+
+Okay now I have to calculate the bilingualism measures. This is going to be a huge pain too I think. 
 
 ```{r}
 
 ```
 
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
