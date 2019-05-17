@@ -14,6 +14,7 @@ library(psych)
 library(knitr)
 library(tidyverse)
 library(stringr)
+library(purrr)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -216,7 +217,6 @@ As a side note I think that one of the main reasons I want to come up with a new
 
 media_use <- surveydata %>% select('participant', starts_with('Q4.'))
 media_use <- media_use %>% mutate(total_media_use = rowSums(select(., starts_with("Q4")), na.rm=TRUE))
-#total_use <- media_use %>% select(participant, total_media_use)
 
 MMI <- surveydata %>% select('participant', starts_with('Q5.'))
 MMI <- MMI %>% mutate_at(vars(starts_with("Q")), funs(recode(., "1" = 0, "2" = .33, "3" = .67, "4" = 1)))
@@ -284,12 +284,34 @@ Okay now I have to calculate the bilingualism measures. This is going to be a hu
 ```{r}
 
 ```
+
 Now adding in the correct answers to the cued recall questions
+
 ```{r}
 
-questions <- c('Q7.1', 'Q7.2', 'Q7.3', 'Q7.4', 'Q7.5', 'Q7.6', 'Q7.7', 'Q7.8',  'Q7.9', 'Q7.10', 'Q8.1', 'Q8.2', 'Q8.3', 'Q8.4', 'Q8.5', 'Q8.6', 'Q8.7', 'Q8.8',  'Q8.9', 'Q8.10')
-answers <- c(1,3,2,3,1,2,4,1,3,3,2,1,2,3,1,4,1,3,1,2)
+question <- c('Q7.1', 'Q7.2', 'Q7.3', 'Q7.4', 'Q7.5', 'Q7.6', 'Q7.7', 'Q7.8',  'Q7.9', 'Q7.10', 'Q8.1', 'Q8.2', 'Q8.3', 'Q8.4', 'Q8.5', 'Q8.6', 'Q8.7', 'Q8.8',  'Q8.9', 'Q8.10')
+answer <- c(1,3,2,3,1,2,4,1,3,3,2,1,2,3,1,4,1,3,1,2)
 
-qa <- data.frame(questions, answers)
+qa_correct <- data.frame(question, answer)
+
+responses <- surveydata %>% select(participant, starts_with("Q7"), starts_with("Q8"))
+
+responses <- responses %>% 
+  group_by(participant) %>% 
+  gather("question", "response", starts_with("Q"))
+
+merged_answers <- responses %>% split(.$participant) %>%
+  map(~ left_join(., qa_correct, by = "question")) %>% 
+  map(~ mutate(., q_corr = ifelse(response - answer == 0, 1, 0))) %>%
+  map_df(., bind_rows)
+
+merged_answers <- filter(merged_answers, !is.na(participant) & participant > 1000)
+
+scores <- merged_answers %>% group_by(participant) %>% summarize(score = mean(q_corr))
+```
+
+Now to calculate everyone's overall scores. 
+```{r}
+
 ```
 
