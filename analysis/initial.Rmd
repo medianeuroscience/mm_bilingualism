@@ -15,6 +15,7 @@ library(knitr)
 library(tidyverse)
 library(stringr)
 library(purrr)
+library(tidyr)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -47,12 +48,13 @@ exp_data <- rename(exp_data, RT = key_resp_1.rt, corr = key_resp_1.corr)
 # Creating a variable that captures the book that they were listening to
 
 exp_data <- mutate(exp_data, 
-               cond = ifelse(str_detect(sounds, "animalfarm_chinese") == TRUE, "animalfarm_chinese",
-                             ifelse(str_detect(sounds, "greatgatsby_english") == TRUE, "greatgatsby_english",
-                                    ifelse(str_detect(sounds, "greatgatsby_chinese") == TRUE, "greatgatsby_chinese", 
-                                           ifelse(str_detect(sounds, "animalfarm_english") == TRUE, "animalfarm_english", 
-                                                  ifelse(str_detect(sounds, "animalfarm_spanish") == TRUE, "animalfarm_spanish",
-                                                         ifelse(str_detect(sounds, "greatgatsby_spanish") == TRUE, "greatgatsby_spanish", NA)))))))
+               cond = case_when(str_detect(sounds, "animalfarm_chinese") == TRUE ~ "animalfarm_chinese",
+                                str_detect(sounds, "greatgatsby_english") == TRUE ~ "greatgatsby_english",
+                                str_detect(sounds, "greatgatsby_chinese") == TRUE ~ "greatgatsby_chinese",
+                                str_detect(sounds, "animalfarm_english") == TRUE ~ "animalfarm_english",
+                                str_detect(sounds, "animalfarm_spanish") == TRUE ~ "animalfarm_spanish",
+                                str_detect(sounds, "greatgatsby_spanish") == TRUE ~ "greatgatsby_spanish",
+                                TRUE ~ NA_character_))
 
 #Creating a variable that captures the language condition they were in
 exp_data <- exp_data %>% 
@@ -258,19 +260,19 @@ MMI <- MMI %>% mutate(
 
 MMI <- MMI %>% mutate(
   MMI_lang = rowSums(cbind(
-    ((print_u * Q5.1.1)/total_media_use),
-    ((tv_u * Q5.2.1)/total_media_use),
-    ((comp_vid_u * Q5.3.1)/total_media_use),
-    ((music_u * Q5.4.1)/total_media_use),
-    ((nm_audio_u * Q5.5.1)/total_media_use),
-    ((vgs_u * Q5.6.1)/total_media_use),
-    ((phone_u * Q5.7.1)/total_media_use),
-    ((im_u * Q5.8.1)/total_media_use),
-    ((txt_u * Q5.9.1)/total_media_use),
-    ((eml_u * Q5.10.1)/total_media_use),
-    ((web_u * Q5.11.1)/total_media_use),
-    ((comp_apps_u * Q5.12.1)/total_media_use),
-    ((mob_apps_u * Q5.13.1)/total_media_use)
+    ((print_u * Q5.1.1)/total_media_use) * 4,
+    ((tv_u * Q5.2.1)/total_media_use)* 4,
+    ((comp_vid_u * Q5.3.1)/total_media_use)* 4,
+    ((music_u * Q5.4.1)/total_media_use)* 4,
+    ((nm_audio_u * Q5.5.1)/total_media_use)* 4,
+    ((vgs_u * Q5.6.1)/total_media_use)* 4,
+    ((phone_u * Q5.7.1)/total_media_use)* 4,
+    ((im_u * Q5.8.1)/total_media_use)* 4,
+    ((txt_u * Q5.9.1)/total_media_use)* 4,
+    ((eml_u * Q5.10.1)/total_media_use)* 4,
+    ((web_u * Q5.11.1)/total_media_use)* 4,
+    ((comp_apps_u * Q5.12.1)/total_media_use)* 4,
+    ((mob_apps_u * Q5.13.1)/total_media_use)* 4
     ), na.rm=TRUE))
 
 MMI_s <- MMI %>% select(participant, MMI_weighted, MMI_lang)
@@ -279,11 +281,80 @@ surveydata <- full_join(surveydata, MMI_s, by="participant")
 
 ```
 
-Okay now I have to calculate the bilingualism measures. This is going to be a huge pain too I think. 
+Okay now I have to calculate the bilingualism measures. This is going to be a huge pain too I think. The scale that we landed on adds points to one category or another based on a person's answers to each question. So we are going to need to create a variable that we can then iteratively add points to based on their answers to each of the bilingualism questions.  Scoring taken from [here](https://www.researchgate.net/publication/231841097_A_quick_gradient_Bilingual_Dominance_Scale). We left off the last item of hte scale because it was "In what country do you currently live?" Since everyone is living in America we went ahead and added +4 to the english variable, as would be the case if they answered any english speaking country in item 12.
 
 ```{r}
 
+bilingualism <- surveydata %>% select(participant, starts_with("Q6"), -ends_with("b"))
+
+bilingualism <- bilingualism %>% 
+  mutate(other_lang = case_when(Q6.1 == 1 ~ "mandarin",
+                                Q6.1 == 2 ~ "spanish",
+                                TRUE ~ "other")) %>%
+  mutate(tot_eng = 4, tot_other = 0) %>%
+  mutate(tot_eng = case_when(Q6.2 == 1 ~ tot_eng + 5, #question 1 & 2 (6.2 and 6.4a from Qualtrics)
+                        Q6.2 == 2 ~ tot_eng + 3,
+                        Q6.2 == 3 ~ tot_eng + 1,
+                        Q6.2 == 4 ~ tot_eng),
+         tot_other = case_when(Q6.4a == 1 ~ tot_other + 5,
+                        Q6.4a == 2 ~ tot_other + 3,
+                        Q6.4a == 3 ~ tot_other + 1,
+                        Q6.4a >= 4 ~ tot_other)) %>% 
+  mutate(tot_eng = case_when(Q6.3 == 1 ~ tot_eng + 5, #question 3 & 4 (6.3 and 6.5a from Qualtrics)
+                        Q6.3 == 2 ~ tot_eng + 3,
+                        Q6.3 == 3 ~ tot_eng + 1,
+                        Q6.3 >= 4 ~ tot_eng),
+         tot_other = case_when(Q6.5a == 1 ~ tot_other + 5,
+                        Q6.5a == 2 ~ tot_other + 3,
+                        Q6.5a == 3 ~ tot_other + 1,
+                        Q6.5a >= 4 ~ tot_other)) %>%
+  mutate(tot_eng = case_when(Q6.6a == 1 ~ tot_eng + 5, #question 5 (6.6a from Qualtrics)
+                        Q6.6a == 2 ~ tot_eng,
+                        Q6.6a == 3 ~ tot_eng + 3),
+         tot_other = case_when(Q6.6a == 1 ~ tot_other,
+                        Q6.6a == 2 ~ tot_other + 5,
+                        Q6.6a == 3 ~ tot_other + 3))  %>%
+  mutate(tot_eng = case_when(Q6.7a == 1 ~ tot_eng + 5, #question 6 (6.7a from Qualtrics)
+                        Q6.7a == 2 ~ tot_eng,
+                        Q6.7a == 3 ~ tot_eng + 3,
+                        TRUE ~ tot_eng),
+         tot_other = case_when(Q6.7a == 1 ~ tot_other,
+                        Q6.7a == 2 ~ tot_other + 5,
+                        Q6.7a == 3 ~ tot_other + 3,
+                        TRUE ~ tot_other)) %>%
+  mutate(tot_eng = case_when(Q6.8a == 1 ~ tot_eng + 5, #question 7 (6.8a from Qualtrics)
+                        Q6.8a == 2 ~ tot_eng,
+                        Q6.8a == 3 ~ tot_eng + 3,
+                        TRUE ~ tot_eng),
+         tot_other = case_when(Q6.8a == 1 ~ tot_other,
+                        Q6.8a == 2 ~ tot_other + 5,
+                        Q6.8a == 3 ~ tot_other + 3,
+                        TRUE ~ tot_other)) %>% 
+  mutate(tot_eng = case_when(Q6.9a == 1 ~ tot_eng + 2, #question 8 (6.9a from Qualtrics)
+                        Q6.9a == 2 ~ tot_eng),
+         tot_other = case_when(Q6.9a == 1 ~ tot_other,
+                        Q6.9a == 2 ~ tot_other + 2)) %>%
+  mutate(tot_eng = case_when(Q6.10 == 1 ~ tot_eng + 1, #question 9 and 10 (6.10 and 6.11a from Qualtrics)
+                        Q6.10 == 2 ~ tot_eng + 2),
+         tot_other = case_when(Q6.11a == 1 ~ tot_other + 1,
+                        Q6.11a == 2 ~ tot_other + 2)) %>% 
+      mutate(tot_eng = case_when(Q6.12 == 1 & Q6.13a == 1 ~ tot_eng - 3, #question 11 (6.12 and 6.13a from Qualtrics)
+                        TRUE ~ tot_eng),
+         tot_other = case_when(Q6.12 == 1 & Q6.13a == 2 ~ tot_other - 3,
+                        TRUE ~ tot_other)) %>% 
+  mutate(dominance = tot_eng - tot_other) # will be positive for english dominance, negative for other dominance
+
+bilingualism_s <- bilingualism %>% select(participant, tot_eng, tot_other, other_lang, dominance)
+  
 ```
+
+I can't help myself so I'm going to do a histogram.
+
+```{r}
+ggplot(bilingualism_s) + geom_histogram(aes(x = dominance, fill = other_lang), binwidth = 4)
+```
+
+Looks like our two groups are not equivalently bilingual, which is probably an issue. We will need to keep this in mind if we glom the two groups together.
 
 Now adding in the correct answers to the cued recall questions
 
@@ -307,11 +378,139 @@ merged_answers <- responses %>% split(.$participant) %>%
 
 merged_answers <- filter(merged_answers, !is.na(participant) & participant > 1000)
 
-scores <- merged_answers %>% group_by(participant) %>% summarize(score = mean(q_corr))
+scores <- merged_answers %>% 
+  mutate(booktitle = case_when(str_detect(question, "Q7") == TRUE ~ 'animalfarm',
+                          str_detect(question, "Q8") == TRUE ~ 'greatgatsby',
+                          TRUE ~ NA_character_)) %>% 
+  group_by(participant, booktitle) %>% 
+  summarize(score = mean(q_corr))
 ```
 
-Now to calculate everyone's overall scores. 
+Here are the the self-reported difficulty and enjoyment measures. 
+
+English Audiobook
+
+- Q10.1_1 - Matching difficulty
+- Q10.1_2 - Attention to matching
+- Q10.1_3 - Matching task enjoyment
+- Q10.1_4 - Audiobook difficulty
+- Q10.1_5 - Attention to audiobook
+- Q10.1_6 - Audiobook enjoyment
+
+Non-English Audiobook
+
+- Q103_1 - Matching difficulty
+- Q103_2 - Attention to matching
+- Q103_3 - Matching task enjoyment
+- Q103_4 - Audiobook difficulty
+- Q103_5 - Attention to audiobook
+- Q103_6 - Audiobook enjoyment
+
+In order to get these to where I can plot them, I have to get them into long form. 
+
+```{r}
+self_reports <- surveydata %>% select(participant, starts_with("Q10.1"), starts_with("Q103"))
+
+self_reports <- self_reports %>% rename('match-diff_eng' = Q10.1_1,
+                                        'match-att_eng' = Q10.1_2,
+                                        'match-enj_eng' = Q10.1_3,
+                                        'book-diff_eng' = Q10.1_4,
+                                        'book-att_eng' = Q10.1_5,
+                                        'book-enj_eng' = Q10.1_6,
+                                        'match-diff_oth' = Q103_1,
+                                        'match-att_oth' = Q103_2,
+                                        'match-enj_oth' = Q103_3,
+                                        'book-diff_oth' = Q103_4,
+                                        'book-att_oth' = Q103_5,
+                                        'book-enj_oth' = Q103_6) %>%
+  gather("question", "response", -participant) %>%
+  separate(question, c('question', 'condition'), sep = "_") %>%
+  filter(participant > 1000)
+
+eng_responses <- self_reports %>% filter(condition == "eng")
+oth_responses <- self_reports %>% filter(condition == "oth")
+
+test1 <- eng_responses %>% 
+  tidyr::pivot_wider(names_from = question,
+              values_from = response)
+
+test2 <- oth_responses %>% 
+  tidyr::pivot_wider(names_from = question,
+              values_from = response)
+
+responses <- bind_rows(test1, test2)
+
+```
+
+Okay **finally** I am going to merge the surveydata with the exp_data in order to start working on the full analyses that I'm going to do for the ICA presentation. 
+
 ```{r}
 
+polychronicity <- surveydata %>% select(participant, polychron)
+
+surveydata_s <- left_join(MMI_s, bilingualism_s, by = "participant")
+surveydata_s <- left_join(surveydata_s, polychronicity, by = "participant")
+surveydata_s <- left_join(surveydata_s, scores, by = "participant")
+
+expdata_s <- exp_data %>% 
+  group_by(participant, booktitle) %>% 
+  summarize(meanRT = psych::harmonic.mean(RT, na.rm = TRUE),
+            sdRT = sd(RT, na.rm=TRUE),
+            meancorr = mean(corr, na.rm = TRUE),
+            booklang = first(booklang)) %>%
+  filter(!is.na(booktitle)) %>%
+  mutate(condition = case_when(booklang == "chinese" | booklang == "spanish" ~ "oth",
+                              booklang == "english" ~ "eng",
+                              TRUE ~ NA_character_))
+
+expdata_s$participant <- as.character(expdata_s$participant)
+
+fulldata_s <- left_join(expdata_s, surveydata_s, by=c("participant", "booktitle"))
+
+fulldata_s <- left_join(fulldata_s, responses, by = c("participant", "condition"))
+
+
+fulldata_s <- fulldata_s %>% 
+  pivot_longer('match-diff':'book-enj',
+               names_to = "question", 
+               values_to = "response"
+               ) %>%
+  filter(participant != 1002, #excluding outliers and those that said they responded randomly in the matching task
+         participant != 1025,
+         participant != 1003,
+         participant != 1041,
+         participant != 1024,
+         participant != 1046,
+         participant != 1047,
+         participant != 1059,
+         participant != 1061,
+         participant != 1069,
+         participant != 1025,
+         participant != 1070,
+         participant != 1006,
+         participant != 1055,
+         other_lang != "other")
+```
+
+Doing some plots
+
+```{r}
+ggplot(fulldata_s) + geom_bar(aes(x = condition, y = meanRT), stat ="summary", fun.y='mean', position='dodge') + facet_wrap(~other_lang)
+
+ggplot(fulldata_s, aes(x = dominance, y = meancorr / meanRT)) + geom_point() + geom_smooth(method = "lm") + facet_wrap(~ booklang)
+
+# plotting correctness by book language, bilingualism, and primary second language
+
+plt1 <- ggplot(filter(fulldata_s, other_lang == "mandarin"), aes(x = MMI_lang, y = score)) + geom_point() + geom_smooth(method = "lm") + facet_wrap(~ booklang)
+
+plt2 <- ggplot(filter(fulldata_s, other_lang == "spanish"), aes(x = MMI_lang, y = score))+ geom_point() + geom_smooth(method = "lm") + facet_wrap(~ booklang)
+
+gridExtra::grid.arrange(plt1, plt2, nrow =2)
+
+# plotting self reported responses by second language, bilingualism (dominance), and book language 
+
+ggplot(fulldata_s, aes(x = dominance, y = response, color = condition)) +  geom_point() + geom_smooth(method = "lm", se=FALSE) + facet_wrap(~ question) + scale_color_brewer(palette = 1,type= "qual")
+
+ggplot(fulldata_s)
 ```
 
