@@ -354,6 +354,32 @@ I can't help myself so I'm going to do a histogram.
 ggplot(bilingualism_s) + geom_histogram(aes(x = dominance, fill = other_lang), binwidth = 4)
 ```
 
+I'm also going to do a big plot of the relationships between different types of media multitasking and bilingual dominance. 
+
+```{r}
+library(ggthemes)
+MMI_lang_qs <- MMI %>% select(participant, ends_with(".1"))
+MMI_lang_qs <- MMI_lang_qs %>% mutate_at(vars(starts_with("Q")), funs(recode(., "0" = 1, ".33" = 2, ".67" = 3, "1" = 4)))
+MMI_lang_qs <- left_join(MMI_lang_qs, bilingualism_s, by="participant")
+MMI_lang_qs <- MMI_lang_qs %>% rename("print" = "Q5.1.1",
+                                      "tv" = "Q5.2.1",
+                                      "computer_video" = "Q5.3.1",
+                                      "music" = "Q5.4.1",
+                                      "non_music_audio" = "Q5.5.1",
+                                      "video_games" = "Q5.6.1",
+                                      "phone-calls" = "Q5.7.1",
+                                      "instant_messaging" = "Q5.8.1",
+                                      "texting" = "Q5.9.1",
+                                      "email" = "Q5.10.1",
+                                      "web_surfing" = "Q5.11.1",
+                                      "other_comp_apps" = "Q5.12.1",
+                                      "other_mobile_apps" = "Q5.13.1")
+
+MMI_lang_qs <- tidyr::pivot_longer(MMI_lang_qs, cols = print:other_mobile_apps, names_to = "media", values_to = "response", values_drop_na = TRUE)
+
+ggplot(filter(MMI_lang_qs, media != "non_music_audio"), aes(x = dominance, y = response, color = media)) + geom_point() + geom_smooth(method = "lm") + facet_wrap(~ media) + theme_few()
+```
+
 Looks like our two groups are not equivalently bilingual, which is probably an issue. We will need to keep this in mind if we glom the two groups together.
 
 Now adding in the correct answers to the cued recall questions
@@ -488,7 +514,6 @@ fulldata_s <- fulldata_s %>%
 Doing some plots
 
 ```{r}
-library(ggthemes)
 
 ggplot(fulldata_s) + 
   geom_bar(aes(x = condition, fill = condition, y = meanRT), stat ="summary", fun.y='mean', position='dodge', width = 0.5) + 
@@ -634,5 +659,53 @@ ggplot(plt_data, aes(x = dominance, y = score, color = as.factor(other_lang))) +
   scale_color_few(name = "Other Language") +
   labs(x = "Bilingualism", y = "Cued-Recall Score")
 
+```
+
+Now I need to look at the relationship between multitasking and cross-language multitasking. 
+
+```{r}
+
+plt_data <- fulldata_s %>%
+  group_by(participant) %>%
+  mutate(MMI_groups = case_when(MMI_weighted <= 3.56 ~ "lo",
+                                 MMI_weighted > 3.56 & MMI_weighted < 4.87 ~ "mid",
+                                 MMI_weighted >= 4.87 ~ "hi"),
+         MMI_lang_groups = case_when(MMI_lang <= 1.45 ~ "lo",
+                                 MMI_lang > 1.45 & MMI_weighted < 2.38 ~ "mid",
+                                 MMI_lang >= 2.44 ~ "hi")) 
+
+ggplot(filter(plt_data, other_lang != "other"), aes(x = dominance, y = MMI_weighted)) +
+  geom_point(color = "#c7c7c7") + 
+  geom_smooth(method = "lm", color = "#65a5d9") + 
+  theme_few() + 
+  labs(x = "Media Multitasking Index", y = "Cross-Langage Multitasking")
+
+anova(lm(score ~ MMI_weighted*MMI_lang*condition, data=fulldata_s))
+
+```
+
+Interestingly enough, we get a significant (negative) effect of MMI_lang after we account for the variance from MMI_weighted. Let's do a post-hoc t-test to look at it more. 
+
+```{r}
+df <- fulldata_s %>%
+  group_by(participant) %>%
+  mutate(MMI_groups = case_when(MMI_weighted <= 3.56 ~ "lo",
+                                 MMI_weighted > 3.56 & MMI_weighted < 4.87 ~ "mid",
+                                 MMI_weighted >= 4.87 ~ "hi"),
+         MMI_lang_groups = case_when(MMI_lang <= 1.45 ~ "lo",
+                                 MMI_lang > 1.45 & MMI_lang < 2.38 ~ "mid",
+                                 MMI_lang >= 2.38 ~ "hi"))
+
+df <- df %>% group_by(MMI_groups, MMI_lang_groups, participant, condition) %>% summarize(mem = mean(score, na.rm=TRUE)) %>% ungroup() %>% group_by(MMI_groups, MMI_lang_groups, condition) %>% summarize(se_mem = plotrix::std.error(mem), mem = mean(mem)) 
+
+ggplot(data = df, aes(x = as.factor(MMI_groups), y = mem, color = as.factor(MMI_lang_groups), group = as.factor(MMI_lang_groups))) + 
+  geom_point() +
+  geom_line() +
+  geom_errorbar(aes(x=as.factor(MMI_groups), ymin=mem-se_mem, ymax=mem+se_mem), width = 0.05) +
+  # scale_x_discrete(limits = c("low", "high")) +
+  theme(plot.margin = unit(c(6, 12, 6, 6), "pt")) +
+  facet_wrap(~ condition)
+  # scale_color_few(name = "Reward", labels = c("High", "Low")) +
+  # labs(x = "Cognitive Load", y = "Secondary Task Reaction Time")
 ```
 
