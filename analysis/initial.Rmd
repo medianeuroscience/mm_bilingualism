@@ -559,35 +559,35 @@ plt_data <- fulldata_s %>%
   filter(MMI_group != "mid")
 
 ggplot(plt_data) + 
-  geom_point(aes(x = condition, color = MMI_group, y = meanscore)) + 
-  geom_line(aes(x = condition, y = meanscore, color = MMI_group, group = MMI_group)) +
+  geom_point(aes(x = condition, color = MMI_group, y = meanscore), size = 2) + 
+  geom_line(aes(x = condition, y = meanscore, color = MMI_group, group = MMI_group), size = 0.8) +
   geom_errorbar(aes(x=condition, ymin=meanscore-sescore, ymax=meanscore+sescore), width = 0.05) +
   # facet_wrap(~ lang_groups) +
   theme_few() +
   theme(axis.title.y = element_text(margin = margin(8,8,8,8)),
         axis.title.x = element_text(margin = margin(8,8,8,8))) +
   scale_color_few(name = "MMI Group", labels = c("High", "Low")) +
-  labs(x = "Condition", y = "Recall Score")
+  labs(x = "Condition", title = "Cued Recall Score", y = "")
 
 ggplot(plt_data) + 
-  geom_point(aes(x = condition, color = MMI_group, y = meanrt)) + 
-  geom_line(aes(x = condition, y = meanrt, color = MMI_group, group = MMI_group)) +
+  geom_point(aes(x = condition, color = MMI_group, y = meanrt), size = 2) + 
+  geom_line(aes(x = condition, y = meanrt, color = MMI_group, group = MMI_group), size = 0.8) +
   geom_errorbar(aes(x=condition, ymin=meanrt-sert, ymax=meanrt+sert), width = 0.05) +
   theme_few() +
   theme(axis.title.y = element_text(margin = margin(8,8,8,8)),
         axis.title.x = element_text(margin = margin(8,8,8,8))) +
   scale_color_few(name = "MMI Group", labels = c("High", "Low")) +
-  labs(x = "Condition", y = "Mean Reaction Time (ms)")
+  labs(x = "Condition", title = "Mean Reaction Time (ms)", y = "")
 
 ggplot(plt_data) + 
-  geom_point(aes(x = condition, color = MMI_group, y = meancorr)) + 
-  geom_line(aes(x = condition, y = meancorr, color = MMI_group, group = MMI_group)) +
+  geom_point(aes(x = condition, color = MMI_group, y = meancorr), size = 2) + 
+  geom_line(aes(x = condition, y = meancorr, color = MMI_group, group = MMI_group), size = 0.8) +
   geom_errorbar(aes(x=condition, ymin=meancorr-secorr, ymax=meancorr+secorr), width = 0.05) +
   theme_few() +
   theme(axis.title.y = element_text(margin = margin(8,8,8,8)),
         axis.title.x = element_text(margin = margin(8,8,8,8))) +
   scale_color_few(name = "MMI Group", labels = c("High", "Low")) +
-  labs(x = "Condition", y = "Percent Correct Matches")
+  labs(x = "Condition", y = "", title = "Correctness of Matches")
 
 ```
 
@@ -716,7 +716,7 @@ ggplot(plt_data, aes(x = dominance, y = score, color = as.factor(other_lang))) +
 
 ```
 
-Now I need to look at the relationship between multitasking and cross-language multitasking. 
+Now I need to look at the relationship(s) between multitasking and cross-language multitasking. 
 
 ```{r}
 
@@ -733,8 +733,17 @@ ggplot(filter(plt_data, other_lang != "other"), aes(x = dominance, y = MMI_weigh
   geom_point(color = "#c7c7c7") + 
   geom_smooth(method = "lm", color = "#65a5d9") + 
   theme_few() + 
-  labs(x = "Media Multitasking Index", y = "Cross-Langage Multitasking")
+  labs(x = "Language Dominance", y = "Media Multitasking")
 
+ggplot(filter(plt_data, other_lang != "other"), aes(x = dominance, y = MMI_lang)) +
+  geom_point(color = "#c7c7c7") + 
+  geom_smooth(method = "lm", color = "#65a5d9") + 
+  theme_few() + 
+  labs(x = "Language Dominance", y = "Cross-Langage Multitasking")
+
+```
+
+```{r}
 df <- fulldata_s %>% 
   group_by(participant, condition) %>% 
   summarize(meanRT = mean(meanRT, na.rm=TRUE),
