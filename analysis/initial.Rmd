@@ -196,13 +196,15 @@ Interesting! There are pretty robust differences between conditions for each sub
 
 surveydata <- surveydata %>% slice(-c(1,2))
 
+surveydata <- surveydata %>% 
+  mutate_at(vars(starts_with("Q")), funs = is.character, as.numeric) %>%
+  mutate(age = case_when(age == "" ~ NA_character_,
+                         TRUE ~ age))
+
 surveydata <- surveydata %>% rename(participant = Q1.1, 
                                     age = Q2.2,
                                     sex = Q2.3,
                                     eth = Q2.4)
-
-surveydata <- surveydata %>% 
-  mutate_at(vars(starts_with("Q")), funs = is.character, as.numeric)
 
 surveydata <- surveydata %>% 
   mutate(polychron = rowMeans(select(., starts_with("Q3.1")), na.rm=TRUE))
@@ -478,6 +480,12 @@ surveydata_s <- left_join(MMI_s, bilingualism_s, by = "participant")
 surveydata_s <- left_join(surveydata_s, polychronicity, by = "participant")
 surveydata_s <- left_join(surveydata_s, scores, by = "participant")
 
+expdata_f <- exp_data %>% 
+  mutate(condition = case_when(booklang == "chinese" | booklang == "spanish" ~ "oth",
+                              booklang == "english" ~ "eng",
+                              TRUE ~ NA_character_),
+         match = recode(corrAns, "x" = "non-match", "z" = "match"))
+
 expdata_s <- exp_data %>% 
   group_by(participant, booktitle, corrAns) %>% 
   summarize(meanRT = psych::harmonic.mean(RT, na.rm = TRUE),
@@ -493,8 +501,10 @@ expdata_s <- exp_data %>%
   filter(!is.na(meanRT))
 
 expdata_s$participant <- as.character(expdata_s$participant)
+expdata_f$participant <- as.character(expdata_f$participant)
 
 fulldata_s <- left_join(expdata_s, surveydata_s, by=c("participant", "booktitle"))
+fulldata_f <- left_join(expdata_f, surveydata_s, by=c("participant", "booktitle"))
 
 fulldata_s <- left_join(fulldata_s, responses, by = c("participant", "condition"))
 
@@ -522,21 +532,66 @@ ggplot(fulldata_s) +
         axis.title.x = element_text(margin = margin(8,8,8,8))) +
   scale_fill_few()
 
+```
+
+```{r}
+
 plt_data <- fulldata_s %>% 
-  mutate(lang_groups = case_when(dominance <= -10 ~ "hi_nat",
-                                 dominance > -10 & dominance < 10 ~ "mid",
-                                 dominance >= 10 ~ "hi_eng")) %>% 
-  group_by(condition, other_lang, lang_groups) %>% 
-  summarize(meanrt = mean(meanRT, na.rm=TRUE), sdrt = sd(meanRT, na.rm = TRUE), meanscore = mean(score, na.rm = TRUE), sdscore = sd(score, na.rm = TRUE))
+  mutate(lang_groups = case_when(dominance <= -1 ~ "Mostly Non-English",
+                                 dominance > -1 & dominance < 9 ~ "Mid",
+                                 dominance >= 9 ~ "Mostly English"),
+         condition = case_when(condition == "eng" ~ "English",
+                               condition == "oth" ~ "Non-English"),
+         MMI_group = case_when(MMI_weighted <= 3.56 ~ "lo",
+                               MMI_weighted > 3.56 & MMI_weighted < 4.87 ~ "mid",
+                               MMI_weighted >= 4.87 ~ "hi"),
+         MMI_lang_groups = case_when(MMI_lang <= 1.45 ~ "lo",
+                                 MMI_lang > 1.45 & MMI_weighted < 2.38 ~ "mid",
+                                 MMI_lang >= 2.44 ~ "hi"),
+         meanRT = meanRT * 1000) %>% 
+  group_by(condition, MMI_group) %>% 
+  summarize(meanrt = mean(meanRT, na.rm=TRUE), 
+            sert = plotrix::std.error(meanRT, na.rm = TRUE),
+            meanscore = mean(score, na.rm = TRUE), 
+            sescore = plotrix::std.error(score, na.rm = TRUE), 
+            secorr = plotrix::std.error(meancorr, na.rm = TRUE),
+            meancorr = mean(meancorr, na.rm = TRUE)) %>% 
+  filter(MMI_group != "mid")
 
 ggplot(plt_data) + 
-  geom_point(aes(x = condition, color = condition, y = meanscore)) + 
-  geom_errorbar(aes(x=condition, ymin=meanscore-sdscore, ymax=meanscore+sdscore)) +
-  facet_wrap(~ lang_groups * other_lang) +
+  geom_point(aes(x = condition, color = MMI_group, y = meanscore)) + 
+  geom_line(aes(x = condition, y = meanscore, color = MMI_group, group = MMI_group)) +
+  geom_errorbar(aes(x=condition, ymin=meanscore-sescore, ymax=meanscore+sescore), width = 0.05) +
+  # facet_wrap(~ lang_groups) +
   theme_few() +
   theme(axis.title.y = element_text(margin = margin(8,8,8,8)),
         axis.title.x = element_text(margin = margin(8,8,8,8))) +
-  scale_color_few()
+  scale_color_few(name = "MMI Group", labels = c("High", "Low")) +
+  labs(x = "Condition", y = "Recall Score")
+
+ggplot(plt_data) + 
+  geom_point(aes(x = condition, color = MMI_group, y = meanrt)) + 
+  geom_line(aes(x = condition, y = meanrt, color = MMI_group, group = MMI_group)) +
+  geom_errorbar(aes(x=condition, ymin=meanrt-sert, ymax=meanrt+sert), width = 0.05) +
+  theme_few() +
+  theme(axis.title.y = element_text(margin = margin(8,8,8,8)),
+        axis.title.x = element_text(margin = margin(8,8,8,8))) +
+  scale_color_few(name = "MMI Group", labels = c("High", "Low")) +
+  labs(x = "Condition", y = "Mean Reaction Time (ms)")
+
+ggplot(plt_data) + 
+  geom_point(aes(x = condition, color = MMI_group, y = meancorr)) + 
+  geom_line(aes(x = condition, y = meancorr, color = MMI_group, group = MMI_group)) +
+  geom_errorbar(aes(x=condition, ymin=meancorr-secorr, ymax=meancorr+secorr), width = 0.05) +
+  theme_few() +
+  theme(axis.title.y = element_text(margin = margin(8,8,8,8)),
+        axis.title.x = element_text(margin = margin(8,8,8,8))) +
+  scale_color_few(name = "MMI Group", labels = c("High", "Low")) +
+  labs(x = "Condition", y = "Percent Correct Matches")
+
+```
+
+```{r}
 
 plt_data <- fulldata_s %>%
   group_by(participant) %>%
@@ -680,7 +735,14 @@ ggplot(filter(plt_data, other_lang != "other"), aes(x = dominance, y = MMI_weigh
   theme_few() + 
   labs(x = "Media Multitasking Index", y = "Cross-Langage Multitasking")
 
-anova(lm(score ~ MMI_weighted*MMI_lang*condition, data=fulldata_s))
+df <- fulldata_s %>% 
+  group_by(participant, condition) %>% 
+  summarize(meanRT = mean(meanRT, na.rm=TRUE),
+            MMI_weighted = first(MMI_weighted),
+            MMI_lang = first(MMI_lang), 
+            dominance = first(dominance))
+
+anova(lm(score ~ MMI_weighted*MMI_lang*condition, data=df))
 
 ```
 
@@ -698,14 +760,68 @@ df <- fulldata_s %>%
 
 df <- df %>% group_by(MMI_groups, MMI_lang_groups, participant, condition) %>% summarize(mem = mean(score, na.rm=TRUE)) %>% ungroup() %>% group_by(MMI_groups, MMI_lang_groups, condition) %>% summarize(se_mem = plotrix::std.error(mem), mem = mean(mem)) 
 
-ggplot(data = df, aes(x = as.factor(MMI_groups), y = mem, color = as.factor(MMI_lang_groups), group = as.factor(MMI_lang_groups))) + 
+ggplot(data = df, aes(x = as.factor(condition), y = mem, color = as.factor(MMI_lang_groups), group = as.factor(MMI_lang_groups))) + 
   geom_point() +
   geom_line() +
-  geom_errorbar(aes(x=as.factor(MMI_groups), ymin=mem-se_mem, ymax=mem+se_mem), width = 0.05) +
+  geom_errorbar(aes(x=as.factor(condition), ymin=mem-se_mem, ymax=mem+se_mem), width = 0.05) +
   # scale_x_discrete(limits = c("low", "high")) +
   theme(plot.margin = unit(c(6, 12, 6, 6), "pt")) +
-  facet_wrap(~ condition)
+  facet_wrap(~ MMI_groups)
   # scale_color_few(name = "Reward", labels = c("High", "Low")) +
   # labs(x = "Cognitive Load", y = "Secondary Task Reaction Time")
+
+```
+
+Now let's do some modeling.
+
+```{r}
+
+# First, let's do MMI * Condition on reactions in the primary task
+
+jtools::plot_summs(lme4::lmer(RT ~ MMI_weighted*condition*dominance + (1|participant) + (1|participant:condition), data = fulldata_f))
+
+jtools::summ(lme4::lmer(RT ~ MMI_weighted*condition*dominance + (1|participant) + (1|participant:condition), data = fulldata_f)) 
+
+# Now, let's do MMI * Condition on correctness in the primary task (matching). Since each response is just a 1 or a 0. I need to do some grouping for this one to make sure the data are at the correct level (one observation per participant per condition)
+
+df <- fulldata_f %>% 
+  group_by(participant, condition) %>%
+  mutate(MMI_groups = case_when(MMI_weighted <= 3.56 ~ 1,
+                                 MMI_weighted > 3.56 & MMI_weighted < 4.87 ~ 0,
+                                 MMI_weighted >= 4.87 ~ 2)) %>%
+  summarize(corr = mean(corr, na.rm=TRUE),
+            MMI_weighted = first(MMI_weighted),
+            MMI_groups = first(MMI_groups),
+            dominance = first(dominance)) %>%
+  filter(!is.na(condition) & MMI_groups != 0)
+
+jtools::plot_summs(lme4::lmer(corr ~ MMI_weighted*condition*dominance + (1|participant), data = df))
+
+jtools::summ(lme4::lmer(corr ~ MMI_weighted*condition*dominance + (1|participant), data = df)) 
+
+# Now, let's do MMI * Condition on correctness in the secondary task (memory recall). 
+
+df <- fulldata_f %>% 
+  group_by(participant, condition) %>%
+  mutate(MMI_groups = case_when(MMI_weighted <= 3.56 ~ 1,
+                                 MMI_weighted > 3.56 & MMI_weighted < 4.87 ~ 0,
+                                 MMI_weighted >= 4.87 ~ 2)) %>%
+  summarize(score = mean(score, na.rm=TRUE),
+            MMI_weighted = first(MMI_weighted),
+            MMI_groups = first(MMI_groups),
+            dominance = first(dominance)) %>%
+  filter(!is.na(condition) & MMI_groups != 0)
+
+jtools::plot_summs(lme4::lmer(score ~ MMI_groups*condition*dominance + (1|participant), data = df))
+
+jtools::summ(lme4::lmer(score ~ MMI_groups*condition*dominance + (1|participant), data = df)) 
+
+```
+
+Demo variables
+
+```{r}
+table(as.numeric(surveydata$sex, na.rm=TRUE))
+mean(as.numeric(surveydata$age), na.rm=TRUE)
 ```
 
